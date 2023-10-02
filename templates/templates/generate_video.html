@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Video</title>
+</head>
+<body>
+    <h1>Generate Video</h1>
+    <a href="{{ url_for('index') }}">Home</a>
+    
+    <form action="/generate_video" method="POST">
+
+  <video width="300" height="auto" controls>
+            <source src="static/TEMP.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="static/TEMP.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <input type="submit" value="Generate Video">
+    </form>
+    
+    {% if video_path %}
+        <h2>Generated Video:</h2>
+        <video width="640" height="480" controls>
+            <source src="{{ video_path }}" type="video/mp4">
+        </video>
+    {% endif %}
+
+    <h1>Run Command</h1>
+<p>After all the above steps are completed you see voice 'Speaking_Video' below this line.<br />
+    it is not lipsynced yet. press Run_Command to lipsyc the the video you see . <br />
+    The video is located here: static/final_video.mp4</p>
+    <video width="200" height="auto" controls>
+        <source src="static/final_video.mp4" type="video/mp4">
+    </video><br />
+    <span >MakeVideo</span>
+    <button onclick="runCommand()">Run_Command</button>
+
+    <script>
+        function runCommand() {
+            $.ajax({
+                type: "GET",
+                url: "/run_command",
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

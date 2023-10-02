@@ -1,0 +1,81 @@
+<html>
+  <body>
+    <center>
+      <h1>Search</h1>
+      <form action="/search_database" method="POST">
+        <label for="search_term">Search Term:</label>
+        <input type="text" id="search_term" name="search_term"><br>
+
+        <label for="search_area">Search Area:</label>
+        <select id="search_area" name="search_area">
+          <option value="description">Description</option>
+          <option value="code">Code Snippet</option>
+          <option value="keywords">Keywords</option>
+        </select><br>
+
+        <input type="submit" value="Search">
+      </form>
+
+      <h1>Enter Data</h1>
+      <form action="/insert_data" method="POST">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br>
+
+        <label for="code">Code Snippet:</label>
+        <textarea id="code" name="code"></textarea><br>
+
+        <label for="keywords">Keywords:</label>
+        <textarea id="keywords" name="keywords"></textarea><br>
+
+        <input type="submit" value="Submit">
+      </form>
+      <hr>
+
+     <!-- Assuming you have a table displaying search results -->
+<!-- Assuming you have a table displaying search results -->
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Description</th>
+        <th>Code</th>
+        <th>Keywords</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Loop through the search results to generate rows -->
+      {% for result in results %}
+      <tr>
+        <td>{{ result[0] }}</td>
+        <td>{{ result[1] }}</td>
+        <td>{{ result[2] }}</td>
+        <td>{{ result[3] }}</td>
+        <td>
+          <!-- Add a link to the edit page for each row -->
+          <a href="{{ url_for('edit_data', rowid=result[0]) }}">Edit</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+  </table>
+  <form action="{{ url_for('edit_data_page', rowid=rowid[0]) }}" method="POST">
+    <label for="row_id">Enter Row ID:</label>
+    <input type="text" id="row_id" name="row_id">
+    <input type="submit" value="Submit">
+</form>
+
+<form action="{{ url_for('edit_data', rowid=rowid) }}" method="POST">
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea>
+    <label for="code">Code:</label>
+    <textarea id="code" name="code"></textarea>
+    <label for="keywords">Keywords:</label>
+    <textarea id="keywords" name="keywords"></textarea>
+    <input type="submit" value="Update">
+</form>
+
+    </center>
+  </body>
+</html>

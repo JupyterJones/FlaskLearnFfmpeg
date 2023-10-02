@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Directory Upload and Video Generation</title>
+</head>
+<body>
+    <h1>Upload Images from Directory and Generate Video</h1>
+    <form method="POST" action="{{ url_for('zoomin.image_dir_to_video') }}" enctype="multipart/form-data">
+        <label for="selected_directory">Select an image directory:</label>
+        <select id="selected_directory" name="selected_directory" required>
+            {% for directory in image_directories %}
+                <option value="{{ directory }}">{{ directory }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Generate Video">
+    </form>  
+    <br /><br /><br />       
+
+    <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename=video2) }}" type="video/mp4">
+    </video>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select and Play MP3</title>
+</head>
+<body>
+    <h1>Select and Play MP3</h1>
+    <li><a href="{{ url_for('index') }}">HOME</a></li>
+    
+    <form method="POST">
+        <label for="selected_directory">Select a directory:</label>
+        <select name="selected_directory" id="selected_directory">
+            {% for directory in directories %}
+                <option value="{{ directory }}" {% if selected_directory == directory %}selected{% endif %}>{{ directory }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Select Directory</button>
+    </form>
+
+    {% if selected_directory %}
+        <form method="POST">
+            <label for="mp3_file">Choose an MP3 file:</label>
+            <select name="mp3_file" id="mp3_file">
+                <option value="">-- Select MP3 File --</option>
+                {% for mp3 in mp3_files %}
+                    <option value="{{ mp3 }}">{{ mp3 }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Play</button>
+        </form>
+    {% endif %}
+
+    <audio controls id="audio-player">
+        <source src="" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const mp3Select = document.getElementById('mp3_file');
+        const selectedDirectory = document.getElementById('selected_directory');
+        const audioPlayer = document.getElementById('audio-player');
+
+        mp3Select.addEventListener('change', function() {
+            const selectedFile = mp3Select.value;
+            const selectedDir = selectedDirectory.value;
+            const filePath = selectedDir + selectedFile;
+            audioPlayer.src = filePath;
+            audioPlayer.load(); // Load the new source
+            audioPlayer.play(); // Start playing
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make Background</title>
+</head>
+<body>
+    <h1>Generated Thumbnail</h1>
+    <img src="{{ url_for('static', filename=filename) }}" alt="Thumbnail Image">
+    <hr>
+         <video width="512" height="auto" controls>
+        <source src="{{ url_for('static', filename=video) }}" type="video/mp4">
+    </video><br />
+       
+</body>
+</html>

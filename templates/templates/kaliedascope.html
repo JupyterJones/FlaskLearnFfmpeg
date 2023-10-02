@@ -1,0 +1,62 @@
+<!DOCTYPE HTML ><html><head>
+<!-- Code from https://www.pepperoni.blog/canvas-kaleidoscope/ -->
+<!-- Modified by Juan A. Villalpando - http://kio4.com/appinventor/169X_javascript_caleidoscopio.htm -->
+
+<!-- DELETE ZOOM -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> -->
+</head>
+<body>
+<img  src= "" id="base"  style="display:none">
+<img  src= "" id="baseR" style="display:none">
+<canvas width="1024" height="1024" id="c"></canvas>
+
+<script type="text/javascript">
+    var base64 =  window.AppInventor.getWebViewString(); // Entrada de datos.
+
+	 document.getElementById('base').setAttribute('src', base64);
+	 document.getElementById('baseR').setAttribute('src', base64);
+</script>
+
+<script type="text/javascript">
+window.addEventListener("load", function(){
+    var c = document.getElementById("c");
+    var baseImg = document.getElementById("base");
+    var baseRImg = document.getElementById("baseR");
+    var ctx = c.getContext("2d");
+    var pat = ctx.createPattern(baseImg, "repeat");
+    var patR = ctx.createPattern(baseRImg, "repeat");
+    var patDim = 150; //pattern is 150x150 square.
+    var SqrtOf3_4 = Math.sqrt(3)/2;
+    //height of triangle side given side length of 150 is:
+    var height =  SqrtOf3_4 * patDim;
+var offset = 0;
+ctx.translate(-0.5*patDim, 0);
+var fn = function(alternateMode){
+    offset = (offset - 1) % 1024
+    var i = 0;
+
+
+    //draw kaleidoscope first row.
+    ctx.save();
+    ctx.fillStyle=pat;
+    ctx.translate(0, offset);
+    while(i <= 3){
+      ctx.beginPath();
+      ctx.moveTo(0,-offset);
+      ctx.lineTo(patDim, -offset);
+      ctx.lineTo(0.5*patDim, height-offset);
+      ctx.closePath();
+      ctx.fill();
+      if(i%3==0){
+        ctx.translate(patDim,-offset);
+        ctx.rotate(-120*Math.PI/180);
+        ctx.translate(-patDim,offset);
+      }
+      else if(i%3==1){
+        if(alternateMode){
+          ctx.rotate(120*Math.PI/180);
+          ctx.translate(-3*patDim, 0);
+          ctx.rotate(-120*Math.PI/180);
+        }
+        ctx.translate(0.5*patDim, height-offset);
+        ctx.rotate(-120*Math.PI/180);

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Preformatted Code</title>
+    <style>
+    pre{
+    color:navy;
+    font-size:22px;
+    }
+    .note{
+    color:red;
+    font-size:24;}
+    </style>
+</head>
+<body>
+    <h1>Preformatted Code Example</h1>
+                 <a href="{{ url_for('hello') }}">HOME</a><br />
+                <a href="{{ url_for('html_base') }}">Html_Base</a><br />
+                <a class="note" href="{{ url_for('home') }}">Cheat Sheet</a><br />   
+    <h2>Code from code.txt:</h2>
+    
+    <pre>{{ code_content|safe }}</pre>
+</body>
+</html>
+

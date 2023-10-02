@@ -1,0 +1,23 @@
+<!--enter_data.html Template:-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Code Snippets</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <h2>Data Entry</h2>
+    <p>{{ formatted_datetime }}</p>
+    <form method="POST">
+        <textarea name="code_block" rows="10" cols="60"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <ul>
+        <li><a href="{{ url_for('search_code') }}">Search CodeHints</a></li>
+        <li><a href="{{ url_for('enter_code') }}">Make a CodeHints Entry</a></li>
+    </ul>
+    <a style="font-size: 24px;color: brown;" href="{{ url_for('index') }}">HOME</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select by ID Form</title>
+</head>
+<body>
+    <h1>Select Data by ID</h1>
+    <form action="{{ url_for('handle_select_by_id') }}" method="post">
+        <label for="search_term">Enter Row ID:</label>
+        <input type="text" name="search_term" id="search_term" required>
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <p>Or</p>
+    <a href="{{ url_for('indexdb') }}">Go back to the Index Page</a>
+</body>
+</html>

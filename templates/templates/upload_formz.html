@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and Rename</title>
+</head>
+<body>
+    <h1>Upload a File and Rename it</h1>
+    <form action="/upload_file_rename" method="POST" enctype="multipart/form-data">
+        <label for="file">Select a File:</label>
+        <input type="file" name="file" id="file" required><br><br>
+
+        <label for="new_filename">New Filename:</label>
+        <input type="text" name="new_filename" id="new_filename" required><br><br>
+
+        <label for="selected_directory">Destination Directory:</label>
+        <input type="text" name="selected_directory" id="selected_directory" required><br><br>
+
+        <label for="width">Width:</label>
+        <input type="text" name="width" id="width" value="1366"><br><br>
+
+        <label for="height">Height:</label>
+        <input type="text" name="height" id="height" value="768"><br><br>
+
+        <input type="submit" value="Upload and Rename">
+    </form>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!-- aigeneration_links.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image and Video Generation</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/body.css') }}"
+
+</head>
+
+<body>
+  <div>
+    <div class="header">
+      <h1>Image and Video Links</h1>
+<a class="note"href="{{ url_for('index') }}">HOME</a><br />
+
+    </div>
+    <div class="columns">
+      <div class="column left">
+        <h3>Image</h3>
+<a class="note"href="{{ url_for('edit_template_page', filename='image_video.html') }}">Edit This Page</a><br />
+
+        <a href="{{ url_for('fade_index') }}">Create YouTube "SHORT" from Image Directory</a><br />
+        <a href="{{ url_for('capture_and_overlay') }}">Falkon Captures</a><br />
+        <a href="{{ url_for('mk_background') }}">Create Video From Thumbnail Cache</a><br />
+        <a href="{{ url_for('add_border') }}">Add a border to an image.</a><br />
+        <a href="{{ url_for('comic_book') }}">Project Underway_Create a Comic Book Page.</a><br />
+        <a href="{{ url_for('video_index') }}">View Archived Videos</a><br />
+        <p>Archive videos are created special to store images. These videos may be coverted to a directory of images for image processing.</p>
+        <a href="{{ url_for('add_files') }}">Convert video to unique images static/mp4_images</a><br />
+
+
+
+        <h3>Video</h3><br />
+        <video width="200" height="auto" controls>
+          <source src="static/assets/result_voice.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video><br />
+        <video width="300" height="auto" controls>
+          <source src="static/assets/NearDone.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video><br /><a href="{{ url_for('large_video') }}">See Above Video Full Size</a><br /><br /><br /><br />
+        <a style="font-size: 24px;margin-left: 10%;color: #29b2f1;" href="{{ url_for('indeX') }}">Link to indeX: Create
+          an Avatar</a><br />
+        <p>
+        <h1 style="color: brown;">Creating a speaking Avatar with A Flask App. <br />Click the videos below for
+          step-by-step instructions. </h1> <a href="{{ url_for('index') }}">RETURN HOME</a><br />
+        </p>
+        <video controls class="resizedvideo">
+          <source src="static/assets/result_cl.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video><br />
+
+        <a href="{{ url_for('text_mp3') }}">First: Create the mp3</a><br />
+
+        <video controls class="resizedvideo">
+          <source src="static/assets/result_convert_mp3_wav.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video><br />
+        <a href="{{ url_for('convert_mp3_to_wav') }}">Second: convert_mp3_to_wav</a><br />
+        <video controls class="resizedvideo">
+          <source src="static/assets/result_indian.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video><br />
+        <a href="{{ url_for('generate_vid') }}">Third: Create a Video the same length as the wav Created</a><br />
+        <video controls class="resizedvideo">
+          <source src="static/assets/Water-blinking.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video><br />
+        <a href="{{ url_for('create_avatar') }}">Fourth and Last Step: Create Avatar</a><br />
+        <br /><br />
+        <a href="{{ url_for('upload_file') }}">Upload Image</a><br />
+
+        <form action="/search" method="GET">
+          <label for="search-term">Search:</label>
+          <input type="text" id="search-term" name="q">
+          <button type="submit">Search</button>
+        </form>
+        <br />
+
+      </div>
+      <div class="column right">
+        <h3>Debug test</h3>
+        <a href="{{ url_for('make_text') }}">Create a Text File</a><br />
+
+        <a href="{{ url_for('choose_dir') }}">Debug Test</a><br />
+        <a href="{{ url_for('mkblend_video') }}">Create a Blended Video</a><br />
+
+        <video controls class="resized-video">
+          <source src="static/assets/result_cl.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <img style="width: 30%; height: auto;" src="{{ url_for('static', filename='assets/woman2.png') }}"
+          alt="Example image"><br />
+
+        <h2 style="color: brown;">Create a VIdeo of Images - Using Minterpolate</h2>
+        <style>
+          .resized-video {
+            width: 35%;
+            height: auto;
+          }
+        </style>
+
+        <video controls class="resized-video">
+          <source src="static/assets/Final_End.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video><br />
+        <video controls class="resized-video">
+          <source src="static/assets/Final_End-0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        <video controls class="resized-video">
+          <source src="static/assets/video_in_a_video-02.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video><br />
+
+        <form method="post" action="/videos" enctype="multipart/form-data">
+          <label for="input_video">Select input video file:</label><br>
+          <input type="file" id="input_video" name="input_video"><br><br>
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>

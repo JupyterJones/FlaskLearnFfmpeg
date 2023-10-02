@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select and Play MP3</title>
+</head>
+<body>
+    <form method="GET">
+        <label for="selected_directory">Select a directory:</label>
+        <select name="selected_directory" id="selected_directory">
+            {% for directory in directories %}
+                <option value="{{ directory }}" {% if selected_directory == directory %}selected{% endif %}>{{ directory }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Select Directory</button>
+    </form>
+    
+    <form method="POST">
+        <label for="mp3_file">Choose an MP3 file:</label>
+        <select name="mp3_file" id="mp3_file">
+            {% for mp3 in mp3_files %}
+                <option value="{{ mp3 }}">{{ mp3 }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit" id="play_button">Play</button>
+    </form>
+    
+    <audio controls id="audio_player">
+        <source src="" type="audio/mpeg" id="audio_source">
+    </audio>
+
+    <script>
+        const directorySelect = document.getElementById('selected_directory');
+        const playButton = document.getElementById('play_button');
+        const mp3Select = document.getElementById('mp3_file');
+        const audioPlayer = document.getElementById('audio_player');
+        
+        directorySelect.addEventListener('change', function() {
+            const selectedDir = directorySelect.value;
+            const updateUrl = `{{ url_for('select_playmp3') }}?selected_directory=${selectedDir}`;
+            window.location.href = updateUrl;
+        });
+
+        playButton.addEventListener('click', function() {
+            const selectedFile = mp3Select.value;
+            const selectedDir = directorySelect.value;
+            const filePath = `{{ url_for('static', filename='') }}${selectedDir}/${selectedFile}`;
+            
+            const audioSource = document.getElementById('audio_source');
+            audioSource.src = filePath;
+            
+            audioPlayer.load();
+            audioPlayer.play();
+        });
+    </script>
+</body>
+</html>

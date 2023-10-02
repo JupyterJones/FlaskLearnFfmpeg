@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Script</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+        </style>
+</head>
+<body>
+    <h1>Edit JavaScript</h1>
+    <a href="{{ url_for('index') }}">Home</a><br />
+    <p>Experiment With Javascript Imagery</p>
+        <form method="POST" action="{{ url_for('edit_script') }}">
+        <label for="script_file">Select a JavaScript file:</label>
+        <select name="script_file" id="script_file">
+            {% for script_file in script_files %}
+                <option value="{{ script_file }}">{{ script_file }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <input type="submit" value="Load Script">
+    </form>
+    <hr>
+    <h2>Edit the selected script:</h2>
+    <form method="POST" action="{{ url_for('save_script') }}">
+        <textarea name="script_content" rows="30" cols="160">{{ script_content }}</textarea>
+        <br>
+        <input type="submit" value="Save Script">
+    </form>
+</body>
+</html>

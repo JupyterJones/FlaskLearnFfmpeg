@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Image</title>
+<style>
+.note{
+color:red;
+font-size:24px;
+}
+</style>
+  </head>
+  <body>
+    <h1>Final Image</h1>
+<a class="note" href="{{ url_for('edit_template_page', filename='final_image.html') }}">Edit This Page</a>&nbsp;&nbsp; |&nbsp;&nbsp;<a class="note" href="{{ url_for('crop') }}">Crop Images</a>&nbsp;&nbsp; |&nbsp;&nbsp;<a class="note" href="{{ url_for('crop') }}">Crop an Image</a> |&nbsp;&nbsp;<a class="note" href="{{ url_for('index') }}">Home</a>
+
+    <p>{{ message }}</p>
+    <img src="{{ url_for('static', filename='final_images/'+final_image) }}" alt="{{ final_image }}">
+  </body>
+</html>

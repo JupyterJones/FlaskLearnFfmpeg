@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Flask App</h1>
+    <video width="512" height="auto" controls>
+        <source src="{{ final_video }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video width="512" height="auto" controls>
+        <source src="static/videos/old_woman.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <a href="{{ url_for('update_database') }}">Home</a><br />
+
+    
+</body>
+</html>

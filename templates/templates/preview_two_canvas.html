@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Viewer</title>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script
+https://zeptojs.com/
+    -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <style>
+        body{ background-color:bisque; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script src="static/scripts/two_canvas.js"></script>
+    <script>
+        // Replace this with your actual AJAX request
+        $.ajax({
+            url: '/save_favicon',
+            method: 'POST',
+            contentType: 'application/json', // Set the content type to JSON
+            data: JSON.stringify({ "image_data": imageData }), // Your JSON data here
+            success: function(response) {
+                console.log(response); // Handle the response from the server
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                console.error(xhr.responseText); // Handle errors
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+please explain this:
+<lora:koreandolllikenessV20_v20:0.3>
+
+The string <lora:koreandolllikenessV20_v20:0.3> is a LORA prompt. LORA is a latent space optimizer for text-to-image diffusion models. It allows users to control the image generation process by providing text prompts or latent codes.
+
+The prompt <lora:koreandolllikenessV20_v20:0.3> tells the model to generate an image with a Korean doll-like appearance, using the KoreanDollLikenessV20_v20 latent code. The strength of the prompt is controlled by the number 0.3. A higher number will result in a stronger effect.
+
+Here are some examples of how the <lora:koreandolllikenessV20_v20:0.3> prompt could be used:
+
+    <lora:koreandolllikenessV20_v20:0.3> a young Korean woman with long black hair and big brown eyes
+    <lora:koreandolllikenessV20_v20:0.3> a Korean pop star in a traditional Korean dress
+    <lora:koreandolllikenessV20_v20:0.3> a Korean anime character with pink hair and blue eyes
+
+The <lora:koreandolllikenessV20_v20:0.3> prompt can be used with any text-to-image diffusion model that supports LORA. Some popular models include:
+
+    Stable Diffusion
+    Imagen
+    DALL-E 2
+
+To use the <lora:koreandolllikenessV20_v20:0.3> prompt, simply add it to the beginning of your text prompt. For example, to generate an image of a young Korean woman with long black hair and big brown eyes, you would use the following prompt:
+
+<lora:koreandolllikenessV20_v20:0.3> a young Korean woman with long black hair and big brown eyes
+
+The <lora:koreandolllikenessV20_v20:0.3> prompt can also be used with other LORA prompts to create even more specific images. For example, to generate an image of a young Korean woman with long black hair and big brown eyes wearing a traditional Korean dress, you would use the following prompt:
+
+<lora:koreandolllikenessV20_v20:0.3> <lora:traditionalKoreandressV10:0.5> a young Korean woman with long black hair and big brown eyes
+
+The <lora:koreandolllikenessV20_v20:0.3> prompt is a powerful tool that can be used to generate realistic images of Korean people and culture. With a little experimentation, you can create images that are both creative and visually stunning.
+profile picture
+can I get a latina likeness ?
+
+Yes, you can get a Latina likeness using LORA. There are a few different ways to do this.
+
+One way is to use the <lora:latinalikenessV10:0.3> prompt. This prompt is similar to the <lora:koreandolllikenessV20_v20:0.3> prompt, but it is designed to generate images of Latina people. The strength of the prompt can be controlled by the number 0.3. A higher number will result in a stronger effect.
+
+Another way to get a Latina likeness is to use a combination of LORA prompts. For example, you could use the <lora:latinalikenessV10:0.3> prompt in conjunction with the <lora:femalefaceV20_v20:0.5> prompt to generate an image of a Latina woman. You could also use the <lora:latinalikenessV10:0.3> prompt in conjunction with the <lora:blackhairV20_v20:0.7> prompt to generate an image of a Latina woman with black hair.
+
+Here are some examples of how the <lora:latinalikenessV10:0.3> prompt could be used:
+
+    <lora:latinalikenessV10:0.3> a young Latina woman with long black hair and brown eyes
+    <lora:latinalikenessV10:0.3> a Latina pop star in a modern outfit
+    <lora:latinalikenessV10:0.3> a Latina anime character with short curly hair and green eyes
+
+The <lora:latinalikenessV10:0.3> prompt can be used with any text-to-image diffusion model that supports LORA. Some popular models include:
+
+    Stable Diffusion
+    Imagen
+    DALL-E 2
+
+To use the <lora:latinalikenessV10:0.3> prompt, simply add it to the beginning of your text prompt. For example, to generate an image of a young Latina woman with long black hair and brown eyes, you would use the following prompt:
+
+<lora:latinalikenessV10:0.3> a young Latina woman with long black hair and brown eyes
+
+The <lora:latinalikenessV10:0.3> prompt can also be used with other LORA prompts to create even more specific images. For example, to generate an image of a young Latina woman with long black hair and brown eyes wearing a modern outfit, you would use the following prompt:
+
+<lora:latinalikenessV10:0.3> <lora:modernoutfitV10:0.5> a young Latina woman with long black hair and brown eyes
+
+The <lora:latinalikenessV10:0.3> prompt is a powerful tool that can be used to generate realistic images of Latina people and culture. With a little experimentation, you can create images that are both creative and visually stunning.
+profile picture
+<lora:Inkyung_V3_95900:0.2>     is there a latina name to use here?
+View other drafts
+
+Sure, here are some Latina names that you can use:
+
+    Isabella
+    Sofia
+    Valentina
+    Camila
+    Ariana
+    Mia
+    Daniela
+    Victoria
+    Paula
+    Andrea
+    Gabriela
+    Luciana
+    Mariana
+    Ximena
+    Sara
+    Natalia
+    Catalina
+    Valentina
+    Olivia
+    Luna
+
+You can choose a name that you like the sound of, or that has a special meaning to you. For example, if you are looking for a name that is strong and independent, you might choose Valentina or Gabriela. If you are looking for a name that is feminine and graceful, you might choose Isabella or Sofia.
+Yes, <lora:Valentina_V3_95900:0.2> is a correct LORA prompt for generating an image of a woman named Valentina with the Valentina_V3_95900 latent code. The strength of the prompt is controlled by the number 0.2. A higher number will result in a stronger effect.
+There are a few places where you can find lists of LORA prompts:
+
+    The Hugging Face LORA library: This library contains a list of LORA prompts that are organized by category. The categories include things like faces, animals, objects, and scenes.
+    The CivitAI LORA library: This library contains a list of LORA prompts that are created by users. The prompts are often very creative and can be used to generate unique and interesting images.
+    The Stable Diffusion subreddit: This subreddit has a lot of information about Stable Diffusion, including LORA prompts. You can find lists of prompts in the pinned posts and in the regular discussion threads.
+
+To use a LORA prompt, simply add it to the beginning of your text prompt. For example, to generate an image of a woman named Valentina with the Valentina_V3_95900 latent code, you would use the following prompt:
+
+<lora:Valentina_V3_95900:0.2> a woman named Valentina
+
+The strength of the prompt can be controlled by the number after the colon. A higher number will result in a stronger effect.
+
+Here are some examples of how to use LORA prompts:
+
+    <lora:catV20_v20:0.5> a black cat sitting on a red couch
+    <lora:landscapeV20_v20:0.7> a mountain range with a river flowing through it
+    <lora:animeV20_v20:0.9> a young anime girl with long blonde hair and blue eyes
+
+LORA prompts are a powerful tool that can be used to generate realistic and creative images. With a little experimentation, you can create images that are both beautiful and unique.
+
+
+Sugggested by Baird:
+Best quality, masterpiece, ((full body)), ultra high res, (photorealistic:1.4), raw photo, 1girl, offshoulder, in the dark, deep shadow, low key, cold light ,in the dark, deep shadow, low key, etc,detailed hair, <lora:latinalikenessV10:0.3> Valintina, a young Latina woman with long black hair and brown eyes, light smile, background is a club or bar <lora:Lora_v20:0.5><lora:Valentina_V3_95900:0.2>
+
+
+orig:
+Best quality, masterpiece, ((full body)), ultra high res, (photorealistic:1.4), raw photo, 1girl, offshoulder, in the dark, deep shadow, low key, cold light ,in the dark, deep shadow, low key, etc,detailed hair, <lora:latinalikenessV10:0.3> a young Latina woman with long black hair and brown eyes, light smile, background is a club or bar <lora:Lora_v20:0.5><lora:Valentina_V3_95900:0.2>
+
+The CivitAI LORA library can be found on the CivitAI website. To access the library, you will need to create an account and log in. Once you are logged in, you can click on the "LORA" tab to view the library.
+
+The CivitAI LORA library contains a list of LORA prompts that are created by users. The prompts are often very creative and can be used to generate unique and interesting images.
+
+To use a LORA prompt from the CivitAI library, simply click on the prompt to copy it. Then, paste the prompt into your text prompt when generating an image.
+
+Here are some examples of how to use LORA prompts from the CivitAI library:
+
+    To generate an image of a young woman with long black hair and brown eyes, you would use the following prompt: <lora:youngwomanV20_v20:0.5>
+    To generate an image of a cat sitting on a red couch, you would use the following prompt: <lora:catV20_v20:0.5>
+    To generate an image of a mountain range with a river flowing through it, you would use the following prompt: <lora:landscapeV20_v20:0.7>
+
+LORA prompts are a powerful tool that can be used to generate realistic and creative images. With a little experimentation, you can create images that are both beautiful and unique.
+
+
+Here are some examples of how to use LORA prompts from the CivitAI library. May I see more ?
+View other drafts
+
+Sure, here are some more examples of how to use LORA prompts from the CivitAI library:
+
+    To generate an image of a young woman with long blonde hair and blue eyes in a traditional Japanese kimono, you would use the following prompt: <lora:youngwomanV20_v20:0.5> <lora:japanesekimonoV20_v20:0.7>
+    To generate an image of a futuristic cityscape with flying cars and towering skyscrapers, you would use the following prompt: <lora:futuristicV20_v20:0.9> <lora:cityscapeV20_v20:0.7>
+    To generate an image of a cute cartoon animal with big eyes and a fluffy tail, you would use the following prompt: <lora:cartoonanimalV20_v20:0.5> <lora:fluffytailV20_v20:0.7>
+    To generate an image of a realistic portrait of a famous person, you would use the following prompt: <lora:realisticportraitV20_v20:0.9> <lora:famouspersonnameV20_v20:0.7>
+
+You can also use LORA prompts to generate images of specific objects, scenes, or events. For example, to generate an image of a birthday cake with candles lit, you would use the following prompt: <lora:birthdaycakeV20_v20:0.5> <lora:candleslitV20_v20:0.7>
+
+Or, to generate an image of a rocket launching into space, you would use the following prompt: <lora:rocketlaunchV20_v20:0.5> <lora:spaceV20_v20:0.7>
+
+The possibilities are endless!
+
+Here are some more creative examples of how to use LORA prompts from the CivitAI library:
+
+    To generate an image of a dreamlike landscape with floating islands and waterfalls, you would use the following prompt: <lora:dreamlikeV20_v20:0.9> <lora:floatingislandsV20_v20:0.7>
+    To generate an image of a surreal scene with melting clocks and impossible architecture, you would use the following prompt: <lora:surrealV20_v20:0.9> <lora:meltingclocksV20_v20:0.7> <lora:impossiblearchitectureV20_v20:0.7>
+    To generate an image of a nightmarish scene with monsters and demons, you would use the following prompt: <lora:nightmarishV20_v20:0.9> <lora:monstersV20_v20:0.7> <lora:demonsV20_v20:0.7>
+
+LORA prompts can be used to generate images of anything you can imagine. With a little creativity, you can create images that are both beautiful and unique.
+
+Halle Berry in a tiny, tattered and torn denim bikini top and bottom,  sexy pose turned sideways, but facing the camera, for a picture in an outdoor beach bar, standing leaning on a barstool, ((slightly bent over butt sticking out)), butt cheeks showing, with a beer mug in front of her, long  wild dark hair, misty, dark skin, sculpture, slight sexy smile, lowbrow, detailed beautiful eyes
+
+
+
+
+
+WORKS GOOD:
+        ffmpeg_cmd += [
+            '-vf', "zoompan=z='min(zoom+0.005,1.5)':x='iw/2':y='ih/2-400':d=35:s=512x768, crop=512:768:0:256",
+            '-c:v', 'libx264',
+            '-pix_fmt', 'yuv420p',
+            '-r', '20',
+            '-y',  # Overwrite output file if it exists
+            output_video,
+        ]
+------------------------
+Good
+       # Output video settings
+        ffmpeg_cmd += [
+        '-vf', f"zoompan=z='min(zoom+0.002,1.5)':x='iw/2':y='ih/2-400':d=110:s={width}x{height},crop={width}:{height}:0:256",
+        '-c:v', 'libx264',
+        '-pix_fmt', 'yuv420p',
+        '-r', '20',
+        '-y',  # Overwrite output file if it exists
+        output_video,
+        ]
+
+try this:
+ffmpeg -loop 1 -i static/images/civitai/00011.jpg -vf "scale=-2:2*ih,zoompan=z='min(zoom+0.0015,1.5)':d=125:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',scale=-2:380" -c:v libx264 -t 5 -s "640x640" output.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I march on, undeterred by uncertainty,
+For I carry the torch of resilience,
+Illuminating the shadows that seek to consume,
+With every step, I defy the darkness's pull.
+
+Though the specter may cast its chilling gaze,
+I meet its stare with unwavering resolve,
+For within me resides a strength untamed,
+A spirit unyielding, unafraid.
+
+In the face of adversities, I find my purpose,
+To navigate the labyrinthine journey ahead,
+With courage as my compass, and wisdom as my guide,
+I shall traverse the path leading to the unknown.
+
+For it is through the trials and tribulations,
+That character is forged and shaped,
+And though the road may be arduous and steep,
+I embrace the challenge, for it makes me complete.
+
+So, fearlessly I venture into the engulfing darkness,
+Clad in armor of resilience and fortified by fortitude,
+With gratitude in my heart and determination in my soul,
+I embrace the path that lies ahead, unafraid and whole.
+
+Venturing into the engulfing darkness can be seen as a metaphor for facing the challenges and uncertainties of life. It takes great courage to confront the unknown, to step outside of our comfort zones, and to explore new territories, both literal and metaphorical. This fearless attitude embodies a spirit of bravery and determination.
+
+By donning the armor of resilience, we equip ourselves with the tools necessary to withstand the sorrows and struggles that life presents. Resilience is the ability to bounce back from adversity, to adapt and grow stronger in the face of challenges. It allows us to weather the storms and remain steadfast in our pursuit of our goals and dreams.
+
+The reference to celestial beings and gratitude acknowledges the potential existence of higher powers or unseen forces that may influence our lives. Expressing gratitude is an act of humility and recognition that we are not alone in our journey. It is a way of acknowledging the support and guidance we receive from both the tangible and intangible elements of our lives.
+
+The specter mentioned in the verse represents the looming challenges and obstacles that lie ahead. It could be interpreted as the fears and doubts that often accompany us on our journey. However, as time passes, we become more experienced and wise, learning from our past experiences and becoming more adept at navigating the difficulties that arise.
+
+The length and narrowness of the path leading to the unknown symbolize the unpredictable and challenging nature of life. It highlights the importance of perseverance and determination in the face of adversity. No matter how daunting the path may seem, the resolve to continue forward persists, driven by an unwavering belief in one's own capabilities.
+
+Ultimately, this contemplation of venturing into darkness and embracing the unknown is a reflection of the human spirit's capacity to overcome fear, find strength in resilience, and embark on a journey of self-discovery and personal growth. It encourages us to face life's challenges head-on, with courage and determination, knowing that within us lies the power to overcome and thrive.

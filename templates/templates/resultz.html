@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uploaded Video</title>
+  </head>
+  <body>
+    <h1>Uploaded Video</h1>
+    <p>Here is your video:</p>
+    <video width="480" height="480" controls>
+      <source src="{{ url_for('static', filename=output_file) }}?timestamp={{ timestamp }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>Timestamp: {{ timestamp }}</p>
+  </body>
+</html>

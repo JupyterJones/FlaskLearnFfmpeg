@@ -1,0 +1,43 @@
+<!-- code_editor.html-->
+<!-- app_utilities.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Embedded YouTube Videos and Links</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<style>
+.note{
+color:darkbrown;
+font-size:24px;
+}
+.Snote{
+color:red;
+font-size:30px;
+}
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>YouTube Videos</h1>
+            <a class = "note" href="{{ url_for('index') }}">Home (index)</a><br />
+            <a class = "note" href="https://elements.envato.com/audio/royalty-free-music" 
+target="_blank">elements.envato.com/audio/royalty-free-music</a><br /><br />
+<a class = "Snote" href="{{ url_for('select_playmp3') }}" target="_blank">Play Music</a>&nbsp;&nbsp;||&nbsp;&nbsp;
+<a class="Snote" href="{{ url_for('start_stream') }}" target="_blank">Start Streaming</a>
+
+
+        </div>
+        <div class="columns">
+        <div class="column">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BidxfmuXJL0?si=QzuoU3Ad-n0WFsII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>    &nbsp;&nbsp;
+<div class="column">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wpGsHnUlJNY?si=JtmCatIR7YZkD2KN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NEFQ_PgRSmk?si=-35q0H-uSRgxKTLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div> 
+</div>

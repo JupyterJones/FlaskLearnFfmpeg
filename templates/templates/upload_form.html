@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>Upload Background and Foreground Images</h1>
+    <form action="/process_imagez" method="post" enctype="multipart/form-data">
+        <label for="bg_image">Background Image:</label>
+        <input type="file" name="bg_image" id="bg_image" accept="image/*" required><br>
+
+        <label for="fg_image">Foreground Image:</label>
+        <input type="file" name="fg_image" id="fg_image" accept="image/*" required><br>
+
+        <input type="submit" value="Create Video">
+    </form>
+
+    {% if video_url %}
+    <h2>Generated Video:</h2>
+    <video controls>
+        <source src="static/overlay_zooms/imagez_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    {% endif %}
+</body>
+</html>

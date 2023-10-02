@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Omic Book Experiment</title>
+
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 1%;
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-image: url('../static/assets/MemMaker_background.png');
+        background-repeat: repeat-y;
+        background-size: cover;
+        /* Use 'cover' to make the image cover the entire body */
+        background-position: top;
+    }
+    video {
+        margin: 10px, auto;
+        width: 400px;
+        height: auto;
+    }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+
+    }
+
+    .header {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .columns {
+        display: flex;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .column {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .column.left {
+        width: 30%;
+        border:    1px solid #000;
+    }
+
+    .column.right {
+    margin: 0 auto; /* Center horizontally */
+    width: 60%;
+    border: 1px solid #000;
+    text-align: center; /* Center video vertically */
+}
+
+.column.right video {
+    max-width: 100%;
+    height: auto;
+}
+ 
+.comic-page {
+    width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    
+    .panel {
+      position: relative;
+      border: 2px solid black;
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    .speech-bubble {
+      position: absolute;
+      background-color: yellow;
+      border-radius: 10px;
+      padding: 5px;
+      font-weight: bold;
+    }
+
+    .speech-bubble2 {
+      position: absolute;
+      background-color: yellow;
+      border-radius: 10px;
+      padding: 5px;
+      font-weight: bold;
+    }
+    
+    .narrative-element {
+      font-size: 24px;
+      color: red;
+      text-transform: uppercase;
+    }
+    .small {
+      width: 200px;
+      height: auto;
+    }
+    .medium {
+      width: 250px;
+      height: auto;
+    }
+
+ 
+        .container {
+            width: 75%;
+            display: flex; /* Use flexbox to align divs side by side */
+        }
+
+        .div1, .div2 {
+            width: 50%; /* Each div takes up 50% of the container's width */
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+       .note{
+           color: red;
+           font-size:24px;
+        }
+    </style>  
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1>Comic Book Experiment</h1>
+<a class="note" href="{{ url_for('edit_template_page', filename='comic_book.html') }}">Edit This Page</a>&nbsp;&nbsp; |&nbsp;&nbsp;<a class="note" href="{{ url_for('crop') }}">Crop Images</a>&nbsp;&nbsp; |&nbsp;&nbsp;<a class="note" href="{{ url_for('index') }}">Home</a>
+    </div>
+
+
+
+
+<div class="container">
+    <div class="div1">
+      <div class="speech-bubble">Hello there!</div>
+      <img class="small" src="{{ url_for('static', filename='images/Leonardo/character2.jpg') }}" alt="Character 1">
+
+    </div>
+    <div class="div2">
+        <div class="narrative-element">WQW !</div>
+        <div class="speech-bubble2">Watch out!</div>
+
+        <img class="medium" src="{{ url_for('static', filename='images/Leonardo/character1.jpg') }}" alt="Character 1">
+
+ 
+      
+    </div>
+  </div>
+  

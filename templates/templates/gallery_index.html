@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Choose Image Directory</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+        video {
+            margin: 10px, auto;
+            width: 250px;
+            height: auto;
+        }
+
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;}
+</style>
+
+</head>
+<body>
+  <h1>Choose an Image Directory:</h1>
+  <form action="/gallery" method="POST">
+    <select name="directory">
+      {% for directory in directories %}
+        <option value="{{ directory }}">{{ directory }}</option>
+      {% endfor %}
+    </select>
+    <input type="submit" value="Generate Gallery">
+  </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Text to Speech</title>
+    </head>
+    <body>
+        <h1>Text to Speech</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <br><br>
+            <textarea name="text" rows="5" cols="30"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        {% if filename %}
+            <p>Text: {{ text }}</p>
+            <audio controls>
+                <source src="{{ filename }}" type="audio/mpeg">
+            </audio>
+        {% endif %}
+    </body>
+</html>

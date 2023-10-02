@@ -1,0 +1,24 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Execute Bash Script</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+
+</head>
+<body>
+    <h1>Execute Bash Script</h1>
+    <form action="/execute" method="POST">
+        <textarea name="script" rows="12" cols="120"></textarea>
+        <br>
+        <input type="submit" value="Execute">
+    </form>
+<h1>Example Script: </h1>
+ <p>ffmpeg -framerate 5 -i /home/jack/Desktop/StoryMaker/static/mushrom/%05d.png -c:v libx265 -r 20 -pix_fmt yuv420p -y /home/jack/Desktop/StoryMaker/static/mushrom/flask-images2.mp4</p>
+ <p> mkdir -p /home/jack/Desktop/StoryMaker/static/scripts/back && cp /home/jack/Desktop/StoryMaker/static/scripts/*.* /home/jack/Desktop/StoryMaker/static/scripts/back && ls /home/jack/Desktop/StoryMaker/static/scripts/back
+ </p>   
+</body>
+</html>
+

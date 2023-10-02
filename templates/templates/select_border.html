@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Select Border</title>
+  </head>
+  <body>
+    <h1>Select Border</h1>
+    <form method="POST" action="{{ url_for('apply_border') }}">
+      <input type="hidden" name="image" value="{{ request.args.get('image') }}">
+      {% for border in borders %}
+        <img src="{{ url_for('static', filename='transparent_borders/'+border) }}" alt="{{ border }}" width="200" height="200">
+        <input type="radio" name="border" value="{{ border }}">&nbsp;&nbsp;
+      {% endfor %}
+      <input type="submit" value="Apply Border">
+    </form>
+  </body>
+</html>
+
+<!--
+  <html>
+  <head>
+    <title>Add Border</title>
+    <style>
+      .thumbnail-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1000px; /* adjust this value to your liking */
+        margin: 0 auto;
+      }
+
+      .thumbnail {
+        flex-basis: calc(20% - 10px); /* adjust this value to change the number of columns */
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Border</h1>
+    <div class="thumbnail-container">
+      {% for thumbnail in thumbnails %}
+        <div class="thumbnail">
+          <a href="{{ url_for('select_border', image=thumbnail.replace('thumbnail_', '')) }}">
+            <img src="{{ url_for('static', filename='thumbnails/'+thumbnail) }}" alt="{{ thumbnail }}" style="border: 10px solid transparent; box-shadow: 0 0 0 10px #fff, 0 0 0 15px #000;">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
+-->

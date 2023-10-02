@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Code</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Flask.css') }}">
+
+</head>
+<body>
+<div class="content">
+
+<center>
+<style>td {width:20%;
+}
+th {width:20%;
+}
+tr {width:20%;
+}
+.two{width:5%;}
+.th_two{width:5%;padding-left: 2%;}
+.three{width:10%;}
+.th_three{width:10%;padding-left: 10%;}
+.thm_three{width:10%;padding-left: 11%;}
+.th_four{width:10%;padding-left: 5%;}
+.th_five{width:10%;padding-left: 40%;}
+</style>
+
+{% extends 'index.html' %}
+
+{% block title %}
+    code
+{% endblock %}
+
+{% block content %}
+    <h1>code</h1>
+    <table style ="width: 65%;">
+        <tr>
+            <th class="two">ID</th>
+            <th>Description</th>
+            <th>Code</th>
+            <th class="two">Keywords</th>
+            <th>Actions</th>
+        </tr>
+        {% for code in code %}
+        <tr>
+            <td class="th_two">{{ code[0] }}</td>
+            <td class="th_three">{{ code[1] }}</td>
+            <td class="thm_three">{{ code[2] }}</td>
+            <td class="th_four">{{ code[3] }}</td>
+            
+            <td>
+                <a class="th_five" href="{{ url_for('edit_code', code_id=code[0]) }}">Edit</a>
+                <form action="{{ url_for('delete_code', code_id=code[0]) }}" method="post">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <hr>
+    <h1>Add New code</h1>
+    <form action="/code" method="post">
+        <label for="description">Description:</label>
+        <textarea type="description" name="description" rows="8" cols="90%"></textarea><br />
+        <label for="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Code:</label>
+        <textarea type="text" name="code" rows="8" cols="90%"></textarea><br>
+        <label for="keywords">Keywords:</label>
+        <input style="width:53%;height: 25px;" type="keywords" name="keywords"><br>
+        <input type="submit" value="Add code">
+    </form>
+{% endblock %}
+<hr>
+<!-- ... Other code ... -->
+
+{% for item in code %}
+    <h3>{{ item[1] }}</h3>
+    <pre>{{ item[2] | safe }}</pre>
+    <p>Keywords: {{ item[3] }}</p>
+    <a href="{{ url_for('edit_code', code_id=item[0]) }}">Edit</a>
+    <form action="{{ url_for('delete_code', code_id=item[0]) }}" method="post">
+        <button type="submit">Delete</button>
+    </form>
+    <hr>
+{% endfor %}
+
+<!-- Display the HTML code for the form -->
+<h2>HTML Code for the Form</h2>
+<pre>
+{{ form_code | safe }}
+</pre>
+
+<!-- ... Other code ... -->
+
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Flask App Builder</title>
+    <title>Edit Template</title>
+     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/body.css') }}">
+  
+</head> 
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 style = color:darkgreen;" >HOME index.html</h1>
+            <a class="note" href="{{ url_for('edit_template_page', filename='index.html') }}">Edit This Page</a></li><br />
+        </div>
+        <div class="columns">
+            <div class="column left">
+                <h3>Links</h3>
+                
+                <a href="{{ url_for('app_utilities') }}">Application Utilities</a><br />
+                <a href="{{ url_for('image_video') }}">Image and Video Processing Links</a><br />
+                <a href="{{ url_for('view_gallery.gallery_index') }}">View Gallery for Image Directories</a><br />
+                <a href="{{ url_for('create_comic.create_comic_index') }}">Create Comic Border</a><br />
+                <a href="{{ url_for('index_canvas') }}">Project Canvas</a><br /><br />
+                <a href="{{ url_for('edit_javascript') }}">Project JavaScript</a><br /><br />
+                <a href="{{ url_for('edit_template') }}">Edit Links Listed Below</a>
+                <p>Edit Index - Edit CSS Files - Edit Canvas JS - Edit Formatted Text - Edit FlaskAppArchitect Description - Edit Formatted Text</p>
+                
+                <a href="{{ url_for('data_page') }}">Data Page - Snippets,Search ChatGPT,Sqlite3</a><br /><br />
+                <a href="{{ url_for('edit_file') }}">Edit File</a><br />
+                <a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a><br />
+                <a href="{{ url_for('edit_description') }}">Edit Description</a><br />
+                <a href="{{ url_for('misc_links') }}">This page contains all active links(I hope)</a><br />
+            </div>
+            <div class="column right">
+                <h2>Random Video</h2>
+                <video controls>
+                    <source src="{{ video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

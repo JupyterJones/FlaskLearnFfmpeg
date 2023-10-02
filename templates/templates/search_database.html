@@ -1,0 +1,20 @@
+<html>
+<body>
+    <center>
+    <h1>Search</h1>
+    <form action="/search_database" method="POST">
+        <label for="search_term">Search Term:</label>
+        <input type="text" id="search_term" name="search_term"><br>
+
+        <label for="search_area">Search Area:</label>
+        <select id="search_area" name="search_area">
+            <option value="description">Description</option>
+            <option value="code">Code Snippet</option>
+            <option value="keywords">Keywords</option>
+        </select><br>
+
+        <input type="submit" value="Search">
+    </form>
+</center>
+</body>
+</html>

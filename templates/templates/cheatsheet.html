@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Cropping</title>
+</head>
+<body>
+    <h1>Image Cropping</h1>
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('crop') }}">
+        <input type="file" name="image">
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if image_path %}
+    <h2>Cropped Image Preview</h2>
+    <img src="{{ image_path }}" alt="Cropped Image">
+    <form method="POST" action="{{ url_for('crop_and_save') }}">
+        <input type="hidden" name="image_path" value="{{ image_path }}">
+        <label for="x">X Coordinate: </label>
+        <input type="number" name="x" required><br>
+        <label for="y">Y Coordinate: </label>
+        <input type="number" name="y" required><br>
+        <label for="width">Width: </label>
+        <input type="number" name="width" required><br>
+        <label for="height">Height: </label>
+        <input type="number" name="height" required><br>
+        <input type="submit" value="Crop and Save">
+    </form>
+    <form method="POST" action="{{ url_for('move_cropped') }}">
+
+        <input type="submit" value="Move Cropped Image">
+    </form>
+    {% endif %}
+
+</body>
+</html>
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Execution Result</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Execute Bash Script</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+
+</head>
+<body>
+    <h1>Execution Result</h1>
+
+    <h2>Script Content</h2>
+
+    {% for results in result %}
+    <pre>{{ results }}</pre>
+    {% endfor %}
+    {% for words in content %}
+
+        <pre>{{ words }}</pre>
+    {% endfor %}
+</body>
+</html>
+

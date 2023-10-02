@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Cloud</title>
+
+    <link rel="stylesheet" href="static/css/flask.css">
+
+
+</head>
+<body>
+    <h1>First Three Lines from Every Block</h1>
+
+    {% if extracted_lines %}
+        <ul>
+            {% for lines in extracted_lines %}
+                <li>
+                    <pre>{{ lines }}</pre>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No code blocks found.</p>
+    {% endif %}
+    
+    <a href="{{ url_for('search_code') }}">Back to Search</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select a Text File</title>
+</head>
+<body>
+    <h1>Select a Text File</h1>
+    <ul>
+        {% for filename in text_files %}
+        <li><a href="{{ url_for('display_text', filename=filename) }}">{{ filename }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

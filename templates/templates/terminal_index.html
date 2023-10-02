@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terminal Emulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='xterm/xterm.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <script src="{{ url_for('static', filename='xterm/xterm.js') }}"></script>
+</head>
+<body>
+    <div id="terminal"></div>
+    <script>
+        const term = new Terminal();
+        term.open(document.getElementById('terminal'));
+    
+        let userInput = '';
+    
+        term.onKey(e => {
+            const printable = !e.domEvent.altKey && !e.domEvent.ctrlKey && !e.domEvent.metaKey;
+    
+            if (e.domEvent.key === 'Enter') {
+                const command = userInput;
+                fetch('/execute_command', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `command=${encodeURIComponent(command)}`,
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Clear the terminal and display the response output
+                    term.clear();
+                    console.log(data.output);
+
+                    const formattedOutput = data.output.replace(/\n/g, '\r\n');
+                    term.write(formattedOutput);
+                    term.write('$ ');
+                });
+    
+                userInput = '';
+            } else if (printable) {
+                term.write(e.key);
+                userInput += e.key;
+            }
+        });
+    
+        term.writeln('$ ');
+    
+    </script>
+    
+    
+</body>
+</html>

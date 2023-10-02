@@ -1,0 +1,42 @@
+<!-- app_utilities.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Run Bash Command</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Run Bash Command</h1>
+        </div>
+            <div class="column left">
+    <form action="{{ url_for('run_bash') }}" method="POST">
+        <label for="bash_command">Enter Bash Command:</label>
+        <textarea name="bash_command" id="bash_command" rows="4" cols="50"></textarea>
+        <br>
+        <button type="submit">Run Command</button>
+    </form>
+    
+    <h2>Result:</h2>
+    <pre>{{ result }}</pre>
+</div>
+            <div class="column right">
+                <h2>Random Video</h2>
+                <p>This will evenually be an instruction video on how to use this page</p><br />
+
+                <video controls>
+                    <source src="{{ video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+
+        </div>
+</body>
+</html>
+

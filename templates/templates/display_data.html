@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Display Data</h1>
+    {% if id_value %}
+        <p>Row ID: {{ id_value }}</p>
+        <p>Description: {{ description }}</p>
+        <pre>Code: {{ code }}</pre>
+        <p>Keywords: {{ keywords }}</p>
+    {% else %}
+        <p>No data found for Row ID: {{ id_value }}</p>
+    {% endif %}
+    <br>
+    <a href="{{ url_for('indexdb') }}">Go back to the Index Page</a>
+</body>
+</html>

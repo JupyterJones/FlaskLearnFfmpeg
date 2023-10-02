@@ -1,0 +1,107 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Processing</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+        video {
+            margin: 10px, auto;
+            width: 300px;
+            height: auto;
+        }
+
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .column.left {
+            width: 30%;
+            border:    1px solid #000;
+        }
+
+        .column.right {
+        margin: 0 auto; /* Center horizontally */
+        width: 60%;
+        border: 1px solid #000;
+        text-align: center; /* Center video vertically */
+    }
+
+    .column.right video {
+        max-width: 100%;
+        height: auto;
+    }
+    .note{
+        color:red;
+        font-size:24px; 
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Image Processing</h1>
+            <a class="note" href="{{ url_for('index') }}">HOME</a><br />
+        </div>
+        <div class="columns">
+            <div class="column left">
+
+                <h3>Create Text</h3><br />
+                <a href="{{ url_for('app_utilities') }}">Application Utilities</a><br />
+                <a href="{{ url_for('feather_files') }}">Feather Images</a><br />
+                <a href="{{ url_for('crop') }}">Crop Images</a><br />
+                <a href="{{ url_for('view_text') }}">View Text Files</a><br />
+                <a href="{{ url_for('edit_file') }}">Edit File</a><br /><br />
+                <a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a><br />
+                <a href="{{ url_for('feather_files') }}">Feather Images</a><br />
+                <a href="{{ url_for('edit_description') }}">Edit Description</a><br />
+                <a href="{{ url_for('image_stuff') }}">Comic Book Experiment</a><br />
+            </div>
+            <div class="column right">
+                <h2>Right Column</h2>
+                <video controls>
+                    <source src="{{ video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

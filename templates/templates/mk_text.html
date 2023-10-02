@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Entry</title>
+</head>
+
+<body>
+    <h1>Enter Text</h1>
+    <form method="POST" action="/mk_text">
+        <textarea name="text" rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Save">
+    </form>
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home (index)</a></li><br />
+        <li><a href="{{ url_for('format_file') }}">Format Text Files</a></li><br />
+        <li><a href="{{ url_for('view_text') }}">view_text Text Files</a></li><br />
+    </ul>
+</body>
+
+</html>

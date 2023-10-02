@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate Video 2</title>
+	<style>
+		.video {
+			display: inline-block;
+			margin: 20px;
+		}
+		.thumbnail {
+			width: 320px;
+			height: 180px;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<h1>Generate Video 2</h1>
+	
+	{% if video_path %}
+		<h2>Generated Video</h2>
+		<video width="640" height="360" controls>
+			<source src="{{ video_url }}" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	{% endif %}
+	
+	{% if selected_videos %}
+		<h2>Selected Videos</h2>
+		{% for video in selected_videos %}
+			<div class="video">
+				<a href="{{ url_for('generate_video2') }}?remove_video={{ video }}">
+					<button>Remove</button>
+				</a>
+				<div class="thumbnail" style="background-image: url({{ url_for('static', filename='thumbnails/' + video + '.jpg') }})"></div>
+				<p>{{ video }}</p>
+			</div>
+		{% endfor %}
+	{% endif %}
+	
+	<h2>Available Videos</h2>
+	{% for video in available_videos %}
+		<div class="video">
+			<a href="{{ url_for('generate_video2') }}?add_video={{ video }}">
+				<button>Add</button>
+			</a>
+			<div class="thumbnail" style="background-image: url({{ url_for('static', filename='thumbnails/' + video + '.jpg') }})"></div>
+			<p>{{ video }}</p>
+		</div>
+	{% endfor %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MP4 to Image Converter</title>
+</head>
+<body>
+    <h1>MP4 to Image Converter</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="mp4_file">Select an MP4 file:</label>
+        <input type="file" name="mp4_file" id="mp4_file" accept=".mp4" required>
+        <br>
+        <label for="action">Choose an action:</label>
+        <select name="action" id="action" required>
+            <option value="save">Save Frames as Images</option>
+            <option value="delete">Delete MP4 File</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+

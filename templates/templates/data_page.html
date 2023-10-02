@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data: Sqlite3 codeshints.txt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <style>
+        /* Your other styles here */
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Data Page</h1>
+    <div class="row">
+        <div class="column">
+            <p>This is Sqlite3 data: Choose an option below:</p>
+            <ul>
+                <li><a href="{{ url_for('select_by_id_form') }}">Select by ID Form</a></li>
+                <li><a href="{{ url_for('search_by_rowid') }}">Search by Row ID</a></li>
+                <li><a href="{{ url_for('search_database') }}">Search the Database</a></li>
+                <li><a href="{{ url_for('edit_data_page') }}">Edit Data</a></li>
+                <li><a href="{{ url_for('insert_data') }}">Insert Data</a></li>
+                <li><a href="{{ url_for('get_rowid_form') }}">Enter Row ID to Edit</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="column">
+            <ul>
+                <li><a href="{{ url_for('search_code') }}">Search CodeHints</a></li>
+                <li><a href="{{ url_for('enter_code') }}">Make a CodeHints Entry</a></li>
+            </ul>
+            <a style="font-size: 24px;color: brown;" href="{{ url_for('index') }}">HOME</a><br />
+            <a style="font-size: 24px;color: brown;" href="{{ url_for('run') }}">Run/Record Bash Command</a><br />
+            <p>Run/Record Bash Command: Run a terminal command and save it for further use.</p>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

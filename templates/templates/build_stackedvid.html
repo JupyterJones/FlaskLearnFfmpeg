@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Square Video</title>
+    <style>
+      .resizedvideo {
+        width: 200px;
+        height: auto;
+      }
+  </style> 
+  </head>
+  <body>
+    <a href="{{ url_for('index') }}">RETURN HOME</a><br />
+    <video class="resizedvideo" controls>
+      <source src="{{ stackedvid_url }}" type="video/mp4">
+    </video>
+  </body>
+</html>

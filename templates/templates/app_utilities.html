@@ -1,0 +1,55 @@
+<!-- app_utilities.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>App Utilities</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<style>
+video{
+width:250px;
+height:auto;
+}
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>App Utilities</h1>
+        </div>
+        <div class="columns">
+            <div class="column left">
+<a style="font-size:30px;color:red;" href="{{ url_for('index') }}">HOME</a><br /><br /><br />
+                <a href="{{ url_for('processing_text') }}">Processing Text Files</a><br />
+                <a href="{{ url_for('the_description') }}">View FlaskAppArchitect Description</a><br />
+                <a href="{{ url_for('edit_description') }}">Edit FlaskAppArchitect Description</a><br /><br />
+                <a href="{{ url_for('enter_code') }}">Enter Code in codehints.txt</a><br />
+                <a href="{{ url_for('search_code') }}">Search Code Hints</a><br /><br />
+                <!-- Link to the api_search route -->
+                <a href="/api_search/">Search Internet (Record Results)</a><br />
+                <a href="{{ url_for('access_database') }}">Acess Sqlite3 Database</a><br /><br />
+                <a href="{{ url_for('products') }}">Add to Sqlite3 Database</a><br /><br />
+                <a href="{{ url_for('self_check') }}">View Errors in App</a><br />
+                <a href="{{ url_for('view_log') }}">View App Log</a><br />
+                <a href="{{ url_for('capture_html') }}">Capture Screen _ Video</a><br />
+                <a href="{{ url_for('edit_css') }}">Edit Css Files</a><br />
+                <a href="{{ url_for('terminal_index') }}">Terminal Emulator</a><br />
+             
+            </div>
+            <div class="column right">
+                <h2>Random Video</h2>
+                <p>This will eventually be an instruction video on how to use this page</p><br />
+
+                <video controls>
+                    <source src="{{ video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

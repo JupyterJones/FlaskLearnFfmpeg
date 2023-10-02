@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Flask App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+ <title>My Flask App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .resizedvideo {
+      width: 200px;
+      height: 200px;
+    }
+
+    .section {
+      margin-top: 50px;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .sectionl {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: left;
+      height: 100vh;
+    }
+
+    .sectionr {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+      justify-content: right;
+      height: 100vh;
+    }
+    html {
+      font-family: sans-serif;
+    background-color: black;
+    }
+    body {
+      width: 95%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgb(167, 196, 189);
+      color: black;
+    }
+    h1 {
+      color: rgb(255, 255, 255);
+    }
+    #wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: teal;
+    }
+    </style>
+</head>
+
+<body>  <center>  
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Select Video</title>
+    </head>
+    <body>
+        <h1>Select Video</h1>
+        <a href="{{ url_for('index') }}">Main Home Index</a><br /> <br /> 
+        <video controls class="resized-video">
+          <source src="static/new_video/result_voice.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        This is the path to the above video:<br />
+        <code>static/new_video/result_voice.mp4</code><br />
+         <form action="/generate_blank_video" method="post" enctype="multipart/form-data">
+            <label for="selected_video">Select Video:</label>
+            <input type="file" name="selected_video" id="selected_video">
+            <br><br>
+            <input type="submit" value="static/new_video/result_voice.mp4">
+        </form>
+                 
+        <a href="{{ url_for('create_text_file') }}">Create a Blank Text</a><br /> 
+        <a href="{{ url_for('overlay_text') }}">Overlay Blank Text with Text</a><br /> 
+        <a href="{{ url_for('add_borders') }}">Add the Overlay to a Border</a><br /> 
+    </body>
+    </html>
+    
+        <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+
+    <h1 style="color: brown;">Creating a speaking Avatar with A Flask App. <br />Click the videos below for
+      step-by-step instructions. </p></h1>  
+
+      <video controls class="resizedvideo">
+        <source src="static/assets/result_cl.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video><br />
+
+        <a href="{{ url_for('generate_blank_video') }}">First: generate_blank_video</a><br />
+
+</center>
+  <footer class="footer">
+    <center>
+      <video controls class="resized-video">
+        <source src="static/assets/result_cl.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img style="width: 30%; height: auto;" src="{{ url_for('static', filename='images/image2.jpg') }}"
+        alt="Example image"><br />&nbsp;&nbsp;&nbsp;
+    </center>
+    <h2 style="color: brown;">Links to YouTube Channels</h2>
+    <style>
+      .resized-video {
+        width: 25%;
+        height: auto;
+      }
+    </style>
+
+    <video controls class="resized-video">
+      <source src="static/assets/Talking_AI_Images.webm" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  <div class="wrapper">
+    <header class="header">
+      <h1 style="color: brown;">Image Processing With Flask and Executeable Functions</h1><br />
+      <p>Below are links to various Image Processing Functions. </p>
+    </header>
+
+    <div class="content">
+      <a href="{{ url_for('generate_blank_video') }}">View Images</a><br />
+      
+    <h1>Random Image</h1>
+    <img src="{{ url_for('static', filename='images/' + random_image_file) }}" alt="Random Image">
+</body>
+</html>

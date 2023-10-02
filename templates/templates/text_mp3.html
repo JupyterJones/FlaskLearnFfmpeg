@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <style>
+        a {
+            font-size: 20px;
+            margin-left: 10%;
+            color: #053b68;
+        }
+
+        pre {
+            font-size: 20px;
+            margin-left: 10%;
+            text-align: left;
+            color: #010f1a;
+            white-space: pre-wrap;
+            /* Since CSS 2.1 */
+            white-space: -moz-pre-wrap;
+            /* Mozilla, since 1999 */
+            white-space: -pre-wrap;
+            /* Opera 4-6 */
+            white-space: -o-pre-wrap;
+            /* Opera 7 */
+            word-wrap: break-word;
+            /* Internet Explorer 5.5+ */
+        }
+        p{
+            font-size: 25px;
+            margin: 10px,auto;
+            text-align: center;
+            color: #010f1a; 
+        }
+        textarea{
+            font-size: 20px;
+            margin-left: 10%;
+            text-align: left;
+            color: #010f1a;
+            white-space: pre-wrap;
+            /* Since CSS 2.1 */
+            white-space: -moz-pre-wrap;
+            /* Mozilla, since 1999 */
+            white-space: -pre-wrap;
+            /* Opera 4-6 */
+            white-space: -o-pre-wrap;
+            /* Opera 7 */
+            word-wrap: break-word;
+            /* Internet Explorer 5.5+ */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Text to Speech</h1>
+        <p>Enter some text and click submit to hear it spoken aloud.</p>
+        <a href="{{ url_for('indeX') }}">home</a><br />
+        <form method="post">
+            <textarea name="text" rows="15" cols="50"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        {% if filename %}
+        <p>Text: {{ text }}</p>
+        <audio controls>
+            <source src="{{ filename }}" type="audio/mpeg">
+        </audio>
+        {% endif %}
+
+        <audio controls id="audio-player">
+            <source src="{{ filename }}" type="audio/mpeg">
+        </audio>
+
+        <button onclick="document.getElementById('audio-player').play()">Play</button>
+        <br /><br />
+        <a href="{{ url_for('indeX') }}">When Finished click home to return: <span
+                style="color:rgb(250, 5, 5);font-size: large;">&nbsp;&nbsp;&nbsp;HOME</span></a><br /><br />
+        <pre>
+Notice in the example text below, 'have' is spelled 'hav' so it is pronounced correctly.
+Also mp3 is spelled out  M P 3 so it is also pronounced correctly.
+-------------------------------------------------------------------------- 
+In order to create a speaking avatar you need to follow a series of steps.
+The first step is to create the text that will be spoken.
+Press the button called create the M P 3
+The page opened will hav a text area.
+Enter the text you wish to hav spoken.
+When the text has been enter you must click the submit button.
+The M P 3 will be created and played back to you.
+The M P 3 file will use the first twenty characters of the text generated as a filename. 
+You may wish to hav a copy of the text in case it does not sound right.
+Then you just paste it in, correct it, and a new file will be created.
+--------------------------------------------------------------------------
+Once you hav the M P 3 file it must be converted to a wav format.
+Simply press the Convert M P 3 two wave link below this video.
+It is super fast and a screen pops up to indicate the process has been completed.
+--------------------------------------------------------------------------
+At this point you should have an M P 3 file and it has been converted to a wave file.
+Now you must pick an image and convert it to an M P 4.
+The M P 4 will be the same length as the M P 3.
+That will be done by pressing the,
+Create a Video the same length as the wav Created link.
+--------------------------------------------------------------------------
+Now you hav an M P 4 file and a wav file.
+Now for the hard stuff. 
+Not for you, but for your computer.
+You just click Create Avatar.
+If you do not have a G P U, It will probably put your computer to the max.
+As soon as you click it you will be directed to page, generate avatar.
+Set back and relax it will take some time to generate.
+If it is too much for your computer, you will find a link to Jupyter Co lab notebook.
+Co Lab provides a free G P U service and is much faster.
+--------------------------------------------------------------------------  
+     </pre>
+</body>
+
+</html>

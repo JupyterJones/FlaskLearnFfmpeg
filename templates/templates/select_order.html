@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Select Order</title>
+</head>
+
+<body>
+    <h1>Select the order of the videos:</h1>
+    <form method="POST" action="{{ url_for('select_order') }}">
+        {% for thumbnail_path in thumbnail_paths %}
+        <img src="{{ thumbnail_path }}" alt="Video thumbnail">
+        <label for="order_{{ loop.index }}">Video {{ loop.index }}:</label>
+        <input type="radio" name="order" value="{{ loop.index }}" id="order_{{ loop.index }}" required><br>
+        {% endfor %}
+        <input type="submit" value="Join Videos">
+    </form>
+</body>
+
+</html>

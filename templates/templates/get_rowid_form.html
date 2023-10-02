@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Row ID</title>
+</head>
+<body>
+    <h1>Enter Row ID</h1>
+    <form action="{{ url_for('get_rowid_form') }}" method="post">
+        <label for="rowid">Row ID:</label>
+        <input type="number" name="rowid" id="rowid" required>
+        <br>
+        <button type="submit">Edit Row</button>
+    </form>
+    <br>
+    <a href="{{ url_for('indexdb') }}">Go back to the Index Page</a>
+</body>
+</html>

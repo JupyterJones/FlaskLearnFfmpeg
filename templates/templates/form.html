@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form action="/format_file" method="post">
+        <select name="filename">
+            {% for file_option in file_options %}
+            <option value="{{ file_option }}">{{ file_option }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Format">
+    </form>
+</body>
+</html>

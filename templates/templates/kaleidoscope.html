@@ -1,0 +1,35 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Flask App Builder</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+
+            canvas {border: 1px solid #999999}
+        </style>
+        <script src="{{ url_for('static', filename='canvas/codespace_api_canvas.js') }}"></script>
+        <script src="{{ url_for('static', filename='canvas/kaleidoscope1_canvas.js') }}"></script>
+        <title>Kaleidoscope</title>
+    </head>
+    <body onload="init()">
+        <div style="min-width: 400px; display: inline-block"></div>
+        <canvas id="kCanvas" width="600" height="600"></canvas>
+        <canvas style="visibility: hidden;" id="dCanvas" width="400" height="400"></canvas>
+    </body>
+</html>

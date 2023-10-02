@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Text Image</title>
+</head>
+<body>
+    <h2>View Text Image</h2>
+    <img src="{{ url_for('static', filename='assets/512x512_text.jpg') }}" alt="Generated Text Image">
+    <br>
+    <a href="{{ url_for('create_text') }}">Generate Another Image</a>
+</body>
+</html>

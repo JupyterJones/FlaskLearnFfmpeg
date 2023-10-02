@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Border</title>
+  </head>
+  <body>
+    <h1>Add Border</h1>
+    {% for thumbnail in thumbnails %}
+      <a href="{{ url_for('select_border', image=thumbnail.replace('thumbnail_', '')) }}">
+        <img src="{{ url_for('static', filename='thumbnails/'+thumbnail) }}" alt="{{ thumbnail }}" style="border: 10px solid transparent; box-shadow: 0 0 0 10px #fff, 0 0 0 15px #faf8f8;">
+      </a>
+    {% endfor %}
+  </body>
+</html>
+

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>HTML5 Canvas Cheat Sheet</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="HTML5%20Canvas%20Cheat%20Sheet_files/normalize.css" rel="stylesheet" media="screen">
+    <link href="HTML5%20Canvas%20Cheat%20Sheet_files/main.css" rel="stylesheet">
+    
+    <script src="HTML5%20Canvas%20Cheat%20Sheet_files/prompt.js"></script></head>
+  <body>
+    <div class="content">
+   
+      <h1>HTML5 Canvas Cheat Sheet</h1>
+  
+  <p id="intro">
+  This cheat sheet summarizes the complete HTML5 Canvas API for the 2D context, based on to the <a href="http://www.w3.org/TR/2dcontext/" target="_blank">W3C HTML5 Canvas Spec</a>.  It also provides techniques for handling common proceedures.
+</p>
+
+<ul id="items" style="position: relative; height: 2380px;">
+  <!---------------------- ITEM ---------------------->
+  <li class="item" style="position: absolute; left: 0px; top: 0px;">
+    <h2>HTML5 Canvas Element</h2>
+ 
+<h3>Html5 canvas element</h3>
+<pre class="prettyprint">&lt;canvas id="myCanvas" width="500" height="300"&gt;
+</pre>
+
+<h3>Html5 canvas element with fallback content</h3>
+<pre class="prettyprint">&lt;canvas id="myCanvas" width="500" height="300"&gt;
+  your browser doesn't support canvas!
+&lt;/canvas&gt;
+</pre>
+   
+<h3>2d context</h3>
+<pre class="prettyprint">var context = canvas.getContext('2d');
+</pre>
+
+<h3>Webgl context (3d)</h3>
+<pre class="prettyprint">var context = canvas.getContext('webgl');
+</pre>
+
+  </li>
+  
+  <!---------------------- SHAPES ---------------------->
+  <li class="item" style="position: absolute; left: 380px; top: 0px;">
+    <h2>Shapes</h2>
+    
+<h3>Draw rectangle</h3>
+<pre class="prettyprint">context.rect(x, y, width, height);
+context.fill();
+context.stroke();
+</pre>
+
+<h3>Fill rectangle shorthand</h3>
+<pre class="prettyprint">context.fillRect(x, y, width, height);
+</pre>
+
+<h3>Stroke rectangle shorthand</h3>
+<pre class="prettyprint">context.strokeRect(x, y, width, height);
+</pre>
+
+<h3>Draw circle</h3>
+<pre class="prettyprint">context.arc(x, y, radius, 0, Math.PI * 2);
+context.fill();
+context.stroke();
+</pre>
+
+  </li>
+  
+  <!---------------------- STYLES ---------------------->
+  <li class="item" style="position: absolute; left: 760px; top: 0px;">
+    <h2>Styles</h2>
+
+<h3>Fill</h3>
+<pre class="prettyprint">context.fillStyle = 'red';
+context.fill();
+</pre>
+    
+<h3>Stroke</h3>
+<pre class="prettyprint">context.strokeStyle = 'red';
+context.stroke();
+</pre>
+
+<h3>Linear gradient</h3>
+<pre class="prettyprint">var grd = context.createLinearGradient(x1, y1, x2, y2);
+grd.addColorStop(0, 'red');   
+grd.addColorStop(1, 'blue');
+context.fillStyle = grd;
+context.fill();
+</pre>
+
+<h3>Radial gradient</h3>
+<pre class="prettyprint">var grd = context.createRadialGradient(x1, y1, radius1, x2, y2, radius2);
+grd.addColorStop(0, 'red');
+grd.addColorStop(1, 'blue');
+context.fillStyle = grd;
+context.fill();
+</pre>
+
+
+<h3>Pattern</h3>
+<pre class="prettyprint">var imageObj = new Image();
+imageObj.onload = function() {
+  var pattern = context.createPattern(imageObj, 'repeat');
+  context.fillStyle = pattern;
+  context.fill();
+};
+imageObj.src = 'path/to/my/image.jpg';
+</pre>
+
+<h3>Line Join</h3>
+<pre class="prettyprint">context.lineJoin = 'miter|round|bevel';
+</pre>
+
+<h3>Line Cap</h3>
+<pre class="prettyprint">context.lineCap = 'butt|round|square';
+</pre>
+
+<h3>Shadow</h3>
+<pre class="prettyprint">context.shadowColor = 'black';
+context.shadowBlur = 20;
+context.shadowOffsetX = 10;
+context.shadowOffsetY = 10;
+</pre>
+
+<h3>Alpha (Opacity)</h3>
+<pre class="prettyprint">context.globalAlpha = 0.5; // between 0 and 1
+</pre>
+      
+      
+  <!---------------------- COLOR FORMATS ---------------------->
+  </li><li class="item" style="position: absolute; left: 380px; top: 374px;">
+    <h2>Color Formats</h2>
+    
+<h3>String</h3>
+<pre class="prettyprint">context.fillStyle = 'red';
+</pre>
+
+<h3>Hex Long</h3>
+<pre class="prettyprint">context.fillStyle = '#ff0000';
+</pre>
+
+<h3>Hex Short</h3>
+<pre class="prettyprint">context.fillStyle = '#f00';
+</pre>
+
+<h3>RGB</h3>
+<pre class="prettyprint">context.fillStyle = 'rgb(255,0,0)';
+</pre>
+
+<h3>RGBA</h3>
+<pre class="prettyprint">context.fillStyle = 'rgba(255,0,0,1)';
+</pre>
+
+  </li>
+
+  <!---------------------- PATHS ---------------------->
+  <li class="item" style="position: absolute; left: 0px; top: 390px;">
+    <h2>Paths</h2>
+  
+<h3>Begin Path</h3>
+<pre class="prettyprint">context.beginPath();
+</pre>
+ 
+<h3>Line</h3>
+<pre class="prettyprint">context.lineTo(x, y);
+</pre>
+
+<h3>Arc</h3>
+<pre class="prettyprint">context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+</pre>
+
+<h3>Quadratic curve</h3>
+<pre class="prettyprint">context.quadraticCurveTo(cx, cy, x, y);
+</pre>
+ 
+<h3>Bezier curve</h3>
+<pre class="prettyprint">context.bezierCurveTo(cx1, cy1, cx2, cy2, x, y);
+</pre>
+
+<h3>Close Path</h3>
+<pre class="prettyprint">context.closePath();
+</pre>
+  </li>
+  
+  <!---------------------- IMAGES ---------------------->
+  <li class="item" style="position: absolute; left: 380px; top: 721px;">
+    <h2>Images</h2>
+    
+<h3>Draw Image with default size</h3>
+<pre class="prettyprint">var imageObj = new Image();
+imageObj.onload = function() {
+  context.drawImage(imageObj, x, y);
+};
+imageObj.src = 'path/to/my/image.jpg';
+</pre>
+
+<h3>Draw image and set size</h3>
+<pre class="prettyprint">var imageObj = new Image();
+imageObj.onload = function() {
+  context.drawImage(imageObj, x, y, width, height);
+};
+imageObj.src = 'path/to/my/image.jpg';
+</pre>
+
+<h3>Crop image</h3>
+<pre class="prettyprint">var imageObj = new Image();
+imageObj.onload = function() {
+  context.drawImage(imageObj, sx, sy, sw, sh, dx, dy, dw, dh);
+};
+imageObj.src = 'path/to/my/image.jpg';
+</pre>
+
+  <!---------------------- TEXT ---------------------->
+  </li><li class="item" style="position: absolute; left: 0px; top: 836px;">
+    <h2>Text</h2>
+
+<h3>Fill Text</h3>
+<pre class="prettyprint">context.font = '40px Arial';
+context.fillStyle = 'red';
+context.fillText('Hello World!', x, y);
+</pre>
+
+<h3>Stroke Text</h3>
+<pre class="prettyprint">context.font = '40pt Arial';
+context.strokeStyle = 'red';
+context.strokeText('Hello World!', x, y);
+</pre>
+
+<h3>Bold Text</h3>
+<pre class="prettyprint">context.font = 'bold 40px Arial';
+</pre>
+
+<h3>Italic Text</h3>
+<pre class="prettyprint">context.font = 'italic 40px Arial';
+</pre>
+
+<h3>Text Align</h3>
+<pre class="prettyprint">context.textAlign = 'start|end|left|center|right';
+</pre>
+
+<h3>Text Baseline</h3>
+<pre class="prettyprint">context.textBaseline = 'top|hanging|middle|alphabetic|ideographic
+|bottom';
+</pre>
+
+<h3>Get Text Width</h3>
+<pre class="prettyprint">var width = context.measureText('Hello world').width;
+</pre>
+
+
+  <!---------------------- TRANSFORMS ---------------------->
+  </li><li class="item" style="position: absolute; left: 760px; top: 1058px;">
+    <h2>Transforms</h2>
+
+<h3>Translate</h3>
+<pre class="prettyprint">context.translate(x, y);
+</pre>
+
+<h3>Scale</h3>
+<pre class="prettyprint">context.scale(x, y);
+</pre>
+
+<h3>Rotate</h3>
+<pre class="prettyprint">context.rotate(radians);
+</pre>
+
+<h3>Flip Horizontally</h3>
+<pre class="prettyprint">context.scale(-1, 1);
+</pre>
+
+<h3>Flip Vertically</h3>
+<pre class="prettyprint">context.scale(1, -1);
+</pre>
+
+<h3>Custom Transform</h3>
+<pre class="prettyprint">context.transform(a, b, c, d ,e, f);
+</pre>
+
+<h3>Set Transform</h3>
+<pre class="prettyprint">context.setTransform(a, b, c, d ,e, f);
+</pre>
+
+<h3>Shear</h3>
+<pre class="prettyprint">context.transform(1, sy, sx, 1, 0, 0);
+</pre>
+
+<h3>Reset</h3>
+<pre class="prettyprint">context.setTransform(1, 0, 0, 1, 0, 0);
+</pre>
+  </li>
+  
+  <!---------------------- STATE STACK ---------------------->
+  <li class="item" style="position: absolute; left: 380px; top: 1248px;">
+    <h2>State Stack</h2>
+
+<h3>Push State onto Stack</h3>
+<pre class="prettyprint">context.save();
+</pre>
+
+<h3>Pop State off of Stack</h3>
+<pre class="prettyprint">context.restore();
+</pre>
+
+  </li>    
+ 
+ 
+   <!---------------------- CLIPPING ---------------------->
+  <li class="item" style="position: absolute; left: 380px; top: 1424px;">
+    <h2>Clipping</h2>
+
+<h3>Clip</h3>
+<pre class="prettyprint">// draw path here
+context.clip();
+</pre>
+
+  </li> 
+  
+  <!---------------------- IMAGE DATA ---------------------->
+  <li class="item" style="position: absolute; left: 0px; top: 1465px;">
+    <h2>Image Data</h2>
+
+<h3>Get Image Data</h3>
+<pre class="prettyprint">var imageData = context.getImageData(x, y, width, height);
+var data = imageData.data;
+</pre>
+
+<h3>Loop Through Image Pixels</h3>
+<pre class="prettyprint">var imageData = context.getImageData(x, y, width, height);
+var data = imageData.data;
+var len = data.length;
+var i, red, green, blue, alpha;
+
+for(i = 0; i &lt; len; i += 4) {
+  red = data[i];
+  green = data[i + 1];
+  blue = data[i + 2];
+  alpha = data[i + 3];
+}
+</pre>
+
+
+<h3>Loop Through Image Pixels With Coordinates</h3>
+<pre class="prettyprint">var imageData = context.getImageData(x, y, width, height);
+var data = imageData.data;
+var x, y, red, green, blue, alpha;
+
+for(y = 0; y &lt; imageHeight; y++) {
+  for(x = 0; x &lt; imageWidth; x++) {
+    red = data[((imageWidth * y) + x) * 4];
+    green = data[((imageWidth * y) + x) * 4 + 1];
+    blue = data[((imageWidth * y) + x) * 4 + 2];
+    alpha = data[((imageWidth * y) + x) * 4 + 3];
+  }
+}
+</pre>
+
+<h3>Set Image Data</h3>
+<pre class="prettyprint">context.putImageData(imageData, x, y);
+</pre>
+
+  </li> 
+  
+    <!---------------------- DATA URLS ---------------------->
+  <li class="item" style="position: absolute; left: 380px; top: 1564px;">
+    <h2>Data URLs</h2>
+
+<h3>Get Data URL</h3>
+<pre class="prettyprint">var dataURL = canvas.toDataURL();
+</pre>
+
+<h3>Render Canvas with Data URL</h3>
+<pre class="prettyprint">var imageObj = new Image();
+imageObj.onload = function() {
+  context.drawImage(imageObj, 0, 0);
+};
+
+imageObj.src = dataURL;
+</pre>
+
+  </li> 
+  
+   <!---------------------- COMPOSITES ---------------------->
+  <li class="item" style="position: absolute; left: 760px; top: 1633px;">
+    <h2>Composites</h2>
+
+<h3>Composite Operations</h3>
+<pre class="prettyprint">context.globalCompositeOperation = 'source-atop|source-in|source-out|source-over|destination-atop|destination-in|destination-out|destination-over|lighter|xor|copy';
+</pre>
+
+
+  </li> 
+  
+       
+  
+  
+</ul>  
+  
+      <script src="HTML5%20Canvas%20Cheat%20Sheet_files/masonry.pkgd.min.js"></script>
+      <script src="HTML5%20Canvas%20Cheat%20Sheet_files/main.js"></script>
+     
+    </div>
+  
+
+</body></html>

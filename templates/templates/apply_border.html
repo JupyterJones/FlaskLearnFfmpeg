@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Applied Border</title>
+  </head>
+  <body>
+    <h1>View Applied Border</h1>
+    {% if error_message %}
+    <p style="color:red">{{ error_message }}</p>
+    {% endif %}
+    <img src="{{ url_for('static', filename='images/'+image) }}" alt="{{ image }}" style="border: 10px solid transparent; box-shadow: 0 0 0 10px #fff, 0 0 0 15px #000;">
+    <br>
+    <img src="{{ url_for('static', filename='transparent_borders/'+border) }}" alt="{{ border }}" style="position: absolute; top: 0; left: 0;">
+  </body>
+</html>

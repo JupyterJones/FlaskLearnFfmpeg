@@ -1,0 +1,25 @@
+<!-- search_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Code Snippets</title>
+ 
+    <link rel="stylesheet" href="static/css/flask.css">
+
+</head>
+<body>
+    <h2>Search Code Snippets</h2>
+    <form method="POST">
+        <label for="keyword">Enter Keyword:</label>
+        <input type="text" name="keyword">
+        <input type="submit" value="Search">
+    </form>
+<ul>
+   <li><a style="font-size: 24px;color: brown;" href="{{ url_for('index') }}">HOME</a></li><br />
+    <li><a style="font-size: 24px;color: brown;" href="{{ url_for('data_page') }}">Data Page</a></li><br />
+</ul>
+
+</body>
+</html>

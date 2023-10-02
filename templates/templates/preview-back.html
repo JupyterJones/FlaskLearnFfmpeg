@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Viewer</title>
+    <script src="https://cdn.skypack.dev/dat.gui@0.7.7"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="output">
+        {{ html_content | safe }}
+    </div>
+</body>
+</html>

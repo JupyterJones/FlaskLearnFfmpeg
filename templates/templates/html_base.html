@@ -1,0 +1,200 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>html Base</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+        video {
+            margin: 10px, auto;
+            width: 250px;
+            height: auto;
+        }
+
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .column.left {
+            width: 30%;
+            border:    1px solid #000;
+        }
+
+        .column.right {
+        margin: 0 auto; /* Center horizontally */
+        width: 60%;
+        border: 1px solid #000;
+        text-align: center; /* Center video vertically */
+    }
+
+    .column.right video {
+        max-width: 100%;
+        height: auto;
+    }
+    .note{
+       color:red;
+       font-size:24px;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>HTML base</h1>
+        </div>
+        <div class="columns">
+
+
+<pre {{ preformatted_text|safe }}>
+&lt;!-- index.html--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Home Flask App Builder&lt;/title&gt;
+    &lt;style&gt;
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+        video {
+            margin: 10px, auto;
+            width: 250px;
+            height: auto;
+        }
+
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .column.left {
+            width: 30%;
+            border:    1px solid #000;
+        }
+
+        .column.right {
+        margin: 0 auto; /* Center horizontally */
+        width: 60%;
+        border: 1px solid #000;
+        text-align: center; /* Center video vertically */
+    }
+
+    .column.right video {
+        max-width: 100%;
+        height: auto;
+    }
+    .note{
+       color:red;
+       font-size:24px;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="wrapper"&gt;
+        &lt;div class="header"&gt;
+            &lt;h1&gt;HOME index.html&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="columns"&gt;
+            &lt;div class="column left"&gt;
+                &lt;h3&gt;Create Text&lt;/h3&gt;&lt;br /&gt;
+                &lt;a class="note" href="{{ url_for('edit_template_page', filename='index.html') }}"&gt;Edit This Page&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('app_utilities') }}"&gt;Application Utilities&lt;/a&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('image_video') }}"&gt;Image and Video Processing Links&lt;/a&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('index_canvas') }}"&gt;Project Canvas&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('edit_javascript') }}"&gt;Project JavaScript&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('edit_template') }}"&gt;Edit Links Listed Below&lt;/a&gt;&lt;p&gt;Edit Index - Edit CSS Files - Edit Canvas
+ JS - Edit Formatted Text  - Edit FlaskAppArchitect Description - Edit Formatted Text&lt;/p&gt;
+                &lt;/p&gt;
+                &lt;a href="{{ url_for('data_page') }}"&gt;Data Page - Snippets,Search ChatGPT,Sqlite3&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('edit_file') }}"&gt;Edit File&lt;/a&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('edit_formatted') }}"&gt;Edit Formatted Text&lt;/a&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('edit_description') }}"&gt;Edit Description&lt;/a&gt;&lt;br /&gt;
+                &lt;a href="{{ url_for('misc_links') }}"&gt;This page contains all active links(I hope)&lt;/a&gt;&lt;br /&gt;
+            &lt;/div&gt;
+            &lt;div class="column right"&gt;
+                &lt;h2&gt;Random Video&lt;/h2&gt;
+                &lt;video controls&gt;
+                    &lt;source src="{{ video }}" type="video/mp4"&gt;
+                    Your browser does not support the video tag.
+                &lt;/video&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+</div>
+</div>
+</body>
+</html>

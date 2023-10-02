@@ -1,0 +1,48 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Flask App</title>
+    <style>
+        html,
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+            /* Image is centered vertically and horizontally at all times */
+            background-position: center center;
+            /* Image doesn't repeat */
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            /* Makes the image fixed in the viewport so that it doesn't move when 
+            the content height is greater than the image height */
+            background-attachment: fixed;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Choose a Directory</h1>
+    <form method="post">
+        <select name="selected_directory">
+            {% for directory in directory_list %}
+            <option value="{{ directory }}">{{ directory }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Get Image List">
+    </form>
+
+    {% if video %}
+    <h2>Generated Video:</h2>
+    <video controls>
+        <source src="{{ video }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    {% endif %}
+
+</body>
+
+</html>

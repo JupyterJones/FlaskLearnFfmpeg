@@ -1,0 +1,27 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search by Row ID</title>
+</head>
+<body>
+    <h1>Search Data by Row ID</h1>
+    <form action="{{ url_for('search_database') }}" method="post">
+        <label for="search_area">Select Search Area:</label>
+        <select name="search_area" id="search_area" required>
+            <option value="rowid">Row ID</option>
+            <option value="description">Description</option>
+            <option value="code">Code</option>
+            <option value="keywords">Keywords</option>
+        </select>
+        <br>
+        <label for="search_term">Enter Search Term:</label>
+        <input type="text" name="search_term" id="search_term" required>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <a href="{{ url_for('indexdb') }}">Go back to the Index Page</a>
+</body>
+</html>

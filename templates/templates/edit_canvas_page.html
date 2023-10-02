@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Template Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+   <style>
+   body {
+
+    background-image: url('../static/assets/MemMaker_background.png');
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: top;
+    font-family: Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+
+       <h1>Edit {{ selected_filename }}</h1>
+    <form action="{{ url_for('edit_canvas_save') }}" method="post">
+        <textarea name="edited_content" rows="40" cols="130">{{ original_content }}</textarea><br>
+        <input type="hidden" name="filename" value="{{ selected_filename }}">
+        <input type="submit" value="Save">
+    </form>
+
+</body>
+</html>

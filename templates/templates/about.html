@@ -1,0 +1,263 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Flask App Builder</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+        video {
+            margin: 10px, auto;
+            width: 250px;
+            height: auto;
+        }
+
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .column.left {
+            width: 70%;
+            border:    1px solid #000;
+        }
+
+        .column.right {
+        margin: 0 auto; /* Center horizontally */
+        width: 30%;
+        border: 1px solid #000;
+        text-align: center; /* Center video vertically */
+    }
+
+    .column.right video {
+        max-width: 100%;
+        height: auto;
+    }
+    .note{
+       color:red;
+       font-size:24px;
+    }
+   
+        /* Define a class for styling the pre element */
+        .styled-pre {
+            white-space: pre-wrap; /* Allows text to wrap within the pre element */
+            font-family: monospace; /* Choose a monospace font for consistent spacing */
+            background-color: #f5f5f5; /* Set a background color for the pre element */
+            padding: 10px; /* Add some padding for spacing */
+            border: 1px solid #ccc; /* Add a border for separation */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>HOME index.html</h1>
+        </div>
+        <div class="columns">
+            <div class="column left">
+                <h3>Create Text</h3><br />
+                <a href="{{ url_for('hello') }}">HOME</a><br />
+                <a href="{{ url_for('html_base') }}">Html_Base</a><br />
+                <a href="{{ url_for('home') }}">home</a><br />
+
+ <pre class="styled-pre">
+    This code is a Flask application with the FlaskWebGui extension. Here's a breakdown of the code:
+
+    You import the necessary modules and set up your Flask app:
+        flask is imported for creating the web application.
+        FlaskUI is imported from flaskwebgui to integrate Flask with a GUI.
+        You set a secret key for your Flask app to enable session management.
+
+    You define three routes for your web application:
+        The root route ("/") maps to the hello function, which finds videos and renders an "about.html" template.
+        The "/home" route maps to the home function, which renders an "HTML5_Canvas_Cheat_Sheet.html" template.
+        The "/about" route maps to the about function, which also finds videos and renders an "about.html" template.
+        The "/html_base" route maps to the html_base function, which renders an "html_base.html" template.
+
+    The findvideos function searches for video files with the ".mp4" extension in the "static" directory and returns a randomly selected video that is not the same as the last one. It uses the Flask session to store the last selected video.
+
+    Finally, you check if the script is being run as the main program and, if so, create and run the FlaskWebGui instance, which integrates your Flask app with a GUI.
+
+Regarding your question about enabling debug mode in FlaskWebGui, yes, Flask has a built-in debug mode that automatically reloads the server when code changes occur. To enable debug mode, you can modify your if __name__ == "__main__": block like this:
+
+python
+
+if __name__ == "__main__":
+    app.debug = True  # Enable debug mode
+    # If you are debugging, you can do that in the browser:
+    # If you want to view the flaskwebgui window:
+    FlaskUI(app=app, server="flask").run()
+
+Now, when you make changes to your code, Flask will automatically reload the server, making debugging more convenient. Just be cautious not to use debug mode in production as it can expose sensitive information.
+=================================================================================
+it appears flaskwebgui can not deal with javascript is that true ?
+ChatGPT
+
+FlaskWebGui is primarily designed to integrate Flask applications with graphical user interfaces (GUIs) for desktop applications. It provides a way to run a Flask app as a desktop application using a graphical window. However, FlaskWebGui may have limitations when it comes to running JavaScript directly within the GUI window.
+
+Here are some points to consider:
+
+    Limited JavaScript Support: FlaskWebGui focuses on rendering Flask web pages within a desktop GUI window. While you can include JavaScript code in your HTML templates, it may not fully support complex JavaScript interactions or libraries that rely heavily on the browser environment.
+
+    Desktop vs. Web Environment: FlaskWebGui is meant to provide a desktop-like experience for Flask applications. JavaScript in web applications typically interacts with the browser's Document Object Model (DOM) and may not behave the same way within a desktop GUI.
+
+    Compatibility: Certain JavaScript features or libraries that depend on specific browser features or APIs may not work seamlessly within FlaskWebGui. This can limit the functionality of web-based JavaScript components.
+
+    Debugging: Debugging JavaScript within FlaskWebGui may be more challenging compared to traditional web browsers, as debugging tools commonly used in web development may not be readily available.
+
+If your Flask application relies heavily on complex JavaScript interactions, you may encounter limitations when using FlaskWebGui. In such cases, you might consider using Flask primarily for server-side functionality and building a separate web-based front end for your application using a more traditional approach, like a web browser.
+
+However, for simpler Flask applications that require a desktop-like interface, FlaskWebGui can be a convenient solution. It's essential to assess your specific project's requirements and whether FlaskWebGui aligns with your goals for running a Flask app as a desktop application.
+------------------------ Example Complete GUI app ----  GUI.py --------------------
+#!/home/jack/Desktop/FlaskAppArchitect_Flask_App_Creator/env/bin/python
+# -*- coding: utf-8 -*-
+from flask import render_template, session, Flask, request, redirect, url_for
+from flaskwebgui import FlaskUI # import FlaskUI
+import os 
+import random
+import datetime
+app = Flask(__name__)
+app.secret_key = os.urandom(24)
+
+@app.route("/")
+def hello():  
+    video=findvideos()
+    return render_template('about.html', video=video)
+
+@app.route("/home", methods=['GET'])
+def home(): 
+    return render_template('HTML5_Canvas_Cheat_Sheet.html')
+
+@app.route("/about", methods=['GET'])
+def about():     
+    video=findvideos()
+    return render_template('about.html', video=video)
+@app.route("/html_base", methods=['GET'])
+def html_base(): 
+    with open('static/code.txt', 'r') as file:
+        code_content = file.read()
+
+    return render_template('your_template.html', code_content=code_content)
+
+
+def findvideos():
+    videoroot_directory = "static"
+    MP4 = []
+    for dirpath, dirnames, filenames in os.walk(videoroot_directory):
+        for filename in filenames:
+            if filename.endswith(".mp4") and "Final" in filename:
+                MP4.append(os.path.join(dirpath, filename))
+    if MP4:
+        last_video = session.get("last_video")
+        new_video = random.choice([video for video in MP4 if video != last_video])
+        session["last_video"] = new_video
+        return new_video
+    else:
+        return None
+template_dir = 'templates'
+original_template_dir = os.path.join(template_dir, 'original')
+os.makedirs(original_template_dir, exist_ok=True)
+
+
+def load_original_template_file(filename):
+    original_file_path = os.path.join(template_dir, filename)
+    with open(original_file_path, 'r') as file:
+        return file.read()
+
+
+def save_original_template_file(filename, content):
+    now = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    new_filename = f"{filename}_{now}.txt"
+    new_file_path = os.path.join(original_template_dir, new_filename)
+    with open(new_file_path, 'w') as file:
+        file.write(content)
+
+
+def edit_and_save_template_file(filename, content):
+    save_original_template_file(filename, content)
+    edited_file_path = os.path.join(template_dir, filename)
+    with open(edited_file_path, 'w') as file:
+        file.write(content)
+
+
+@app.route('/edit_template')
+def edit_template():
+    filenames = [f for f in os.listdir(template_dir) if f.endswith('.html')]
+    filenames = sorted(filenames)
+    fvideo ="static/assets/voice-for_avatar_Edit_Files.mp4"
+    return render_template('edit_template.html', filenames=filenames, video=fvideo)
+
+
+@app.route('/edit_template_page')
+def edit_template_page():
+    selected_filename = request.args.get('filename')
+    original_content = load_original_template_file(selected_filename)
+    return render_template('edit_template_page.html', selected_filename=selected_filename, original_content=original_content)
+
+
+@app.route('/edit_template_save', methods=['POST'])
+def edit_template_save():
+    edited_content = request.form['edited_content']
+    selected_filename = request.form['filename']
+    edit_and_save_template_file(selected_filename, edited_content)
+    return redirect(url_for('edit_template'))
+
+
+
+    
+if __name__ == "__main__":
+    app.debug = True  # Enable debug mode
+    # If you are debugging, you can do that in the browser:
+    # If you want to view the flaskwebgui window:
+    FlaskUI(app=app, server="flask").run()
+
+ </pre>            
+            </div>
+            <div class="column right">
+                <h2>Random Video</h2>
+                <video controls>
+                    <source src="{{ video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

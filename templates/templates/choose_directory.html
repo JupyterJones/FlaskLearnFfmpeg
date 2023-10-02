@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Directory</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#directory-input').change(function(e) {
+                $('#directory-form').submit();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Choose Directory</h1>
+    <form id="directory-form" method="POST" action="/mkblend_video" enctype="multipart/form-data">
+        <label for="directory-input">Select Directory:</label>
+        <input type="file" id="directory-input" name="directory" webkitdirectory directory multiple style="display: none;">
+        <button type="button" onclick="document.getElementById('directory-input').click();">Browse</button>
+    </form>
+</body>
+</html>
+
+

@@ -1,0 +1,22 @@
+<!--search_chat.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Chat</title>
+</head>
+<body>
+    <h1>Search Results for "{{ query }}"</h1>
+    
+    <form method="GET" action="{{ url_for('search_chat') }}">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="q" value="{{ query }}">
+        <input type="submit" value="Search">
+    </form>
+    
+    <ul>
+        {% for message in results %}
+            <li>{{ message.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

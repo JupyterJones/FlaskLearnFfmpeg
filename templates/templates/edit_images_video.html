@@ -1,0 +1,46 @@
+<!-- app_utilities.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Images And Video</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Edit Images And Video</h1>
+        </div>
+        <div class="columns">
+            <div class="column left">
+                <h3>Links</h3><br />
+                <a href="{{ url_for('mk_text') }}">Create a Text File</a><br />
+                <a href="{{ url_for('format_file') }}">Format Text Files</a><br />
+                <a href="{{ url_for('view_text') }}">View Text Files</a><br />
+                <a href="{{ url_for('edit_file') }}">Edit File</a><br />
+                <a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a><br />
+                <a href="{{ url_for('edit_template') }}">Edit a Template</a><br />
+                <a href="{{ url_for('edit_description') }}">Edit Description</a><br />
+                <a href="{{ url_for('view_flake8') }}">View Errors in App</a><br />
+                <a href="{{ url_for('view_log') }}">View App Log</a><br />
+                <a href="{{ url_for('capture_html') }}">Capture Screen _ Video</a><br />
+                <a href="{{ url_for('edit_css') }}">Edit Css Files</a><br />
+                <a href="{{ url_for('terminal_index') }}">Terminal Emulator</a><br />
+            </div>
+            <div class="column right">
+                <h2>Random Video</h2>
+                <p>This will eventually be an instruction video on how to use this page</p><br />
+
+                <video controls>
+                    <source src="{{ video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

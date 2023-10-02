@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="gallery">
+  <hr>
+  {% for image_url in image_urls %}
+    <img src="{{ image_url }}" alt="Image">
+  {% endfor %}
+</div>
+</body>
+</html>
+
+

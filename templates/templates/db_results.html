@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <table border="1">
+        <tr>
+            <th>Row ID</th>
+            <th>Description</th>
+            <th>Code</th>
+            <th>Keywords</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="{{ url_for('indexdb') }}">Go back to the Index Page</a>
+</body>
+</html>

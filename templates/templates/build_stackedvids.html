@@ -1,0 +1,41 @@
+<!-- build_stackedvids.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Build Stacked Videos</title>
+    <style>
+        .resizedvideo {
+          width: 200px;
+          height: 200px;
+        }
+    </style>    
+</head>
+<body>
+    <h1>Build Stacked Videos</h1>
+    <form action="/generate_stackedvids" method="POST">
+        <label for="video">Select a Video:</label>
+        <select name="video" id="video">
+            {% for video_file in video_files %}
+            <option value="{{ video_file }}">{{ video_file }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label for="image">Select an Image:</label>
+        <select name="image" id="image">
+            {% for image_file in image_files %}
+            <option value="{{ image_file }}">{{ image_file }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Generate Stacked Videos">
+    </form>
+
+    <video controls class="resizedvideo">
+        <source src="static/stacked_vids/stacked_videos.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video><br />
+
+    
+</body>
+</html>

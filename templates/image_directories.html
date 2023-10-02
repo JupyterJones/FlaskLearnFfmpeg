@@ -1,0 +1,12 @@
+<form action="{{ url_for('image_directories') }}" method="POST">
+    <label for="directory">Select a directory:</label>
+    <select id="directory" name="directory">
+        <option value="static/Prodia_640x640">static/Prodia_640x640</option>
+        <option value="static/LineArt">static/LineArt</option>
+        <option value="static/quantized">static/Quantized</option>
+        <option value="static/squares">static/squares</option>
+        <option value="static/BrightColors">static/BrightColors</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>

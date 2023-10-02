@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add MP4 Files</title>
+</head>
+<body>
+    <h1>Add MP4 Files</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="mp4_file">Select an MP4 file:</label>
+        <input type="file" name="mp4_file" id="mp4_file" accept=".mp4" required>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+    <a href="{{ url_for('delete_files') }}">clean the static/images/mp4_images/ directory</a><br />
+</body>
+</html>
+

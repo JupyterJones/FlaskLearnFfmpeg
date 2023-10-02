@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Capture Video</title>
+     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<body>
+        <div class="wrapper">
+        <div class="header">
+            <h1>Video Capture</h1>
+        </div>
+    
+
+<div class="columns">
+<div class="column">
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<button id="start-button">Start Capture</button>
+<button id="stop-button">Stop Capture</button>
+
+<script>
+    $(document).ready(function() {
+        $('#start-button').click(function() {
+            $.post('/run_capture', function(data) {
+                alert(data.message);
+            });
+        });
+
+        $('#stop-button').click(function() {
+            $.post('/stop_capture', function(data) {
+                alert(data.message);
+            });
+        });
+    });
+</script>
+</div>
+<div class=column">
+                <video controls>
+                    <source src="static/videos/Current.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+</div>
+</div>

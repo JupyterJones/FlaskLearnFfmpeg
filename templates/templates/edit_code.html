@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Code</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+<div class="content">
+    <div class="title m-b-md">
+        Edit Code
+    </div> 
+<center>
+{% extends 'index.html' %}
+
+{% block title %}
+    Edit code
+{% endblock %}
+
+{% block content %}
+    <h1>Edit code</h1>
+    <form action="{{ url_for('edit_code', code_id=code[0]) }}" method="post">
+        <label for="description">Description:</label>
+        <input type="text" name="description" value="{{ code[1] }}"><br>
+        <label for="code">Code:</label>
+        <textarea type="text" name="code" rows="3" cols="90%">{{ code[2] }}</textarea>><br />
+        <!--input type="text" name="description" value="{{ code[2] }}"><br-->
+        <label for="keywords">Keywords:</label>
+        <input type="text" name="keywords" value="{{ code[3] }}"><br>
+        <input type="submit" value="Update code">
+    </form>
+{% endblock %}
+</center>
+</div>
+</body>
+</html>

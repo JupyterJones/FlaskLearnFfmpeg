@@ -1,0 +1,48 @@
+<!-- search_results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+   <style>
+   body {
+
+    background-image: url('../static/assets/MemMaker_background.png');
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: top;
+    font-family: Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+    <h2>Search Again or Enter Data</h2>
+
+    <ul>
+        <li><a href="{{ url_for('search_code') }}">Back to Search</a></li>
+        <li><a href="{{ url_for('enter_code') }}">Make a CodeHints Entry</a></li>
+    </ul>
+    <a style="font-size: 24px;color: brown;" href="{{ url_for('index') }}">HOME</a>
+
+
+    <h1>Search Results for "{{ keyword }}"</h1>
+    
+    {% if code_blocks %}
+        <ul>
+            {% for block in code_blocks %}
+                <li>
+                    <strong>Timestamp and Code Block:</strong><br>
+                    <pre>{{ block.code_block }}</pre>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No matching code blocks found.</p>
+    {% endif %}
+    
+ 
+</body>
+</html>

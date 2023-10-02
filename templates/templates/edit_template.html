@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Template</title>
+     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/body.css') }}">
+
+</head>
+    <body>
+        <div class="wrapper">
+        <div class="header">
+            <h1>Edit Template Files</h1>
+       <a style="font-size: xx-large;"href="{{ url_for('index') }}">Return to HOME</a>
+<p>The originals of all templates edited are saved,by date,in templates/originals/</p>
+        </div>
+    
+
+<div class="columns">
+<div class="column left">
+    <form action="/edit_template_page" method="GET">
+        <select name="filename">
+            {% for filename in filenames %}
+                <option value="{{ filename }}">{{ filename }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Edit and Save</button>
+    </form>
+    <hr>
+    {% if selected_filename %}
+        <h2>Edit {{ selected_filename }}</h2>
+        <form action="/edit_template_save" method="POST">
+            <textarea name="edited_content">{{ original_content }}</textarea>
+            <input type="hidden" name="filename" value="{{ selected_filename }}">
+            <button type="submit">Save</button>
+        </form>
+    {% endif %}
+ <ul>
+        
+<li><a class="note" href="{{ url_for('edit_template_page', filename='edit_template.html') }}">Edit This Page</a></li>
+
+<li><a href="{{ url_for('edit_css') }}">Edit CSS Files</a></li> 
+<li><a href="{{ url_for('edit_canvas_script') }}">Edit Canvas JS</a></li> 
+        <li><a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a></li>
+        <li><a href="{{ url_for('edit_description') }}">Edit FlaskAppArchitect Description</a></li>
+        <li><a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a></li>
+        <li><a href="{{ url_for('edit_javascript') }}">Edit Javascript</a></li>
+        
+    </ul> 
+</div>
+<div class="column right">
+<p>Special Video chosen for this page.</p>
+    <video controls>
+        <source src="{{ video }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+</div>    
+</body>
+</html>
+<!-- Compare this snippet from templates/edit_text_save.html: -->

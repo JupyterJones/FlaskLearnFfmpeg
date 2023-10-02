@@ -1,0 +1,105 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Canvas Project</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+        video {
+            margin: 10px, auto;
+            width: 250px;
+            height: auto;
+        }
+
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .column.left {
+            width: 30%;
+            border:    1px solid #000;
+        }
+
+        .column.right {
+        margin: 0 auto; /* Center horizontally */
+        width: 60%;
+        border: 1px solid #000;
+        text-align: center; /* Center video vertically */
+    }
+
+    .column.right video {
+        max-width: 100%;
+        height: auto;
+    }
+    .note{
+          font-size:25px;
+          color:red;
+   }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>HOME index.html</h1>
+            <a href ="https://www.youtube.com/playlist?list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL">External YouTube Link JavaScript Tutorial</a><br />
+        </div>
+        <div class="columns">
+            <div class="column left">
+            
+                <h3>Create Text</h3><br />
+                <a href="{{ url_for('canvas') }}">First Canvas Project</a><br />
+                <a href="{{ url_for('one_canvas') }}">One Canvas</a><br />
+                <a href="{{ url_for('two_canvas') }}">Two Canvas</a><br />
+                <a class="note" href="{{ url_for('edit_canvas') }}">Edit a Canvas HTMl</a><br />
+                <a class="note" href="{{ url_for('edit_canvas') }}">Edit a Canvas JavaScript</a><br />
+<hr>
+                <a href="{{ url_for('misc_links') }}">This page contains all active links(I hope)</a><br />
+            </div>
+            <div class="column right">
+                <h2>Random Video</h2>
+                <video controls>
+                    <source src="{{ video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

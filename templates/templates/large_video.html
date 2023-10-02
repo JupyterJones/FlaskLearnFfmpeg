@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Large Video Page</title>
+</head>
+<body>
+    <h1>Large Video Page</h1>
+    <a style="color: brown;font-size: large;" href="{{ url_for('index') }}">HOME</a><br />
+    <video controls>
+        <source src="{{ url_for('static', filename='assets/NearDone.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>

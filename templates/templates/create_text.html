@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Text Image</title>
+</head>
+<body>
+    <h2>Create a Five-Line Text Image</h2>
+    <form action="/create_text" method="post">
+        <textarea name="text" rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Generate Image">
+    </form>
+    <h2>View Example Text Image</h2>
+    <img src="{{ url_for('static', filename='assets/sample_512x512_text.jpg') }}" alt="Generated Text Image">
+</body>
+</html>

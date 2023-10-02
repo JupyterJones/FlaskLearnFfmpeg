@@ -1,0 +1,27 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Generated Video Path</title>
+    </head>
+    <body>
+        <h1>Generated Video Path</h1>
+        <form method="POST" action="/generate_blank_video" enctype="multipart/form-data">
+            <label for="selected_video">Select Video:</label>
+            <input type="file" name="selected_video" id="selected_video">
+            <br><br>
+            <input type="submit" value="Generate and Overlay">
+        </form>
+        
+        <br><br>
+        {% if step2_path %}
+            <p>Output Path: {{ step2_path }}</p>
+            <video width="50%" controls>
+                <source src="{{ step2_path }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        {% else %}
+            <p>No video generated.</p>
+        {% endif %}
+    </body>
+    </html>
+ 

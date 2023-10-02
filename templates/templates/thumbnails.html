@@ -1,0 +1,31 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Thumbnails</h1>
+
+  <div class="thumbnails-container">
+    {% for thumbnail_path, video_path in thumbnail_paths|zip(video_paths) %}
+      <div class="thumbnail">
+        <a href="{{ url_for('play', video_path=video_path) }}">
+          <img src="{{ url_for('static', filename=thumbnail_path[7:]) }}" class="img-thumbnail">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <style>
+    .thumbnails-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .thumbnail {
+      width: calc(11.11% - 10px);
+      margin-bottom: 20px;
+    }
+    .thumbnail img {
+      width: 100%;
+    }
+  </style>
+{% endblock %}

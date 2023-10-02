@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert MP3 to WAV</title>
+  </head>
+  <body>
+    <h1>Convert MP3 to WAV</h1>
+    <form action="{{ url_for('convert_mp3_to_wav') }}" method="POST" enctype="multipart/form-data">
+      <label for="mp3_file">Select MP3 file:</label>
+      <input type="file" name="mp3_file" id="mp3_file">
+      <br>
+      <input type="submit" value="Convert">
+    </form>
+  </body>
+</html>

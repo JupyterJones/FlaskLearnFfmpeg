@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Script Editor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+</head>
+<body>
+    <h1>JavaScript Script Editor</h1>
+    <div id="myElement">Element to Change Color</div>
+    <button id="myButton">Click Me</button>
+
+    <script>
+        // Function to display a greeting message
+        function sayHello(name) {
+            console.log(`Hello, ${name}!`);
+        }
+
+        // Invoke the sayHello function
+        sayHello("John");
+
+        // Function to calculate the sum of two numbers
+        function sum(a, b) {
+            return a + b;
+        }
+
+        // Calculate and display the sum
+        var result = sum(10, 5);
+        console.log("Sum:", result);
+
+        // Function to change the background color of an element
+        function changeBackgroundColor(elementId, color) {
+            var element = document.getElementById(elementId);
+            element.style.backgroundColor = color;
+        }
+
+        // Change the background color of an element with ID 'myElement'
+        changeBackgroundColor('myElement', 'lightblue');
+
+        // Event listener to handle button click
+        var button = document.getElementById('myButton');
+        button.addEventListener('click', function() {
+            alert('Button clicked!');
+        });
+    </script>
+</body>
+</html>

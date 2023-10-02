@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>JavaScript Script Editor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+
+        video {
+            margin: 10px, auto;
+            width: 250px;
+            height: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .column.left {
+            width: 30%;
+            border: 1px solid #000;
+        }
+
+        .column.right {
+            margin: 0 auto;
+            /* Center horizontally */
+            width: 60%;
+            border: 1px solid #000;
+            text-align: center;
+            /* Center video vertically */
+        }
+
+        .column.right video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="columns">
+            <div class="column left">
+
+                <head>
+                    <h2>JavaScript Script Editor</h2>
+                </head><br />
+                <a style="font-size:30px;color:red;" href="{{ url_for('index') }}">HOME</a><br /><br /><br />
+
+                <form action="/preview" method="POST">
+                    <textarea id="editor" name="script"></textarea>
+                    <br>
+                    <input type="submit" value="Preview">
+                </form><br />
+                <hr>
+                <form action="/preview_two_canvas" method="POST">
+                    <textarea id="editor" name="script"></textarea>
+                    <br>
+                    <input type="submit" value="Preview Two">
+                </form><br />
+
+
+                <a href="/edit_script">Edit Script</a><br />
+                <script>
+                    var editor = ace.edit("editor");
+                    editor.setTheme("ace/theme/monokai");
+                    editor.getSession().setMode("ace/mode/javascript");
+                </script><br /><br />
+                <button id="captureButton">capture_video</button><br />
+                <button id="capture_square">capture_square</button><br />
+            </div>
+            <div class="column right">
+                <h2>Random Video</h2>
+                <p>This will eventually be an instruction video on how to use this page</p><br />
+
+                <video controls>
+                    <source src="{{ video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <br /><br />>
+
+                <audio id="audioPlayer" controls>
+                    <source src="{{ url_for('static', filename='MUSIC/Blue_Mood-Robert_Munzinger.mp3') }}"
+                        type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <br />
+
+                <script>
+                    var audioPlayer = document.getElementById('audioPlayer');
+                    var playButton = document.getElementById('playButton');
+
+                    playButton.addEventListener('click', function () {
+                        audioPlayer.play();
+                    });
+                </script><br />
+
+
+                <script>
+                    document.getElementById("captureButton").addEventListener("click", function () {
+                        fetch('/capture_video')  // Replace with the correct route to capture video
+                            .then(response => response.json())
+                            .then(data => {
+                                console.log(data.message);  // Print the response from the server
+                            })
+                            .catch(error => {
+                                console.error(error);
+                            });
+                    });
+                </script>
+
+                <script>
+                    document.getElementById("capture_square").addEventListener("click", function () {
+                        fetch('/capture_square')  // Replace with the correct route to capture video
+                            .then(response => response.json())
+                            .then(data => {
+                                console.log(data.message);  // Print the response from the server
+                            })
+                            .catch(error => {
+                                console.error(error);
+                            });
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

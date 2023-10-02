@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Access</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Database Content</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        {% for code in code %}
+        <tr>
+            <td>{{ code[0] }}</td>
+            <td>{{ code[1] }}</td>
+            <td>{{ code[2] }}</td>
+            <td>{{ code[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+

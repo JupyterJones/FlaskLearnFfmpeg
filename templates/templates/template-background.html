@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select and Play MP3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('/static/images/largegiger/DreamShaper_v5_A_dystopian_city_street_level_view_populated_by_0.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+            position: relative; /* Needed for absolute positioning of shadow */
+            color: white; /* Set text color */
+        }
+        h1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Behind the text */
+            background-color: white;
+            filter: blur(15px); /* Adjust blur radius as needed */
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        form {
+            text-align: center;
+            margin-top: 30px;
+        }
+        select, input {
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select and Play MP3</h1>
+    <form method="post">
+        <select name="mp3_file">
+            {% for file in mp3_files %}
+                <option value="{{ file }}">{{ file }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Play">
+    </form>
+</body>
+</html>

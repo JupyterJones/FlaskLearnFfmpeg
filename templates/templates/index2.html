@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Create Scrolling Text</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h3>Flask VideoMaker V2.1</h3>
+    <p>Below is an example of 'Type' of video this application can create. First Create a text file. You can hand write
+      it or use ChatGPT. Then you format the text in lines of five words per line. Next create a video of scrolling text
+      That is read as the text scrolls by. Then create an Image_Video which gradually fades from one image to another. A
+      image directory is required. for best results be sure all images are the same size. The last step is add the
+      Image_Video to the scrolling text.'</p>
+    <p>Avatar_Maker is included (Link is in the Black Band below) to create video introductions. This app is all ready
+      created, but not yet connected to the Flask VideoMaker</p>
+    <video width="200" height="auto" controls>
+      <source src="static/assets/result_voice.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video><br />
+    <video width="300" height="auto" controls>
+      <source src="static/assets/NearDone.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video><br /><a href="{{ url_for('large_video') }}">See Above Video Full Size</a><br /><br /><br /><br />
+
+  </div>
+
+  <div class="topnav">
+    <a style="font-size: 24px;margin-left: 10%;color: #29b2f1;" href="{{ url_for('indeX') }}">Link to indeX: Create an Avatar</a><br /><br />
+    <a style="font-size: 24px;margin-left: 10%;color: #29b2f1;" href="{{ url_for('data_page') }}">Link to Database:</a><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a style="font-size: 24px;margin-left: 10%;color: #29b2f1;" href="{{ url_for('index_FLASK') }}">Extras:</a>
+  </div>
+  
+
+  <div class="row">
+    <div class="column">
+      <h2>Create a Text File</h2>
+      <center>Play Me</center>
+      <video width="150" height="auto" controls>
+        <source src="static/assets/This_Column.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video><br />
+
+      <h3>Create Text</h3><br />
+      <a href="{{ url_for('mk_text') }}">Create a Text File</a><br /><br />
+      <a href="{{ url_for('format_file') }}">Format Text Files</a><br /><br />
+      <a href="{{ url_for('view_text') }}">View Text Files</a><br /><br />
+      <a href="{{ url_for('edit_file') }}">Edit File</a><br /><br />
+      <a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a><br /><br />
+      
+      <video width="150" height="auto" controls>
+        <source src="static/assets/asset_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video><br />
+    
+    
+    
+    
+    
+    </div>
+
+    <div class="column">
+      <h2>Create Scrolling Text Background</h2>
+      <h3>Audio to Video Conversion</h3>
+      <form action="{{ url_for('convert') }}" method="POST" enctype="multipart/form-data">
+        <label for="audio_file">Audio MP3 or Wav:</label>
+        <input type="file" name="audio_file" accept=".mp3,.wav" required>
+        <br><br />
+        <label for="formatted_text_file">Formatted Text File:</label>
+        <input type="file" name="formatted_text_file" accept=".txt" required>
+        <br>
+        <input type="submit" value="Convert1280x720">
+      </form>
+      <br />
+      <hr><br />
+      <form action="{{ url_for('convert512') }}" method="POST" enctype="multipart/form-data">
+        <label for="audio_file">Audio MP3 or Wav:</label>
+        <input type="file" name="audio_file" accept=".mp3,.wav" required>
+        <br><br />
+        <label for="formatted_text_file">Formatted Text File:</label>
+        <input type="file" name="formatted_text_file" accept=".txt" required>
+        <br>
+        <input type="submit" value="Convert512x1024">
+      </form>
+      <hr><br />
+      <form method="post" action="/videos" enctype="multipart/form-data">
+        <label for="input_video">Select MP4 Video for Minterpolate Transitions :</label><br>
+        <input type="file" id="input_video" name="input_video"><br><br>
+        <input type="submit" value="Submit">
+      </form><br/>
+
+        <video width="150" height="auto" controls>
+        <source src="static/assets/Final_End_Dance.mp4" type="video/mp4">
+      </video><br />
+    </div>
+
+    <div class="column">
+      <h2>Create Left Side Animation</h2>
+      <h3>Choose a Directory</h3>
+      <form id="directoryForm" method="post" action="/mkblend_videos">
+          <select name="selected_directory" id="directoryInput">
+              <option value="" disabled selected>Select a directory</option>
+              <option value="static/images/512x1536-woman">512x1536-woman</option>
+              <option value="static/images/abstract_beauty">abstract_beauty</option>
+              <option value="static/images/beautiful_girl">beautiful_girl</option>
+              <option value="static/images/Beautiful_Warrior">Beautiful_Warrior</option>
+          </select>
+          <button type="submit">Submit</button>
+      </form>
+      <h3>Select Directory</h3>
+      <form action="/mkblend_videos" method="post">
+        <label for="directory">Choose a directory make a short mp4:</label>
+        <select name="directory" id="directory">
+          {% for directory in directories %}
+          <option value="{{ directory }}">{{ directory }}</option>
+          {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Generate Video">
+      </form>
+        <h2>Create Stacked Videos</h2>
+      <a href="{{ url_for('build_stackedvids') }}">Create Stacked Video</a><br /><br />
+      <button onclick="callFlaskFunction()">Generate Video</button>
+      <h3>Result Video Minterpolate Transitions</h3>
+      <video id="myVideo" width="150" height="auto" controls>
+        <source src="static/assets/Final_End.mp4" type="video/mp4">
+        </video>
+        Your browser does not support the video tag.
+
+    </div>
+  <div>
+    <a style="font-size: large;color: bisque;" href="{{ url_for('process_imagez') }}">Zooms and Zoom</a><br /><br />
+
+  <script>
+    function callFlaskFunction() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '/resize_and_overlay_videos', true);
+      xhr.responseType = 'blob';
+
+      xhr.onload = function (e) {
+        if (this.status == 200) {
+          var videoBlob = this.response;
+          var videoUrl = URL.createObjectURL(videoBlob);
+
+          var videoElement = document.getElementById('myVideo');
+          videoElement.src = videoUrl;
+        }
+      };
+
+      xhr.send();
+    }
+  </script>
+
+  <center>
+  
+<h3>Outline Jpeg</h3>
+      <form action="/outline_j" method="post" enctype="multipart/form-data">
+          <label for="file">Select Image:</label>
+          <input type="file" name="file" id="file" accept="image/*">
+          <input type="submit" value="Outline J">
+      </form>
+
+      <h3>Outline Png</h3>
+      <form action="/outline_p" method="post" enctype="multipart/form-data">
+          <label for="file">Select Image:</label>
+          <input type="file" name="file" id="file" accept="image/*">
+          <input type="submit" value="Outline p">
+      </form>
+  </center>
+  </div>
+
+</body>
+</body>
+
+</html>

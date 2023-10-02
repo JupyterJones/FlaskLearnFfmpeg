@@ -1,0 +1,186 @@
+<!-- index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Misc_Links</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flask.css') }}">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('../static/assets/MemMaker_background.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+        }
+
+        video {
+            margin: 10px, auto;
+            width: 250px;
+            height: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .column {
+            padding: 20px;
+            margin: 2px,2px,2px,2px;
+            box-sizing: border-box;
+        }
+
+        .column.left {
+            width: 40%;
+            
+            border: 1px solid #000;
+        }
+
+        .column.right {
+            width: 40%;
+              border: 1px solid #000;
+            text-align: center;
+
+        }
+
+        .column.right video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Misc_Links</h1>
+        </div>
+        <div class="columns">
+            <div class="column left">
+                <a href="/capture_overlay_verify">Start Capture Regular</a><br />
+                <a href="/capture_overlay_short">Start Capture Short</a>
+                <a href="{{ url_for('create_text') }}">Create Text Image</a>
+                    <a href="{{ url_for('select_by_id_form') }}">Select by ID Form</a><br />
+                    <a href="{{ url_for('search_by_rowid') }}">Search by Row ID</a><br />
+                    <a href="{{ url_for('search_database') }}">Search the Database</a><br />
+                    <a href="{{ url_for('edit_data_page') }}">Edit Data</a><br />
+                    <a href="{{ url_for('insert_data') }}">Insert Data</a><br />
+                    <a href="{{ url_for('get_rowid_form') }}">Enter Row ID to Edit</a><br />
+
+                <a href="{{ url_for('get_gallery') }}">View Images</a><br />
+                <a href="{{ url_for('view_thumbs') }}">View Thumbnails</a><br />
+                <a href="{{ url_for('upload_file') }}">Upload Image</a><br />
+                <a href="{{ url_for('flask_info') }}">Video</a><br />
+                <a href="{{ url_for('add_text') }}">Add text to chat.txt</a><br />
+                <a href="{{ url_for('search_txt') }}">Search chat.txt</a><br />
+                <a href="{{ url_for('blend_pil') }}">upload and blend images.</a><br />
+                <a href="{{ url_for('add_border') }}">Add a border to an image.</a><br />
+                <a href="{{ url_for('process_images') }}">Process Images With Mask</a><br />
+                <a href="{{ url_for('text_mp3') }}">Create an mp3 from aText Entry</a><br />
+                <a href="{{ url_for('view_log') }}">View Log/app.log</a><br />
+                <a href="{{ url_for('index') }}">Home (index)</a><br />
+                <a href="{{ url_for('format_file') }}">Format Text Files</a><br />
+                <a href="{{ url_for('view_text') }}">view_text Text Files</a><br />
+                <a href="{{ url_for('generate_video') }}">Create an mp4 from video_resources</a><br />
+                <a href="{{ url_for('generate_video2') }}">Create an mp4 from Uploads</a><br />
+                <a href="{{ url_for('generate_video3') }}">Choose A directory to create video</a><br />
+                <a href="{{ url_for('image_directories') }}">Choose Image directories</a><br />
+                <a href="{{ url_for('select_playmp3') }}">Select and play mp3 from audio_mp3/</a><br />
+                <a href="{{ url_for('make_animation') }}">Create an Animated Gif (20 images @ 1 per second.)</a><br />
+                <a href="{{ url_for('build_stackedvids') }}">Video Stacked on Images</a><br />
+                <a href="{{ url_for('build_stackedvid') }}">Two Video Stacked</a><br />
+                <a href="{{ url_for('title_page') }}">Create a title Page</a><br />
+                <a href="{{ url_for('add_title') }}">Add a Title to a Video</a><br />
+                <a href="{{ url_for('add_effects') }}">Add effects to a Video</a><br />
+                <a href="{{ url_for('choose_dir') }}">Choose a directory</a><br />
+                <a href="{{ url_for('indexA') }}">Working With Text</a><br />
+                <a href="{{ url_for('app_utilities') }}">Application Utilities</a><br />
+                <a href="{{ url_for('image_processing') }}">Image Processing Links</a><br />
+                <a href="{{ url_for('format_file') }}">Format Text Files</a><br />
+                <a href="{{ url_for('view_text') }}">View Text Files</a><br />
+                <a href="{{ url_for('edit_file') }}">Edit File</a><br />
+                <a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a><br />
+                <a href="{{ url_for('app_utilities') }}">Application Utilities</a><br />
+                <a href="{{ url_for('image_processing') }}">Image Processing Links</a><br />
+                <a href="{{ url_for('format_file') }}">Format Text Files</a><br />
+                <a href="{{ url_for('view_text') }}">View Text Files</a><br />
+                <a href="{{ url_for('edit_file') }}">Edit File</a><br />
+                <a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a><br />
+                <a href="{{ url_for('index') }}">Home (index)</a><br />
+                <a href="{{ url_for('format_file') }}">Format Text Files</a><br />
+                <a href="{{ url_for('view_text') }}">view_text Text Files</a><br />
+                <a href="{{ url_for('image_stuff') }}">Comic Book Experiment</a><br />
+                <a href="{{ url_for('edit_description') }}">Edit Description</a><br /><br>
+                <a href="{{ url_for('edit_description') }}">Edit Description</a><br />
+            </div>
+            <div class="column right">
+                <a href="{{ url_for('mk_text') }}">Create a Text File</a><br />
+                <a href="{{ url_for('format_file') }}">Format Text Files</a><br />
+                <a href="{{ url_for('view_text') }}">View Text Files</a><br />
+                <a href="{{ url_for('edit_file') }}">Edit File</a><br />
+                <a href="{{ url_for('edit_formatted') }}">Edit Formatted Text</a><br />
+                <a href="{{ url_for('mk_background') }}">Creat Video From Thumbnail Cache</a><br />
+                <a href="{{ url_for('add_border') }}">Add a border to an image.</a><br />
+                <a href="{{ url_for('get_gallery') }}">View Images</a><br />
+                <a href="{{ url_for('view_thumbs') }}">View Thumbnails</a><br />
+                <a href="{{ url_for('upload_file') }}">Upload Image</a><br />
+                <a href="{{ url_for('flask_info') }}">Video</a><br />
+                <a href="{{ url_for('add_text') }}">Add text to chat.txt</a><br />
+                <a href="{{ url_for('search') }}">Search chat.txt</a><br />
+                <a href="{{ url_for('blend_pil') }}">upload and blend images.</a><br />
+                <a href="{{ url_for('add_border') }}">Add a border to an image.</a><br />
+                <a href="{{ url_for('process_images') }}">Process Images With Mask</a><br />
+                <a href="{{ url_for('text_mp3') }}">Create an mp3 from aText Entry</a><br />
+                <a href="{{ url_for('generate_video') }}">Create an mp4 from video_resources</a><br />
+                <a href="{{ url_for('generate_video2') }}">Create an mp4 from Uploads</a><br />
+                <a href="{{ url_for('image_directories') }}">Choose Image directories</a><br />
+                <a href="{{ url_for('select_playmp3') }}">Select and play mp3 from audio_mp3/</a><br />
+                <a href="{{ url_for('make_animation') }}">Create an Animated Gif (20 images @ 1 per second.)</a><br />
+                <a href="{{ url_for('build_stackedvids') }}">Video Stacked on Images</a><br />
+                <a href="{{ url_for('build_stackedvid') }}">Two Video Stacked</a><br />
+                <a href="{{ url_for('title_page') }}">Create a title Page</a><br />
+                <a href="{{ url_for('add_title') }}">Add a Title to a Video</a><br />
+                    <form action="{{ url_for('clean_images_route') }}" method="POST">
+                        <button type="submit">Clean Images</button>
+                    </form>
+                    <form action="/search" method="GET">
+                        <label for="search-term">Search:</label>
+                        <input type="text" id="search-term" name="q">
+                        <button type="submit">Search</button>
+                    </form>
+
+                    <a href="https://www.youtube.com/@totallyinsaneart3345" target="_blank ">Totally Insane
+                        Art</a><br />
+                    <a href="https://www.youtube.com/@JackNorthrup" target="_blank ">Jack Northrup</a><br />
+                    </video>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
