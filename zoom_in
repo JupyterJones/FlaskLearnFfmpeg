@@ -47,7 +47,7 @@ def allowed_file(filename):
 
 def getimages():
     # image_dir =random.choice(glob.glob("/home/jack/Desktop/StoryMaker/static/images/*"))
-    image_dir = glob.glob("/home/jack/Desktop/StoryMaker/static/images/*")
+    image_dir = glob.glob("/home/jack/Desktop/FlaskLearnFfmpeg/static/images/*")
     # images = glob.glob(image_dir)
     image_dir = sorted(image_dir)
     return image_dir
@@ -62,7 +62,7 @@ def upload_form():
     image_directories = static_image_directories()
     video = 'assets/framed_final_output.mp4'
     video2 = 'assets/final_output.mp4'
-    return render_template('dir_to_video.html', image_directories=image_directories, video=video, video2=video2)
+    return render_template('dir_tovideo.html', image_directories=image_directories, video=video, video2=video2)
 
 
 # Define a route to handle the image upload and video generation
@@ -138,4 +138,4 @@ def download_video(filename):
     return redirect(url_for('static', filename=f'output/{filename}'))
 
 if __name__ == '__main__':
-     app.run(debug=True)
+     app.run(debug=True, port=5000)

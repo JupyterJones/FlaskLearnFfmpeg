@@ -1,0 +1,981 @@
+2023-09-30 10:39:19,057 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 713
+2023-09-30 10:39:19,078 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://192.168.0.108:5200
+2023-09-30 10:39:19,078 - [33mPress CTRL+C to quit[0m
+2023-09-30 10:39:19,080 -  * Restarting with stat
+2023-09-30 10:39:20,063 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 713
+2023-09-30 10:39:20,071 -  * Debugger is active!
+2023-09-30 10:39:20,072 -  * Debugger PIN: 511-420-279
+2023-09-30 10:41:10,736 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 10:41:10,983 -  * Restarting with stat
+2023-09-30 10:41:12,720 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 714
+2023-09-30 10:41:12,777 -  * Debugger is active!
+2023-09-30 10:41:12,778 -  * Debugger PIN: 511-420-279
+2023-09-30 10:41:22,036 - 127.0.0.1 - - [30/Sep/2023 10:41:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-09-30 10:41:22,291 - 127.0.0.1 - - [30/Sep/2023 10:41:22] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 10:41:22,484 - 127.0.0.1 - - [30/Sep/2023 10:41:22] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 10:41:22,520 - 127.0.0.1 - - [30/Sep/2023 10:41:22] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 10:41:24,022 - 127.0.0.1 - - [30/Sep/2023 10:41:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 10:43:58,312 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 10:43:58,566 -  * Restarting with stat
+2023-09-30 10:44:05,789 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 762
+2023-09-30 10:44:05,810 -  * Debugger is active!
+2023-09-30 10:44:05,811 -  * Debugger PIN: 511-420-279
+2023-09-30 10:44:09,073 - 127.0.0.1 - - [30/Sep/2023 10:44:09] "GET / HTTP/1.1" 200 -
+2023-09-30 10:44:09,172 - 127.0.0.1 - - [30/Sep/2023 10:44:09] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 10:44:09,180 - 127.0.0.1 - - [30/Sep/2023 10:44:09] "[35m[1mGET /static/assets/Final_fades_01.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:44:11,309 - 127.0.0.1 - - [30/Sep/2023 10:44:11] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 10:44:12,018 - 127.0.0.1 - - [30/Sep/2023 10:44:12] "[35m[1mGET /static/assets/Final_fades_01.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:44:12,296 - 127.0.0.1 - - [30/Sep/2023 10:44:12] "[35m[1mGET /static/assets/Final_fades_01.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:44:12,299 - 127.0.0.1 - - [30/Sep/2023 10:44:12] "[35m[1mGET /static/assets/Final_fades_01.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:44:15,775 - 127.0.0.1 - - [30/Sep/2023 10:44:15] "[35m[1mGET /static/assets/Final_fades_01.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:44:28,461 - 127.0.0.1 - - [30/Sep/2023 10:44:28] "[35m[1mGET /edit_template HTTP/1.1[0m" 500 -
+2023-09-30 10:44:28,603 - 127.0.0.1 - - [30/Sep/2023 10:44:28] "GET /edit_template?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 10:44:28,610 - 127.0.0.1 - - [30/Sep/2023 10:44:28] "GET /edit_template?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 10:44:28,642 - 127.0.0.1 - - [30/Sep/2023 10:44:28] "GET /edit_template?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 10:44:29,708 - 127.0.0.1 - - [30/Sep/2023 10:44:29] "[36mGET /edit_template?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 10:45:53,358 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 10:45:54,788 -  * Restarting with stat
+2023-09-30 10:45:55,986 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 808
+2023-09-30 10:45:56,024 -  * Debugger is active!
+2023-09-30 10:45:56,027 -  * Debugger PIN: 511-420-279
+2023-09-30 10:45:56,072 - 127.0.0.1 - - [30/Sep/2023 10:45:56] "[35m[1mGET /edit_template HTTP/1.1[0m" 500 -
+2023-09-30 10:45:56,127 - 127.0.0.1 - - [30/Sep/2023 10:45:56] "[36mGET /edit_template?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 10:45:56,133 - 127.0.0.1 - - [30/Sep/2023 10:45:56] "[36mGET /edit_template?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 10:45:56,221 - 127.0.0.1 - - [30/Sep/2023 10:45:56] "[36mGET /edit_template?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 10:46:02,568 - 127.0.0.1 - - [30/Sep/2023 10:46:02] "GET / HTTP/1.1" 200 -
+2023-09-30 10:46:02,642 - 127.0.0.1 - - [30/Sep/2023 10:46:02] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 10:46:02,669 - 127.0.0.1 - - [30/Sep/2023 10:46:02] "[35m[1mGET /static/assets/00013Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:46:02,718 - 127.0.0.1 - - [30/Sep/2023 10:46:02] "[35m[1mGET /static/assets/00013Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:46:04,330 - 127.0.0.1 - - [30/Sep/2023 10:46:04] "[35m[1mGET /static/assets/00013Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:46:04,368 - 127.0.0.1 - - [30/Sep/2023 10:46:04] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 10:46:06,243 - 127.0.0.1 - - [30/Sep/2023 10:46:06] "[35m[1mGET /static/assets/00013Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:46:06,247 - 127.0.0.1 - - [30/Sep/2023 10:46:06] "[35m[1mGET /static/assets/00013Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 10:46:06,555 - 127.0.0.1 - - [30/Sep/2023 10:46:06] "[35m[1mGET /edit_template HTTP/1.1[0m" 500 -
+2023-09-30 10:46:06,694 - 127.0.0.1 - - [30/Sep/2023 10:46:06] "[36mGET /edit_template?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 10:46:06,707 - 127.0.0.1 - - [30/Sep/2023 10:46:06] "[36mGET /edit_template?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 10:46:06,726 - 127.0.0.1 - - [30/Sep/2023 10:46:06] "[36mGET /edit_template?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 10:46:52,768 - 127.0.0.1 - - [30/Sep/2023 10:46:52] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 10:46:52,826 - 127.0.0.1 - - [30/Sep/2023 10:46:52] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 10:46:52,829 - 127.0.0.1 - - [30/Sep/2023 10:46:52] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 10:46:52,905 - 127.0.0.1 - - [30/Sep/2023 10:46:52] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 10:46:59,245 - 127.0.0.1 - - [30/Sep/2023 10:46:59] "[35m[1mGET /edit_template_page?filename=edit_template.html HTTP/1.1[0m" 500 -
+2023-09-30 10:46:59,359 - 127.0.0.1 - - [30/Sep/2023 10:46:59] "GET /edit_template_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 10:46:59,364 - 127.0.0.1 - - [30/Sep/2023 10:46:59] "GET /edit_template_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 10:46:59,395 - 127.0.0.1 - - [30/Sep/2023 10:46:59] "GET /edit_template_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 10:46:59,504 - 127.0.0.1 - - [30/Sep/2023 10:46:59] "[36mGET /edit_template_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 10:47:57,657 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 10:47:57,858 -  * Restarting with stat
+2023-09-30 10:47:58,872 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 820
+2023-09-30 10:47:58,883 -  * Debugger is active!
+2023-09-30 10:47:58,885 -  * Debugger PIN: 511-420-279
+2023-09-30 10:49:46,565 - 127.0.0.1 - - [30/Sep/2023 10:49:46] "[35m[1mGET /edit_template_page?filename=edit_template.html HTTP/1.1[0m" 500 -
+2023-09-30 10:49:46,640 - 127.0.0.1 - - [30/Sep/2023 10:49:46] "[36mGET /edit_template_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 10:49:46,645 - 127.0.0.1 - - [30/Sep/2023 10:49:46] "[36mGET /edit_template_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 10:49:46,661 - 127.0.0.1 - - [30/Sep/2023 10:49:46] "[36mGET /edit_template_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 11:00:55,052 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 11:00:55,252 -  * Restarting with stat
+2023-09-30 11:00:56,244 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1365
+2023-09-30 11:01:13,155 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1365
+2023-09-30 11:02:51,292 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1340
+2023-09-30 11:03:38,174 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1278
+2023-09-30 11:05:25,396 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1237
+2023-09-30 11:05:45,018 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1187
+2023-09-30 11:06:00,550 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1178
+2023-09-30 11:06:19,215 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1149
+2023-09-30 11:07:10,527 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1149
+2023-09-30 11:08:25,834 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1146
+2023-09-30 11:11:39,474 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1146
+2023-09-30 11:12:19,759 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1126
+2023-09-30 11:12:35,478 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1110
+2023-09-30 11:13:07,651 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1086
+2023-09-30 11:13:23,832 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1081
+2023-09-30 11:13:23,853 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://192.168.0.108:5200
+2023-09-30 11:13:23,853 - [33mPress CTRL+C to quit[0m
+2023-09-30 11:13:23,854 -  * Restarting with stat
+2023-09-30 11:13:24,769 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1081
+2023-09-30 11:13:24,786 -  * Debugger is active!
+2023-09-30 11:13:24,786 -  * Debugger PIN: 511-420-279
+2023-09-30 13:06:26,022 - 127.0.0.1 - - [30/Sep/2023 13:06:26] "GET /edit_template_page?filename=edit_template.html HTTP/1.1" 200 -
+2023-09-30 13:06:26,077 - 127.0.0.1 - - [30/Sep/2023 13:06:26] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:06:26,163 - 127.0.0.1 - - [30/Sep/2023 13:06:26] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:06:35,918 - 127.0.0.1 - - [30/Sep/2023 13:06:35] "[35m[1mGET /view_text HTTP/1.1[0m" 500 -
+2023-09-30 13:06:36,124 - 127.0.0.1 - - [30/Sep/2023 13:06:36] "GET /view_text?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 13:06:36,145 - 127.0.0.1 - - [30/Sep/2023 13:06:36] "GET /view_text?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 13:06:36,164 - 127.0.0.1 - - [30/Sep/2023 13:06:36] "GET /view_text?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 13:06:36,295 - 127.0.0.1 - - [30/Sep/2023 13:06:36] "[36mGET /view_text?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:07:28,997 - 127.0.0.1 - - [30/Sep/2023 13:07:28] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:07:38,622 - 127.0.0.1 - - [30/Sep/2023 13:07:38] "[35m[1mGET /mk_text HTTP/1.1[0m" 500 -
+2023-09-30 13:07:38,760 - 127.0.0.1 - - [30/Sep/2023 13:07:38] "GET /mk_text?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 13:07:38,763 - 127.0.0.1 - - [30/Sep/2023 13:07:38] "GET /mk_text?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 13:07:38,815 - 127.0.0.1 - - [30/Sep/2023 13:07:38] "GET /mk_text?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 13:07:38,835 - 127.0.0.1 - - [30/Sep/2023 13:07:38] "[36mGET /mk_text?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:08:20,175 - 127.0.0.1 - - [30/Sep/2023 13:08:20] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:08:22,222 - 127.0.0.1 - - [30/Sep/2023 13:08:22] "GET /mk_text HTTP/1.1" 200 -
+2023-09-30 13:08:22,347 - circle_center, circle_radius:,(8, 8) 5
+2023-09-30 13:08:22,404 - 127.0.0.1 - - [30/Sep/2023 13:08:22] "GET /favicon.ico HTTP/1.1" 200 -
+2023-09-30 13:10:20,300 - 127.0.0.1 - - [30/Sep/2023 13:10:20] "POST /mk_text HTTP/1.1" 200 -
+2023-09-30 13:10:24,749 - 127.0.0.1 - - [30/Sep/2023 13:10:24] "GET /view_text HTTP/1.1" 200 -
+2023-09-30 13:10:27,375 - 127.0.0.1 - - [30/Sep/2023 13:10:27] "GET /view_text/def_findvideos_function%0D%0A.txt HTTP/1.1" 200 -
+2023-09-30 13:10:57,105 - 127.0.0.1 - - [30/Sep/2023 13:10:57] "GET / HTTP/1.1" 200 -
+2023-09-30 13:10:57,222 - 127.0.0.1 - - [30/Sep/2023 13:10:57] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:10:57,242 - 127.0.0.1 - - [30/Sep/2023 13:10:57] "[35m[1mGET /static/assets/Final_voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:10:57,333 - 127.0.0.1 - - [30/Sep/2023 13:10:57] "[35m[1mGET /static/assets/Final_voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:10:57,347 - 127.0.0.1 - - [30/Sep/2023 13:10:57] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:10:57,402 - 127.0.0.1 - - [30/Sep/2023 13:10:57] "[35m[1mGET /static/assets/Final_voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:10:57,447 - 127.0.0.1 - - [30/Sep/2023 13:10:57] "[35m[1mGET /static/assets/Final_voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:11:05,734 - 127.0.0.1 - - [30/Sep/2023 13:11:05] "[35m[1mGET /static/assets/Final_voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:11:15,903 - 127.0.0.1 - - [30/Sep/2023 13:11:15] "GET /edit_template_page?filename=index.html HTTP/1.1" 200 -
+2023-09-30 13:11:15,988 - 127.0.0.1 - - [30/Sep/2023 13:11:15] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:11:16,033 - 127.0.0.1 - - [30/Sep/2023 13:11:16] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:11:27,393 - 127.0.0.1 - - [30/Sep/2023 13:11:27] "[35m[1mPOST /edit_template_save HTTP/1.1[0m" 500 -
+2023-09-30 13:11:27,515 - 127.0.0.1 - - [30/Sep/2023 13:11:27] "GET /edit_template_save?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 13:11:27,524 - 127.0.0.1 - - [30/Sep/2023 13:11:27] "GET /edit_template_save?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 13:11:27,556 - 127.0.0.1 - - [30/Sep/2023 13:11:27] "GET /edit_template_save?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 13:11:27,597 - 127.0.0.1 - - [30/Sep/2023 13:11:27] "[36mGET /edit_template_save?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:12:50,149 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 13:12:50,401 -  * Restarting with stat
+2023-09-30 13:12:51,464 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1081
+2023-09-30 13:12:51,497 -  * Debugger is active!
+2023-09-30 13:12:51,497 -  * Debugger PIN: 511-420-279
+2023-09-30 13:12:54,261 - 127.0.0.1 - - [30/Sep/2023 13:12:54] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:13:00,121 - 127.0.0.1 - - [30/Sep/2023 13:13:00] "GET /view_text HTTP/1.1" 200 -
+2023-09-30 13:13:02,854 - 127.0.0.1 - - [30/Sep/2023 13:13:02] "GET /view_text/def_findvideos_function%0D%0A.txt HTTP/1.1" 200 -
+2023-09-30 13:13:05,563 - 127.0.0.1 - - [30/Sep/2023 13:13:05] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:13:14,568 - 127.0.0.1 - - [30/Sep/2023 13:13:14] "GET /view_text HTTP/1.1" 200 -
+2023-09-30 13:13:17,617 - 127.0.0.1 - - [30/Sep/2023 13:13:17] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:13:19,753 - 127.0.0.1 - - [30/Sep/2023 13:13:19] "[35m[1mGET /edit_formatted HTTP/1.1[0m" 500 -
+2023-09-30 13:13:19,863 - 127.0.0.1 - - [30/Sep/2023 13:13:19] "GET /edit_formatted?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 13:13:19,886 - 127.0.0.1 - - [30/Sep/2023 13:13:19] "GET /edit_formatted?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 13:13:19,954 - 127.0.0.1 - - [30/Sep/2023 13:13:19] "GET /edit_formatted?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 13:13:19,975 - 127.0.0.1 - - [30/Sep/2023 13:13:19] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:15:49,208 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 13:15:49,404 -  * Restarting with stat
+2023-09-30 13:15:50,382 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1081
+2023-09-30 13:15:50,407 -  * Debugger is active!
+2023-09-30 13:15:50,408 -  * Debugger PIN: 511-420-279
+2023-09-30 13:16:07,109 - 127.0.0.1 - - [30/Sep/2023 13:16:07] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:16:11,306 - 127.0.0.1 - - [30/Sep/2023 13:16:11] "[35m[1mGET /edit_formatted HTTP/1.1[0m" 500 -
+2023-09-30 13:16:11,428 - 127.0.0.1 - - [30/Sep/2023 13:16:11] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 13:16:11,432 - 127.0.0.1 - - [30/Sep/2023 13:16:11] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 13:16:11,454 - 127.0.0.1 - - [30/Sep/2023 13:16:11] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:16:44,201 - 127.0.0.1 - - [30/Sep/2023 13:16:44] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:16:59,414 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 13:16:59,617 -  * Restarting with stat
+2023-09-30 13:17:00,847 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1081
+2023-09-30 13:17:00,881 -  * Debugger is active!
+2023-09-30 13:17:00,882 -  * Debugger PIN: 511-420-279
+2023-09-30 13:17:45,129 - 127.0.0.1 - - [30/Sep/2023 13:17:45] "GET /edit_template_page?filename=index.html HTTP/1.1" 200 -
+2023-09-30 13:17:45,150 - 127.0.0.1 - - [30/Sep/2023 13:17:45] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:17:45,188 - 127.0.0.1 - - [30/Sep/2023 13:17:45] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:17:49,199 - 127.0.0.1 - - [30/Sep/2023 13:17:49] "[35m[1mGET /format_file HTTP/1.1[0m" 500 -
+2023-09-30 13:17:49,305 - 127.0.0.1 - - [30/Sep/2023 13:17:49] "GET /format_file?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 13:17:49,312 - 127.0.0.1 - - [30/Sep/2023 13:17:49] "GET /format_file?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 13:17:49,343 - 127.0.0.1 - - [30/Sep/2023 13:17:49] "GET /format_file?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 13:17:49,454 - 127.0.0.1 - - [30/Sep/2023 13:17:49] "[36mGET /format_file?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:18:34,301 - 127.0.0.1 - - [30/Sep/2023 13:18:34] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:18:37,498 - 127.0.0.1 - - [30/Sep/2023 13:18:37] "[35m[1mGET /edit_formatted HTTP/1.1[0m" 500 -
+2023-09-30 13:18:37,773 - 127.0.0.1 - - [30/Sep/2023 13:18:37] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 13:18:37,777 - 127.0.0.1 - - [30/Sep/2023 13:18:37] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 13:18:37,818 - 127.0.0.1 - - [30/Sep/2023 13:18:37] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:19:12,337 - 127.0.0.1 - - [30/Sep/2023 13:19:12] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:19:14,145 - 127.0.0.1 - - [30/Sep/2023 13:19:14] "[35m[1mGET /edit_formatted HTTP/1.1[0m" 500 -
+2023-09-30 13:19:14,271 - 127.0.0.1 - - [30/Sep/2023 13:19:14] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 13:19:14,272 - 127.0.0.1 - - [30/Sep/2023 13:19:14] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 13:19:14,312 - 127.0.0.1 - - [30/Sep/2023 13:19:14] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:20:03,874 - 127.0.0.1 - - [30/Sep/2023 13:20:03] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:20:07,158 - 127.0.0.1 - - [30/Sep/2023 13:20:07] "GET /format_file HTTP/1.1" 200 -
+2023-09-30 13:20:10,711 - This is Formated Content: def_findvideos_function def findvideos(): videoroot_directory =
+"static" MP4 = [] for
+dirpath, dirnames, filenames in os.walk(videoroot_directory):
+for filename in filenames: if
+filename.endswith(".mp4") and "Final" in filename:
+MP4.append(os.path.join(dirpath, filename)) if MP4: last_video
+= session.get("last_video") new_video = random.choice([video
+for video in MP4 if
+video != last_video]) session["last_video"] =
+new_video return new_video else: return
+None
+2023-09-30 13:20:10,712 - This is Formated file: static/formatted_text/def_findvideos_function
+FORMATTED.txt
+2023-09-30 13:20:10,720 - 127.0.0.1 - - [30/Sep/2023 13:20:10] "[35m[1mPOST /format_file HTTP/1.1[0m" 500 -
+2023-09-30 13:20:10,841 - 127.0.0.1 - - [30/Sep/2023 13:20:10] "[36mGET /format_file?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 13:20:10,851 - 127.0.0.1 - - [30/Sep/2023 13:20:10] "[36mGET /format_file?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 13:20:10,878 - 127.0.0.1 - - [30/Sep/2023 13:20:10] "[36mGET /format_file?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:20:44,419 - This is Formated Content: def_findvideos_function def findvideos(): videoroot_directory =
+"static" MP4 = [] for
+dirpath, dirnames, filenames in os.walk(videoroot_directory):
+for filename in filenames: if
+filename.endswith(".mp4") and "Final" in filename:
+MP4.append(os.path.join(dirpath, filename)) if MP4: last_video
+= session.get("last_video") new_video = random.choice([video
+for video in MP4 if
+video != last_video]) session["last_video"] =
+new_video return new_video else: return
+None
+2023-09-30 13:20:44,419 - This is Formated file: static/formatted_text/def_findvideos_function
+FORMATTED.txt
+2023-09-30 13:20:44,421 - 127.0.0.1 - - [30/Sep/2023 13:20:44] "POST /format_file HTTP/1.1" 200 -
+2023-09-30 13:20:49,515 - 127.0.0.1 - - [30/Sep/2023 13:20:49] "GET /format_file HTTP/1.1" 200 -
+2023-09-30 13:20:50,979 - 127.0.0.1 - - [30/Sep/2023 13:20:50] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:20:55,337 - 127.0.0.1 - - [30/Sep/2023 13:20:55] "[35m[1mGET /edit_formatted HTTP/1.1[0m" 500 -
+2023-09-30 13:20:55,434 - 127.0.0.1 - - [30/Sep/2023 13:20:55] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 13:20:55,452 - 127.0.0.1 - - [30/Sep/2023 13:20:55] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 13:20:55,497 - 127.0.0.1 - - [30/Sep/2023 13:20:55] "[36mGET /edit_formatted?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:21:56,252 - 127.0.0.1 - - [30/Sep/2023 13:21:56] "GET /edit_formatted HTTP/1.1" 200 -
+2023-09-30 13:21:56,388 - 127.0.0.1 - - [30/Sep/2023 13:21:56] "GET /static/assets/MemMaker_background.png HTTP/1.1" 200 -
+2023-09-30 13:22:16,500 - 127.0.0.1 - - [30/Sep/2023 13:22:16] "GET /edit_formatted HTTP/1.1" 200 -
+2023-09-30 13:22:16,527 - 127.0.0.1 - - [30/Sep/2023 13:22:16] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 13:22:19,806 - 127.0.0.1 - - [30/Sep/2023 13:22:19] "GET / HTTP/1.1" 200 -
+2023-09-30 13:22:19,889 - 127.0.0.1 - - [30/Sep/2023 13:22:19] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:22:19,890 - 127.0.0.1 - - [30/Sep/2023 13:22:19] "[35m[1mGET /static/assets/00001Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:19,964 - 127.0.0.1 - - [30/Sep/2023 13:22:19] "[35m[1mGET /static/assets/00001Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:19,966 - 127.0.0.1 - - [30/Sep/2023 13:22:19] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:22:20,004 - 127.0.0.1 - - [30/Sep/2023 13:22:20] "[35m[1mGET /static/assets/00001Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:20,006 - 127.0.0.1 - - [30/Sep/2023 13:22:20] "[35m[1mGET /static/assets/00001Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:20,069 - 127.0.0.1 - - [30/Sep/2023 13:22:20] "[35m[1mGET /static/assets/00001Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:20,107 - 127.0.0.1 - - [30/Sep/2023 13:22:20] "[35m[1mGET /static/assets/00001Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:20,110 - 127.0.0.1 - - [30/Sep/2023 13:22:20] "[35m[1mGET /static/assets/00001Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:20,152 - 127.0.0.1 - - [30/Sep/2023 13:22:20] "[35m[1mGET /static/assets/00001Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:22,826 - 127.0.0.1 - - [30/Sep/2023 13:22:22] "GET / HTTP/1.1" 200 -
+2023-09-30 13:22:22,858 - 127.0.0.1 - - [30/Sep/2023 13:22:22] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:22:22,864 - 127.0.0.1 - - [30/Sep/2023 13:22:22] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:22,973 - 127.0.0.1 - - [30/Sep/2023 13:22:22] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:22:22,985 - 127.0.0.1 - - [30/Sep/2023 13:22:22] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:23,037 - 127.0.0.1 - - [30/Sep/2023 13:22:23] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:23,056 - 127.0.0.1 - - [30/Sep/2023 13:22:23] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:23,112 - 127.0.0.1 - - [30/Sep/2023 13:22:23] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:23,149 - 127.0.0.1 - - [30/Sep/2023 13:22:23] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:23,154 - 127.0.0.1 - - [30/Sep/2023 13:22:23] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 13:22:43,588 - 127.0.0.1 - - [30/Sep/2023 13:22:43] "POST /edit_formatted HTTP/1.1" 200 -
+2023-09-30 13:22:43,727 - 127.0.0.1 - - [30/Sep/2023 13:22:43] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 13:22:46,728 - 127.0.0.1 - - [30/Sep/2023 13:22:46] "POST /edit_formatted HTTP/1.1" 200 -
+2023-09-30 13:22:46,869 - 127.0.0.1 - - [30/Sep/2023 13:22:46] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 13:22:49,190 - 127.0.0.1 - - [30/Sep/2023 13:22:49] "GET /edit_template_page?filename=edit_formatted.html HTTP/1.1" 200 -
+2023-09-30 13:22:49,274 - 127.0.0.1 - - [30/Sep/2023 13:22:49] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:22:49,343 - 127.0.0.1 - - [30/Sep/2023 13:22:49] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:50:39,199 - 127.0.0.1 - - [30/Sep/2023 13:50:39] "[32mPOST /edit_template_save HTTP/1.1[0m" 302 -
+2023-09-30 13:50:39,216 - 127.0.0.1 - - [30/Sep/2023 13:50:39] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 13:50:39,362 - 127.0.0.1 - - [30/Sep/2023 13:50:39] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:50:39,363 - 127.0.0.1 - - [30/Sep/2023 13:50:39] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 13:50:39,432 - 127.0.0.1 - - [30/Sep/2023 13:50:39] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:50:53,127 - 127.0.0.1 - - [30/Sep/2023 13:50:53] "[35m[1mGET /edit_css HTTP/1.1[0m" 500 -
+2023-09-30 13:50:53,274 - 127.0.0.1 - - [30/Sep/2023 13:50:53] "GET /edit_css?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 13:50:53,279 - 127.0.0.1 - - [30/Sep/2023 13:50:53] "GET /edit_css?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 13:50:53,328 - 127.0.0.1 - - [30/Sep/2023 13:50:53] "GET /edit_css?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 13:50:53,445 - 127.0.0.1 - - [30/Sep/2023 13:50:53] "[36mGET /edit_css?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:51:36,780 - 127.0.0.1 - - [30/Sep/2023 13:51:36] "GET /edit_css HTTP/1.1" 200 -
+2023-09-30 13:51:36,861 - 127.0.0.1 - - [30/Sep/2023 13:51:36] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 13:51:36,863 - 127.0.0.1 - - [30/Sep/2023 13:51:36] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:51:36,922 - 127.0.0.1 - - [30/Sep/2023 13:51:36] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:51:47,236 - 127.0.0.1 - - [30/Sep/2023 13:51:47] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:51:51,446 - 127.0.0.1 - - [30/Sep/2023 13:51:51] "GET /edit_css HTTP/1.1" 200 -
+2023-09-30 13:51:51,543 - 127.0.0.1 - - [30/Sep/2023 13:51:51] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 13:51:51,553 - 127.0.0.1 - - [30/Sep/2023 13:51:51] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:51:51,610 - 127.0.0.1 - - [30/Sep/2023 13:51:51] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:52:05,344 - 127.0.0.1 - - [30/Sep/2023 13:52:05] "[35m[1mGET /edit_css_page HTTP/1.1[0m" 500 -
+2023-09-30 13:52:05,456 - 127.0.0.1 - - [30/Sep/2023 13:52:05] "GET /edit_css_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 13:52:05,457 - 127.0.0.1 - - [30/Sep/2023 13:52:05] "GET /edit_css_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 13:52:05,497 - 127.0.0.1 - - [30/Sep/2023 13:52:05] "GET /edit_css_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 13:52:05,620 - 127.0.0.1 - - [30/Sep/2023 13:52:05] "[36mGET /edit_css_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:52:08,196 - 127.0.0.1 - - [30/Sep/2023 13:52:08] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:52:31,513 - 127.0.0.1 - - [30/Sep/2023 13:52:31] "GET /edit_template_page?filename=edit_css.html HTTP/1.1" 200 -
+2023-09-30 13:52:31,608 - 127.0.0.1 - - [30/Sep/2023 13:52:31] "[33mGET /static/css/body.css HTTP/1.1[0m" 404 -
+2023-09-30 13:52:31,646 - 127.0.0.1 - - [30/Sep/2023 13:52:31] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:54:18,766 - 127.0.0.1 - - [30/Sep/2023 13:54:18] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:54:20,773 - 127.0.0.1 - - [30/Sep/2023 13:54:20] "GET /edit_css HTTP/1.1" 200 -
+2023-09-30 13:54:20,798 - 127.0.0.1 - - [30/Sep/2023 13:54:20] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 13:54:20,802 - 127.0.0.1 - - [30/Sep/2023 13:54:20] "GET /static/css/body.css HTTP/1.1" 200 -
+2023-09-30 13:54:20,811 - 127.0.0.1 - - [30/Sep/2023 13:54:20] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 13:54:20,869 - 127.0.0.1 - - [30/Sep/2023 13:54:20] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 13:56:01,818 - circle_center, circle_radius:,(8, 8) 5
+2023-09-30 13:56:01,852 - 127.0.0.1 - - [30/Sep/2023 13:56:01] "GET /favicon.ico HTTP/1.1" 200 -
+2023-09-30 13:56:23,922 - 127.0.0.1 - - [30/Sep/2023 13:56:23] "[35m[1mGET /edit_css_page?filename=body.css HTTP/1.1[0m" 500 -
+2023-09-30 13:56:24,030 - 127.0.0.1 - - [30/Sep/2023 13:56:24] "[36mGET /edit_css_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 13:56:24,031 - 127.0.0.1 - - [30/Sep/2023 13:56:24] "[36mGET /edit_css_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 13:56:24,073 - 127.0.0.1 - - [30/Sep/2023 13:56:24] "[36mGET /edit_css_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 13:57:08,772 - 127.0.0.1 - - [30/Sep/2023 13:57:08] "GET /edit_css_page?filename=body.css HTTP/1.1" 200 -
+2023-09-30 13:57:08,810 - 127.0.0.1 - - [30/Sep/2023 13:57:08] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 13:57:08,812 - 127.0.0.1 - - [30/Sep/2023 13:57:08] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 13:57:08,996 - 127.0.0.1 - - [30/Sep/2023 13:57:08] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:03:30,300 - 127.0.0.1 - - [30/Sep/2023 14:03:30] "GET /edit_css_page?filename=body.css HTTP/1.1" 200 -
+2023-09-30 14:03:30,325 - 127.0.0.1 - - [30/Sep/2023 14:03:30] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 14:03:30,332 - 127.0.0.1 - - [30/Sep/2023 14:03:30] "[33mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 404 -
+2023-09-30 14:03:30,439 - 127.0.0.1 - - [30/Sep/2023 14:03:30] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:03:50,320 - 127.0.0.1 - - [30/Sep/2023 14:03:50] "GET /edit_css_page?filename=body.css HTTP/1.1" 200 -
+2023-09-30 14:03:50,404 - 127.0.0.1 - - [30/Sep/2023 14:03:50] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 14:03:50,415 - 127.0.0.1 - - [30/Sep/2023 14:03:50] "GET /static/assets/MemMaker_background.png HTTP/1.1" 200 -
+2023-09-30 14:03:50,460 - 127.0.0.1 - - [30/Sep/2023 14:03:50] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:05:20,330 - 127.0.0.1 - - [30/Sep/2023 14:05:20] "GET /edit_css_page?filename=body.css HTTP/1.1" 200 -
+2023-09-30 14:05:20,362 - 127.0.0.1 - - [30/Sep/2023 14:05:20] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 14:05:20,376 - 127.0.0.1 - - [30/Sep/2023 14:05:20] "GET /static/assets/MemMaker_background.png HTTP/1.1" 200 -
+2023-09-30 14:05:20,428 - 127.0.0.1 - - [30/Sep/2023 14:05:20] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:05:30,602 - 127.0.0.1 - - [30/Sep/2023 14:05:30] "[32mPOST /edit_css_save HTTP/1.1[0m" 302 -
+2023-09-30 14:05:30,611 - 127.0.0.1 - - [30/Sep/2023 14:05:30] "GET /edit_css HTTP/1.1" 200 -
+2023-09-30 14:05:30,689 - 127.0.0.1 - - [30/Sep/2023 14:05:30] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 14:05:30,693 - 127.0.0.1 - - [30/Sep/2023 14:05:30] "GET /static/css/body.css HTTP/1.1" 200 -
+2023-09-30 14:05:30,783 - 127.0.0.1 - - [30/Sep/2023 14:05:30] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 14:05:30,802 - 127.0.0.1 - - [30/Sep/2023 14:05:30] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:05:39,643 - 127.0.0.1 - - [30/Sep/2023 14:05:39] "GET / HTTP/1.1" 200 -
+2023-09-30 14:05:39,756 - 127.0.0.1 - - [30/Sep/2023 14:05:39] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:05:39,761 - 127.0.0.1 - - [30/Sep/2023 14:05:39] "[35m[1mGET /static/assets/00009Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:05:39,807 - 127.0.0.1 - - [30/Sep/2023 14:05:39] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 14:05:39,865 - 127.0.0.1 - - [30/Sep/2023 14:05:39] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:05:39,865 - 127.0.0.1 - - [30/Sep/2023 14:05:39] "[35m[1mGET /static/assets/00009Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:05:39,958 - 127.0.0.1 - - [30/Sep/2023 14:05:39] "[35m[1mGET /static/assets/00009Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:05:39,961 - 127.0.0.1 - - [30/Sep/2023 14:05:39] "[35m[1mGET /static/assets/00009Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:05:40,017 - 127.0.0.1 - - [30/Sep/2023 14:05:40] "[35m[1mGET /static/assets/00009Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:05:40,032 - 127.0.0.1 - - [30/Sep/2023 14:05:40] "[35m[1mGET /static/assets/00009Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:05:40,045 - 127.0.0.1 - - [30/Sep/2023 14:05:40] "[35m[1mGET /static/assets/00009Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:05:45,913 - 127.0.0.1 - - [30/Sep/2023 14:05:45] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 14:05:46,008 - 127.0.0.1 - - [30/Sep/2023 14:05:46] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:05:46,012 - 127.0.0.1 - - [30/Sep/2023 14:05:46] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 14:05:46,066 - 127.0.0.1 - - [30/Sep/2023 14:05:46] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:05:50,878 - 127.0.0.1 - - [30/Sep/2023 14:05:50] "GET /edit_css HTTP/1.1" 200 -
+2023-09-30 14:05:50,973 - 127.0.0.1 - - [30/Sep/2023 14:05:50] "[33mGET /static/css/flask.css HTTP/1.1[0m" 404 -
+2023-09-30 14:05:50,975 - 127.0.0.1 - - [30/Sep/2023 14:05:50] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:05:51,015 - 127.0.0.1 - - [30/Sep/2023 14:05:51] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:05:54,094 - 127.0.0.1 - - [30/Sep/2023 14:05:54] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:06:10,052 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "GET / HTTP/1.1" 200 -
+2023-09-30 14:06:10,230 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:06:10,231 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[35m[1mGET /static/assets/Final_End.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:06:10,335 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[35m[1mGET /static/assets/Final_End.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:06:10,337 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:06:10,409 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[35m[1mGET /static/assets/Final_End.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:06:10,425 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[35m[1mGET /static/assets/Final_End.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:06:10,475 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[35m[1mGET /static/assets/Final_End.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:06:10,504 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[35m[1mGET /static/assets/Final_End.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:06:10,507 - 127.0.0.1 - - [30/Sep/2023 14:06:10] "[35m[1mGET /static/assets/Final_End.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:06:37,538 - 127.0.0.1 - - [30/Sep/2023 14:06:37] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 14:06:37,643 - 127.0.0.1 - - [30/Sep/2023 14:06:37] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:06:37,662 - 127.0.0.1 - - [30/Sep/2023 14:06:37] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 14:06:37,726 - 127.0.0.1 - - [30/Sep/2023 14:06:37] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:11:37,334 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 14:11:37,615 -  * Restarting with stat
+2023-09-30 14:11:38,572 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1085
+2023-09-30 14:11:38,591 -  * Debugger is active!
+2023-09-30 14:11:38,591 -  * Debugger PIN: 511-420-279
+2023-09-30 14:14:26,938 - 127.0.0.1 - - [30/Sep/2023 14:14:26] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 14:14:26,994 - 127.0.0.1 - - [30/Sep/2023 14:14:26] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:14:26,999 - 127.0.0.1 - - [30/Sep/2023 14:14:26] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 14:14:27,032 - 127.0.0.1 - - [30/Sep/2023 14:14:27] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:14:29,890 - 127.0.0.1 - - [30/Sep/2023 14:14:29] "GET / HTTP/1.1" 200 -
+2023-09-30 14:14:30,002 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[35m[1mGET /static/assets/00010Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:30,014 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:14:30,127 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[35m[1mGET /static/assets/00010Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:30,138 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:14:30,155 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[35m[1mGET /static/assets/00010Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:30,162 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[35m[1mGET /static/assets/00010Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:30,378 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[35m[1mGET /static/assets/00010Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:30,416 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[35m[1mGET /static/assets/00010Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:30,419 - 127.0.0.1 - - [30/Sep/2023 14:14:30] "[35m[1mGET /static/assets/00010Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:56,386 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "GET / HTTP/1.1" 200 -
+2023-09-30 14:14:56,417 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:14:56,424 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "[35m[1mGET /static/assets/00008Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:56,484 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "[35m[1mGET /static/assets/00008Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:56,494 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "[35m[1mGET /static/assets/00008Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:56,519 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:14:56,581 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "[35m[1mGET /static/assets/00008Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:56,586 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "[35m[1mGET /static/assets/00008Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:56,668 - 127.0.0.1 - - [30/Sep/2023 14:14:56] "[35m[1mGET /static/assets/00008Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:59,754 - 127.0.0.1 - - [30/Sep/2023 14:14:59] "GET /ffmpeg_commands HTTP/1.1" 200 -
+2023-09-30 14:14:59,868 - 127.0.0.1 - - [30/Sep/2023 14:14:59] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 14:14:59,900 - 127.0.0.1 - - [30/Sep/2023 14:14:59] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:59,947 - 127.0.0.1 - - [30/Sep/2023 14:14:59] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:14:59,952 - 127.0.0.1 - - [30/Sep/2023 14:14:59] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 14:15:00,012 - 127.0.0.1 - - [30/Sep/2023 14:15:00] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:15:00,020 - 127.0.0.1 - - [30/Sep/2023 14:15:00] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:15:00,143 - 127.0.0.1 - - [30/Sep/2023 14:15:00] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:23:42,864 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 14:23:43,110 -  * Restarting with stat
+2023-09-30 14:23:44,282 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1085
+2023-09-30 14:23:44,301 -  * Debugger is active!
+2023-09-30 14:23:44,302 -  * Debugger PIN: 511-420-279
+2023-09-30 14:27:24,530 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 14:27:24,716 -  * Restarting with stat
+2023-09-30 14:27:25,658 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1093
+2023-09-30 14:27:25,676 -  * Debugger is active!
+2023-09-30 14:27:25,680 -  * Debugger PIN: 511-420-279
+2023-09-30 14:27:48,965 - 127.0.0.1 - - [30/Sep/2023 14:27:48] "GET /list_jpgs HTTP/1.1" 200 -
+2023-09-30 14:28:37,473 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1093
+2023-09-30 14:28:37,489 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://192.168.0.108:5200
+2023-09-30 14:28:37,489 - [33mPress CTRL+C to quit[0m
+2023-09-30 14:28:37,490 -  * Restarting with stat
+2023-09-30 14:28:38,393 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1093
+2023-09-30 14:28:38,408 -  * Debugger is active!
+2023-09-30 14:28:38,408 -  * Debugger PIN: 511-420-279
+2023-09-30 14:28:51,912 - 127.0.0.1 - - [30/Sep/2023 14:28:51] "GET /list_jpgs HTTP/1.1" 200 -
+2023-09-30 14:28:54,636 - 127.0.0.1 - - [30/Sep/2023 14:28:54] "GET /list_jpgs HTTP/1.1" 200 -
+2023-09-30 14:29:23,093 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 14:29:23,316 -  * Restarting with stat
+2023-09-30 14:29:24,233 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1093
+2023-09-30 14:29:24,248 -  * Debugger is active!
+2023-09-30 14:29:24,249 -  * Debugger PIN: 511-420-279
+2023-09-30 14:29:27,125 - 127.0.0.1 - - [30/Sep/2023 14:29:27] "[35m[1mGET /list_jpgs HTTP/1.1[0m" 500 -
+2023-09-30 14:29:27,184 - 127.0.0.1 - - [30/Sep/2023 14:29:27] "GET /list_jpgs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 14:29:27,185 - 127.0.0.1 - - [30/Sep/2023 14:29:27] "GET /list_jpgs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 14:29:27,206 - 127.0.0.1 - - [30/Sep/2023 14:29:27] "GET /list_jpgs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 14:29:27,284 - 127.0.0.1 - - [30/Sep/2023 14:29:27] "[36mGET /list_jpgs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 14:32:52,899 - 127.0.0.1 - - [30/Sep/2023 14:32:52] "[35m[1mGET /choose_dir HTTP/1.1[0m" 500 -
+2023-09-30 14:32:53,009 - 127.0.0.1 - - [30/Sep/2023 14:32:53] "GET /choose_dir?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 14:32:53,014 - 127.0.0.1 - - [30/Sep/2023 14:32:53] "GET /choose_dir?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 14:32:53,060 - 127.0.0.1 - - [30/Sep/2023 14:32:53] "GET /choose_dir?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 14:32:53,166 - 127.0.0.1 - - [30/Sep/2023 14:32:53] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 14:34:40,451 - 127.0.0.1 - - [30/Sep/2023 14:34:40] "GET /choose_dir HTTP/1.1" 200 -
+2023-09-30 14:34:40,661 - 127.0.0.1 - - [30/Sep/2023 14:34:40] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:34:40,715 - 127.0.0.1 - - [30/Sep/2023 14:34:40] "[33mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 14:34:40,877 - 127.0.0.1 - - [30/Sep/2023 14:34:40] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:34:40,968 - 127.0.0.1 - - [30/Sep/2023 14:34:40] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:34:40,971 - 127.0.0.1 - - [30/Sep/2023 14:34:40] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:35:00,281 - No file was selected: TEXT TEST
+2023-09-30 14:35:00,282 - Debug was selected: TEXT TEST
+2023-09-30 14:35:00,282 - Selected directory: static/images/ideogram
+2023-09-30 14:35:00,285 - 127.0.0.1 - - [30/Sep/2023 14:35:00] "[35m[1mPOST /choose_dir HTTP/1.1[0m" 500 -
+2023-09-30 14:35:00,387 - 127.0.0.1 - - [30/Sep/2023 14:35:00] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 14:35:00,389 - 127.0.0.1 - - [30/Sep/2023 14:35:00] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 14:35:00,415 - 127.0.0.1 - - [30/Sep/2023 14:35:00] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 14:35:21,971 - No file was selected: TEXT TEST
+2023-09-30 14:35:21,973 - Debug was selected: TEXT TEST
+2023-09-30 14:35:21,973 - Selected directory: static/images/yodo_01
+2023-09-30 14:35:21,976 - 127.0.0.1 - - [30/Sep/2023 14:35:21] "[35m[1mPOST /choose_dir HTTP/1.1[0m" 500 -
+2023-09-30 14:35:22,074 - 127.0.0.1 - - [30/Sep/2023 14:35:22] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 14:35:22,077 - 127.0.0.1 - - [30/Sep/2023 14:35:22] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 14:35:22,113 - 127.0.0.1 - - [30/Sep/2023 14:35:22] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 14:37:17,529 - No file was selected: TEXT TEST
+2023-09-30 14:37:17,530 - Debug was selected: TEXT TEST
+2023-09-30 14:37:17,531 - Selected directory: static/images/yodo_01
+2023-09-30 14:37:17,534 - 127.0.0.1 - - [30/Sep/2023 14:37:17] "[35m[1mPOST /choose_dir HTTP/1.1[0m" 500 -
+2023-09-30 14:37:17,630 - 127.0.0.1 - - [30/Sep/2023 14:37:17] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 14:37:17,632 - 127.0.0.1 - - [30/Sep/2023 14:37:17] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 14:37:17,679 - 127.0.0.1 - - [30/Sep/2023 14:37:17] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 14:37:48,238 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 14:37:48,869 -  * Restarting with stat
+2023-09-30 14:37:50,529 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1093
+2023-09-30 14:37:50,553 -  * Debugger is active!
+2023-09-30 14:37:50,555 -  * Debugger PIN: 511-420-279
+2023-09-30 14:37:50,701 - No file was selected: TEXT TEST
+2023-09-30 14:37:50,701 - Debug was selected: TEXT TEST
+2023-09-30 14:37:50,701 - Selected directory: static/images/yodo_01
+2023-09-30 14:37:50,702 - Selected image filenames: ['static/images/yodo_01/00001.jpg', 'static/images/yodo_01/00008.jpg', 'static/images/yodo_01/00004.jpg', 'static/images/yodo_01/00014.jpg', 'static/images/yodo_01/00013.jpg', 'static/images/yodo_01/00016.jpg', 'static/images/yodo_01/00017.jpg', 'static/images/yodo_01/00015.jpg', 'static/images/yodo_01/00002.jpg', 'static/images/yodo_01/00011.jpg', 'static/images/yodo_01/00009.jpg', 'static/images/yodo_01/00018.jpg', 'static/images/yodo_01/00005.jpg', 'static/images/yodo_01/00012.jpg', 'static/images/yodo_01/00010.jpg']
+2023-09-30 14:37:50,702 - Processing image: static/images/yodo_01/00001.jpg
+2023-09-30 14:37:50,732 - Processing image: static/images/yodo_01/00008.jpg
+2023-09-30 14:37:50,740 - Processing image: static/images/yodo_01/00004.jpg
+2023-09-30 14:37:50,744 - Processing image: static/images/yodo_01/00014.jpg
+2023-09-30 14:37:50,750 - Processing image: static/images/yodo_01/00013.jpg
+2023-09-30 14:37:50,754 - Processing image: static/images/yodo_01/00016.jpg
+2023-09-30 14:37:50,759 - Processing image: static/images/yodo_01/00017.jpg
+2023-09-30 14:37:50,764 - Processing image: static/images/yodo_01/00015.jpg
+2023-09-30 14:37:50,768 - Processing image: static/images/yodo_01/00002.jpg
+2023-09-30 14:37:50,782 - Processing image: static/images/yodo_01/00011.jpg
+2023-09-30 14:37:50,787 - Processing image: static/images/yodo_01/00009.jpg
+2023-09-30 14:37:50,791 - Processing image: static/images/yodo_01/00018.jpg
+2023-09-30 14:37:50,796 - Processing image: static/images/yodo_01/00005.jpg
+2023-09-30 14:37:50,800 - Processing image: static/images/yodo_01/00012.jpg
+2023-09-30 14:37:50,804 - Processing image: static/images/yodo_01/00010.jpg
+2023-09-30 14:37:50,809 - Number of image clips: 15
+2023-09-30 14:37:50,869 - Output video file path: static/videos/random_images_20230930-143750_video.mp4
+2023-09-30 14:37:50,873 - Final video file path: static/videos/random_images_video.mp4
+2023-09-30 14:37:57,829 - 127.0.0.1 - - [30/Sep/2023 14:37:57] "POST /choose_dir HTTP/1.1" 200 -
+2023-09-30 14:37:58,038 - 127.0.0.1 - - [30/Sep/2023 14:37:58] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:37:58,079 - 127.0.0.1 - - [30/Sep/2023 14:37:58] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:37:58,117 - 127.0.0.1 - - [30/Sep/2023 14:37:58] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:37:58,169 - 127.0.0.1 - - [30/Sep/2023 14:37:58] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:37:58,284 - 127.0.0.1 - - [30/Sep/2023 14:37:58] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:37:58,294 - 127.0.0.1 - - [30/Sep/2023 14:37:58] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 14:37:58,328 - 127.0.0.1 - - [30/Sep/2023 14:37:58] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:40,724 - No file was selected: TEXT TEST
+2023-09-30 15:54:40,726 - Debug was selected: TEXT TEST
+2023-09-30 15:54:40,726 - Selected directory: static/images/yodo_01
+2023-09-30 15:54:40,726 - Selected image filenames: ['static/images/yodo_01/00008.jpg', 'static/images/yodo_01/00019.jpg', 'static/images/yodo_01/00007.jpg', 'static/images/yodo_01/00009.jpg', 'static/images/yodo_01/00002.jpg', 'static/images/yodo_01/00015.jpg', 'static/images/yodo_01/00011.jpg', 'static/images/yodo_01/00001.jpg', 'static/images/yodo_01/00016.jpg', 'static/images/yodo_01/00010.jpg', 'static/images/yodo_01/00006.jpg', 'static/images/yodo_01/00017.jpg', 'static/images/yodo_01/00012.jpg', 'static/images/yodo_01/00013.jpg', 'static/images/yodo_01/00004.jpg']
+2023-09-30 15:54:40,727 - Processing image: static/images/yodo_01/00008.jpg
+2023-09-30 15:54:40,736 - Processing image: static/images/yodo_01/00019.jpg
+2023-09-30 15:54:40,746 - Processing image: static/images/yodo_01/00007.jpg
+2023-09-30 15:54:40,751 - Processing image: static/images/yodo_01/00009.jpg
+2023-09-30 15:54:40,755 - Processing image: static/images/yodo_01/00002.jpg
+2023-09-30 15:54:40,779 - Processing image: static/images/yodo_01/00015.jpg
+2023-09-30 15:54:40,785 - Processing image: static/images/yodo_01/00011.jpg
+2023-09-30 15:54:40,795 - Processing image: static/images/yodo_01/00001.jpg
+2023-09-30 15:54:40,809 - Processing image: static/images/yodo_01/00016.jpg
+2023-09-30 15:54:40,813 - Processing image: static/images/yodo_01/00010.jpg
+2023-09-30 15:54:40,819 - Processing image: static/images/yodo_01/00006.jpg
+2023-09-30 15:54:40,827 - Processing image: static/images/yodo_01/00017.jpg
+2023-09-30 15:54:40,835 - Processing image: static/images/yodo_01/00012.jpg
+2023-09-30 15:54:40,841 - Processing image: static/images/yodo_01/00013.jpg
+2023-09-30 15:54:40,854 - Processing image: static/images/yodo_01/00004.jpg
+2023-09-30 15:54:40,862 - Number of image clips: 15
+2023-09-30 15:54:40,924 - Output video file path: static/videos/random_images_20230930-155440_video.mp4
+2023-09-30 15:54:40,924 - Final video file path: static/videos/random_images_video.mp4
+2023-09-30 15:54:48,529 - 127.0.0.1 - - [30/Sep/2023 15:54:48] "POST /choose_dir HTTP/1.1" 200 -
+2023-09-30 15:54:48,696 - 127.0.0.1 - - [30/Sep/2023 15:54:48] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:48,729 - 127.0.0.1 - - [30/Sep/2023 15:54:48] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:48,754 - 127.0.0.1 - - [30/Sep/2023 15:54:48] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:48,892 - 127.0.0.1 - - [30/Sep/2023 15:54:48] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:48,985 - 127.0.0.1 - - [30/Sep/2023 15:54:48] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:48,992 - 127.0.0.1 - - [30/Sep/2023 15:54:48] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:49,045 - 127.0.0.1 - - [30/Sep/2023 15:54:49] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:53,350 - 127.0.0.1 - - [30/Sep/2023 15:54:53] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:54:53,398 - 127.0.0.1 - - [30/Sep/2023 15:54:53] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:55:19,747 - 127.0.0.1 - - [30/Sep/2023 15:55:19] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 15:55:54,392 - 127.0.0.1 - - [30/Sep/2023 15:55:54] "[33mPOST /mkblend_video HTTP/1.1[0m" 404 -
+2023-09-30 15:59:33,897 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 15:59:34,123 -  * Restarting with stat
+2023-09-30 16:00:51,334 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1203
+2023-09-30 16:00:51,351 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://192.168.0.108:5200
+2023-09-30 16:00:51,351 - [33mPress CTRL+C to quit[0m
+2023-09-30 16:00:51,352 -  * Restarting with stat
+2023-09-30 16:00:52,268 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1203
+2023-09-30 16:00:52,284 -  * Debugger is active!
+2023-09-30 16:00:52,284 -  * Debugger PIN: 511-420-279
+2023-09-30 16:00:58,035 - 127.0.0.1 - - [30/Sep/2023 16:00:58] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:00:58,050 - 127.0.0.1 - - [30/Sep/2023 16:00:58] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:00:58,060 - 127.0.0.1 - - [30/Sep/2023 16:00:58] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:00:58,067 - 127.0.0.1 - - [30/Sep/2023 16:00:58] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:00:58,125 - 127.0.0.1 - - [30/Sep/2023 16:00:58] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:00:58,174 - 127.0.0.1 - - [30/Sep/2023 16:00:58] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:00:58,316 - 127.0.0.1 - - [30/Sep/2023 16:00:58] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:00:58,320 - 127.0.0.1 - - [30/Sep/2023 16:00:58] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:01:02,758 - 127.0.0.1 - - [30/Sep/2023 16:01:02] "[35m[1mPOST /mkblend_video HTTP/1.1[0m" 500 -
+2023-09-30 16:01:02,873 - 127.0.0.1 - - [30/Sep/2023 16:01:02] "GET /mkblend_video?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-30 16:01:02,878 - 127.0.0.1 - - [30/Sep/2023 16:01:02] "GET /mkblend_video?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-30 16:01:02,927 - 127.0.0.1 - - [30/Sep/2023 16:01:02] "GET /mkblend_video?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-09-30 16:01:03,032 - 127.0.0.1 - - [30/Sep/2023 16:01:03] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 16:02:07,180 - 127.0.0.1 - - [30/Sep/2023 16:02:07] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:02:07,264 - 127.0.0.1 - - [30/Sep/2023 16:02:07] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:02:07,322 - 127.0.0.1 - - [30/Sep/2023 16:02:07] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:02:07,358 - 127.0.0.1 - - [30/Sep/2023 16:02:07] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:02:07,388 - 127.0.0.1 - - [30/Sep/2023 16:02:07] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:02:07,394 - 127.0.0.1 - - [30/Sep/2023 16:02:07] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:02:07,458 - 127.0.0.1 - - [30/Sep/2023 16:02:07] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:02:09,847 - No file was selected: TEXT TEST
+2023-09-30 16:02:09,847 - Debug was selected: TEXT TEST
+2023-09-30 16:02:09,847 - Selected directory: static/images/yodo_01
+2023-09-30 16:02:09,847 - Selected image filenames: ['static/images/yodo_01/00018.jpg', 'static/images/yodo_01/00008.jpg', 'static/images/yodo_01/00010.jpg', 'static/images/yodo_01/00012.jpg', 'static/images/yodo_01/00009.jpg', 'static/images/yodo_01/00007.jpg', 'static/images/yodo_01/00002.jpg', 'static/images/yodo_01/00013.jpg', 'static/images/yodo_01/00004.jpg', 'static/images/yodo_01/00014.jpg', 'static/images/yodo_01/00001.jpg', 'static/images/yodo_01/00006.jpg', 'static/images/yodo_01/00019.jpg', 'static/images/yodo_01/00011.jpg', 'static/images/yodo_01/00005.jpg']
+2023-09-30 16:02:09,848 - Processing image: static/images/yodo_01/00018.jpg
+2023-09-30 16:02:09,860 - Processing image: static/images/yodo_01/00008.jpg
+2023-09-30 16:02:09,864 - Processing image: static/images/yodo_01/00010.jpg
+2023-09-30 16:02:09,869 - Processing image: static/images/yodo_01/00012.jpg
+2023-09-30 16:02:09,875 - Processing image: static/images/yodo_01/00009.jpg
+2023-09-30 16:02:09,879 - Processing image: static/images/yodo_01/00007.jpg
+2023-09-30 16:02:09,883 - Processing image: static/images/yodo_01/00002.jpg
+2023-09-30 16:02:09,893 - Processing image: static/images/yodo_01/00013.jpg
+2023-09-30 16:02:09,897 - Processing image: static/images/yodo_01/00004.jpg
+2023-09-30 16:02:09,902 - Processing image: static/images/yodo_01/00014.jpg
+2023-09-30 16:02:09,906 - Processing image: static/images/yodo_01/00001.jpg
+2023-09-30 16:02:09,916 - Processing image: static/images/yodo_01/00006.jpg
+2023-09-30 16:02:09,920 - Processing image: static/images/yodo_01/00019.jpg
+2023-09-30 16:02:09,931 - Processing image: static/images/yodo_01/00011.jpg
+2023-09-30 16:02:09,935 - Processing image: static/images/yodo_01/00005.jpg
+2023-09-30 16:02:09,939 - Number of image clips: 15
+2023-09-30 16:02:09,986 - Output video file path: static/videos/random_images_20230930-160209_video.mp4
+2023-09-30 16:02:09,986 - Final video file path: static/videos/random_images_video.mp4
+2023-09-30 16:02:14,270 - 127.0.0.1 - - [30/Sep/2023 16:02:14] "POST /choose_dir HTTP/1.1" 200 -
+2023-09-30 16:02:18,730 - 127.0.0.1 - - [30/Sep/2023 16:02:18] "[35m[1mPOST /mkblend_video HTTP/1.1[0m" 500 -
+2023-09-30 16:02:18,835 - 127.0.0.1 - - [30/Sep/2023 16:02:18] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 16:02:18,838 - 127.0.0.1 - - [30/Sep/2023 16:02:18] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 16:02:18,889 - 127.0.0.1 - - [30/Sep/2023 16:02:18] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 16:05:21,284 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 16:05:21,520 -  * Restarting with stat
+2023-09-30 16:05:22,846 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1203
+2023-09-30 16:05:22,862 -  * Debugger is active!
+2023-09-30 16:05:22,863 -  * Debugger PIN: 511-420-279
+2023-09-30 16:05:24,093 - IMAGE_LIST: []
+2023-09-30 16:05:24,093 - Selected image filenames: []
+2023-09-30 16:05:24,093 - Number of files: 0
+2023-09-30 16:05:24,100 - 127.0.0.1 - - [30/Sep/2023 16:05:24] "[35m[1mPOST /mkblend_video HTTP/1.1[0m" 500 -
+2023-09-30 16:05:24,163 - 127.0.0.1 - - [30/Sep/2023 16:05:24] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 16:05:24,178 - 127.0.0.1 - - [30/Sep/2023 16:05:24] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 16:05:24,193 - 127.0.0.1 - - [30/Sep/2023 16:05:24] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 16:05:27,166 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:27,171 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "GET /static/videos/random_images_video.mp4 HTTP/1.1" 200 -
+2023-09-30 16:05:27,177 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:27,219 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:27,288 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:27,300 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:27,303 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:27,409 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:27,474 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:27,480 - 127.0.0.1 - - [30/Sep/2023 16:05:27] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:05:28,817 - No file was selected: TEXT TEST
+2023-09-30 16:05:28,817 - Debug was selected: TEXT TEST
+2023-09-30 16:05:28,818 - Selected directory: static/images/yodo_01
+2023-09-30 16:05:28,818 - Selected image filenames: ['static/images/yodo_01/00006.jpg', 'static/images/yodo_01/00008.jpg', 'static/images/yodo_01/00012.jpg', 'static/images/yodo_01/00018.jpg', 'static/images/yodo_01/00007.jpg', 'static/images/yodo_01/00014.jpg', 'static/images/yodo_01/00001.jpg', 'static/images/yodo_01/00015.jpg', 'static/images/yodo_01/00016.jpg', 'static/images/yodo_01/00003.jpg', 'static/images/yodo_01/00010.jpg', 'static/images/yodo_01/00019.jpg', 'static/images/yodo_01/00002.jpg', 'static/images/yodo_01/00009.jpg', 'static/images/yodo_01/00005.jpg']
+2023-09-30 16:05:28,818 - Processing image: static/images/yodo_01/00006.jpg
+2023-09-30 16:05:28,828 - Processing image: static/images/yodo_01/00008.jpg
+2023-09-30 16:05:28,833 - Processing image: static/images/yodo_01/00012.jpg
+2023-09-30 16:05:28,837 - Processing image: static/images/yodo_01/00018.jpg
+2023-09-30 16:05:28,841 - Processing image: static/images/yodo_01/00007.jpg
+2023-09-30 16:05:28,846 - Processing image: static/images/yodo_01/00014.jpg
+2023-09-30 16:05:28,849 - Processing image: static/images/yodo_01/00001.jpg
+2023-09-30 16:05:28,859 - Processing image: static/images/yodo_01/00015.jpg
+2023-09-30 16:05:28,863 - Processing image: static/images/yodo_01/00016.jpg
+2023-09-30 16:05:28,867 - Processing image: static/images/yodo_01/00003.jpg
+2023-09-30 16:05:28,872 - Processing image: static/images/yodo_01/00010.jpg
+2023-09-30 16:05:28,876 - Processing image: static/images/yodo_01/00019.jpg
+2023-09-30 16:05:28,885 - Processing image: static/images/yodo_01/00002.jpg
+2023-09-30 16:05:28,894 - Processing image: static/images/yodo_01/00009.jpg
+2023-09-30 16:05:28,899 - Processing image: static/images/yodo_01/00005.jpg
+2023-09-30 16:05:28,904 - Number of image clips: 15
+2023-09-30 16:05:28,945 - Output video file path: static/videos/random_images_20230930-160528_video.mp4
+2023-09-30 16:05:28,945 - Final video file path: static/videos/random_images_video.mp4
+2023-09-30 16:05:33,575 - 127.0.0.1 - - [30/Sep/2023 16:05:33] "POST /choose_dir HTTP/1.1" 200 -
+2023-09-30 16:09:02,880 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 16:09:03,128 -  * Restarting with stat
+2023-09-30 16:09:04,119 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1204
+2023-09-30 16:09:04,136 -  * Debugger is active!
+2023-09-30 16:09:04,137 -  * Debugger PIN: 511-420-279
+2023-09-30 16:09:09,301 - IMAGE_LIST: []
+2023-09-30 16:09:09,302 - Selected image filenames: []
+2023-09-30 16:09:09,303 - Number of files: 0
+2023-09-30 16:09:09,311 - 127.0.0.1 - - [30/Sep/2023 16:09:09] "[35m[1mPOST /mkblend_video HTTP/1.1[0m" 500 -
+2023-09-30 16:09:09,412 - 127.0.0.1 - - [30/Sep/2023 16:09:09] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 16:09:09,413 - 127.0.0.1 - - [30/Sep/2023 16:09:09] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 16:09:09,484 - 127.0.0.1 - - [30/Sep/2023 16:09:09] "[36mGET /mkblend_video?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 16:10:19,319 - IMAGE_LIST: []
+2023-09-30 16:10:19,324 - Selected image filenames: []
+2023-09-30 16:10:19,326 - Number of files: 0
+2023-09-30 16:10:19,337 - 127.0.0.1 - - [30/Sep/2023 16:10:19] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 16:10:45,241 - IMAGE_LIST: []
+2023-09-30 16:10:45,242 - Selected image filenames: []
+2023-09-30 16:10:45,242 - Number of files: 0
+2023-09-30 16:10:45,242 - 127.0.0.1 - - [30/Sep/2023 16:10:45] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 16:11:04,486 - 127.0.0.1 - - [30/Sep/2023 16:11:04] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:04,492 - 127.0.0.1 - - [30/Sep/2023 16:11:04] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:04,538 - 127.0.0.1 - - [30/Sep/2023 16:11:04] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:04,558 - 127.0.0.1 - - [30/Sep/2023 16:11:04] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:04,592 - 127.0.0.1 - - [30/Sep/2023 16:11:04] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:06,092 - 127.0.0.1 - - [30/Sep/2023 16:11:06] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:06,109 - 127.0.0.1 - - [30/Sep/2023 16:11:06] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:06,114 - 127.0.0.1 - - [30/Sep/2023 16:11:06] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:13,756 - 127.0.0.1 - - [30/Sep/2023 16:11:13] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:19,992 - 127.0.0.1 - - [30/Sep/2023 16:11:19] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:20,003 - 127.0.0.1 - - [30/Sep/2023 16:11:20] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:20,061 - 127.0.0.1 - - [30/Sep/2023 16:11:20] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:36,589 - No file was selected: TEXT TEST
+2023-09-30 16:11:36,589 - Debug was selected: TEXT TEST
+2023-09-30 16:11:36,589 - Selected directory: static/images/ideogram
+2023-09-30 16:11:36,590 - Selected image filenames: ['static/images/ideogram/00005.jpg', 'static/images/ideogram/00002.jpg', 'static/images/ideogram/00012.jpg', 'static/images/ideogram/00004.jpg', 'static/images/ideogram/00008.jpg', 'static/images/ideogram/00001.jpg', 'static/images/ideogram/00006.jpg', 'static/images/ideogram/00011.jpg', 'static/images/ideogram/00007.jpg', 'static/images/ideogram/00009.jpg', 'static/images/ideogram/00003.jpg', 'static/images/ideogram/00010.jpg']
+2023-09-30 16:11:36,590 - Processing image: static/images/ideogram/00005.jpg
+2023-09-30 16:11:36,608 - Processing image: static/images/ideogram/00002.jpg
+2023-09-30 16:11:36,616 - Processing image: static/images/ideogram/00012.jpg
+2023-09-30 16:11:36,622 - Processing image: static/images/ideogram/00004.jpg
+2023-09-30 16:11:36,630 - Processing image: static/images/ideogram/00008.jpg
+2023-09-30 16:11:36,637 - Processing image: static/images/ideogram/00001.jpg
+2023-09-30 16:11:36,643 - Processing image: static/images/ideogram/00006.jpg
+2023-09-30 16:11:36,650 - Processing image: static/images/ideogram/00011.jpg
+2023-09-30 16:11:36,657 - Processing image: static/images/ideogram/00007.jpg
+2023-09-30 16:11:36,664 - Processing image: static/images/ideogram/00009.jpg
+2023-09-30 16:11:36,672 - Processing image: static/images/ideogram/00003.jpg
+2023-09-30 16:11:36,680 - Processing image: static/images/ideogram/00010.jpg
+2023-09-30 16:11:36,688 - Number of image clips: 12
+2023-09-30 16:11:36,745 - Output video file path: static/videos/random_images_20230930-161136_video.mp4
+2023-09-30 16:11:36,746 - Final video file path: static/videos/random_images_video.mp4
+2023-09-30 16:11:43,610 - 127.0.0.1 - - [30/Sep/2023 16:11:43] "POST /choose_dir HTTP/1.1" 200 -
+2023-09-30 16:11:43,691 - 127.0.0.1 - - [30/Sep/2023 16:11:43] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:45,505 - 127.0.0.1 - - [30/Sep/2023 16:11:45] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:45,606 - 127.0.0.1 - - [30/Sep/2023 16:11:45] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 16:11:45,618 - 127.0.0.1 - - [30/Sep/2023 16:11:45] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:36:49,624 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 17:36:49,843 -  * Restarting with stat
+2023-09-30 17:36:50,769 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1205
+2023-09-30 17:36:50,785 -  * Debugger is active!
+2023-09-30 17:36:50,786 -  * Debugger PIN: 511-420-279
+2023-09-30 17:37:03,830 - No file was selected: TEXT TEST
+2023-09-30 17:37:03,830 - Debug was selected: TEXT TEST
+2023-09-30 17:37:03,831 - Selected directory: static/images/ideogram
+2023-09-30 17:37:03,832 - Number of image files: 12
+2023-09-30 17:37:03,833 - Selected image filenames: ['static/images/ideogram/00008.jpg', 'static/images/ideogram/00012.jpg', 'static/images/ideogram/00007.jpg', 'static/images/ideogram/00011.jpg', 'static/images/ideogram/00006.jpg', 'static/images/ideogram/00010.jpg', 'static/images/ideogram/00002.jpg', 'static/images/ideogram/00001.jpg', 'static/images/ideogram/00003.jpg', 'static/images/ideogram/00004.jpg', 'static/images/ideogram/00005.jpg', 'static/images/ideogram/00009.jpg']
+2023-09-30 17:37:03,834 - Processing image: static/images/ideogram/00008.jpg
+2023-09-30 17:37:03,854 - Processing image: static/images/ideogram/00012.jpg
+2023-09-30 17:37:03,862 - Processing image: static/images/ideogram/00007.jpg
+2023-09-30 17:37:03,872 - Processing image: static/images/ideogram/00011.jpg
+2023-09-30 17:37:03,879 - Processing image: static/images/ideogram/00006.jpg
+2023-09-30 17:37:03,889 - Processing image: static/images/ideogram/00010.jpg
+2023-09-30 17:37:03,899 - Processing image: static/images/ideogram/00002.jpg
+2023-09-30 17:37:03,907 - Processing image: static/images/ideogram/00001.jpg
+2023-09-30 17:37:03,914 - Processing image: static/images/ideogram/00003.jpg
+2023-09-30 17:37:03,921 - Processing image: static/images/ideogram/00004.jpg
+2023-09-30 17:37:03,927 - Processing image: static/images/ideogram/00005.jpg
+2023-09-30 17:37:03,936 - Processing image: static/images/ideogram/00009.jpg
+2023-09-30 17:37:03,943 - Number of image clips: 12
+2023-09-30 17:37:03,999 - Output video file path: static/videos/random_images_20230930-173703_video.mp4
+2023-09-30 17:37:03,999 - Final video file path: static/videos/random_images_video.mp4
+2023-09-30 17:37:10,820 - 127.0.0.1 - - [30/Sep/2023 17:37:10] "POST /choose_dir HTTP/1.1" 200 -
+2023-09-30 17:37:10,940 - 127.0.0.1 - - [30/Sep/2023 17:37:10] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:37:10,972 - 127.0.0.1 - - [30/Sep/2023 17:37:10] "GET /static/videos/random_images_video.mp4 HTTP/1.1" 200 -
+2023-09-30 17:37:10,987 - 127.0.0.1 - - [30/Sep/2023 17:37:10] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:37:11,073 - 127.0.0.1 - - [30/Sep/2023 17:37:11] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:37:11,143 - 127.0.0.1 - - [30/Sep/2023 17:37:11] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:37:11,148 - 127.0.0.1 - - [30/Sep/2023 17:37:11] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:37:11,153 - 127.0.0.1 - - [30/Sep/2023 17:37:11] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:37:11,315 - 127.0.0.1 - - [30/Sep/2023 17:37:11] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:16,046 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 17:40:16,584 -  * Restarting with stat
+2023-09-30 17:40:18,273 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1205
+2023-09-30 17:40:18,293 -  * Debugger is active!
+2023-09-30 17:40:18,293 -  * Debugger PIN: 511-420-279
+2023-09-30 17:40:20,926 - 127.0.0.1 - - [30/Sep/2023 17:40:20] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:20,972 - 127.0.0.1 - - [30/Sep/2023 17:40:20] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:20,981 - 127.0.0.1 - - [30/Sep/2023 17:40:20] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:23,153 - No file was selected: TEXT TEST
+2023-09-30 17:40:23,153 - Debug was selected: TEXT TEST
+2023-09-30 17:40:23,154 - Selected directory: static/images/ideogram
+2023-09-30 17:40:23,154 - Number of image files: 12
+2023-09-30 17:40:23,168 - 127.0.0.1 - - [30/Sep/2023 17:40:23] "[35m[1mPOST /choose_dir HTTP/1.1[0m" 500 -
+2023-09-30 17:40:23,278 - 127.0.0.1 - - [30/Sep/2023 17:40:23] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 17:40:23,292 - 127.0.0.1 - - [30/Sep/2023 17:40:23] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 17:40:23,317 - 127.0.0.1 - - [30/Sep/2023 17:40:23] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 17:40:40,102 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1205
+2023-09-30 17:40:40,122 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://192.168.0.108:5200
+2023-09-30 17:40:40,123 - [33mPress CTRL+C to quit[0m
+2023-09-30 17:40:40,125 -  * Restarting with stat
+2023-09-30 17:40:41,228 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1205
+2023-09-30 17:40:41,285 -  * Debugger is active!
+2023-09-30 17:40:41,286 -  * Debugger PIN: 511-420-279
+2023-09-30 17:40:46,363 - No file was selected: TEXT TEST
+2023-09-30 17:40:46,364 - Debug was selected: TEXT TEST
+2023-09-30 17:40:46,364 - Selected directory: static/images/ideogram
+2023-09-30 17:40:46,364 - Number of image files: 12
+2023-09-30 17:40:46,377 - 127.0.0.1 - - [30/Sep/2023 17:40:46] "[35m[1mPOST /choose_dir HTTP/1.1[0m" 500 -
+2023-09-30 17:40:46,443 - 127.0.0.1 - - [30/Sep/2023 17:40:46] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 17:40:46,448 - 127.0.0.1 - - [30/Sep/2023 17:40:46] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 17:40:46,525 - 127.0.0.1 - - [30/Sep/2023 17:40:46] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 17:40:48,485 - 127.0.0.1 - - [30/Sep/2023 17:40:48] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:48,490 - 127.0.0.1 - - [30/Sep/2023 17:40:48] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:48,586 - 127.0.0.1 - - [30/Sep/2023 17:40:48] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:48,781 - 127.0.0.1 - - [30/Sep/2023 17:40:48] "[35m[1mGET /static/videos/random_images_video.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:48,798 - 127.0.0.1 - - [30/Sep/2023 17:40:48] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:48,827 - 127.0.0.1 - - [30/Sep/2023 17:40:48] "[35m[1mGET /static/assets/result_cl.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:40:53,778 - No file was selected: TEXT TEST
+2023-09-30 17:40:53,779 - Debug was selected: TEXT TEST
+2023-09-30 17:40:53,779 - Selected directory: static/images/ideogram
+2023-09-30 17:40:53,779 - Number of image files: 12
+2023-09-30 17:40:53,788 - 127.0.0.1 - - [30/Sep/2023 17:40:53] "[35m[1mPOST /choose_dir HTTP/1.1[0m" 500 -
+2023-09-30 17:40:53,886 - 127.0.0.1 - - [30/Sep/2023 17:40:53] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-30 17:40:53,890 - 127.0.0.1 - - [30/Sep/2023 17:40:53] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-30 17:40:53,913 - 127.0.0.1 - - [30/Sep/2023 17:40:53] "[36mGET /choose_dir?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-30 17:46:23,978 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1205
+2023-09-30 17:46:23,999 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://192.168.0.108:5200
+2023-09-30 17:46:23,999 - [33mPress CTRL+C to quit[0m
+2023-09-30 17:46:24,001 -  * Restarting with stat
+2023-09-30 17:46:25,119 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1205
+2023-09-30 17:46:25,137 -  * Debugger is active!
+2023-09-30 17:46:25,138 -  * Debugger PIN: 511-420-279
+2023-09-30 17:47:01,242 - 127.0.0.1 - - [30/Sep/2023 17:47:01] "GET / HTTP/1.1" 200 -
+2023-09-30 17:47:01,388 - 127.0.0.1 - - [30/Sep/2023 17:47:01] "GET /static/css/body.css HTTP/1.1" 200 -
+2023-09-30 17:47:01,588 - 127.0.0.1 - - [30/Sep/2023 17:47:01] "GET /static/assets/MemMaker_background.png HTTP/1.1" 200 -
+2023-09-30 17:47:01,637 - 127.0.0.1 - - [30/Sep/2023 17:47:01] "[35m[1mGET /static/assets/Final_End_Dance.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:01,765 - 127.0.0.1 - - [30/Sep/2023 17:47:01] "[35m[1mGET /static/assets/Final_End_Dance.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:01,784 - 127.0.0.1 - - [30/Sep/2023 17:47:01] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2023-09-30 17:47:01,809 - 127.0.0.1 - - [30/Sep/2023 17:47:01] "[35m[1mGET /static/assets/Final_End_Dance.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:07,131 - 127.0.0.1 - - [30/Sep/2023 17:47:07] "GET /ffmpeg_commands HTTP/1.1" 200 -
+2023-09-30 17:47:07,267 - 127.0.0.1 - - [30/Sep/2023 17:47:07] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:47:07,272 - 127.0.0.1 - - [30/Sep/2023 17:47:07] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:07,342 - 127.0.0.1 - - [30/Sep/2023 17:47:07] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:07,343 - 127.0.0.1 - - [30/Sep/2023 17:47:07] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:47:07,410 - 127.0.0.1 - - [30/Sep/2023 17:47:07] "[35m[1mGET /static/assets/00015Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:10,065 - 127.0.0.1 - - [30/Sep/2023 17:47:10] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 17:47:10,222 - 127.0.0.1 - - [30/Sep/2023 17:47:10] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:47:10,243 - 127.0.0.1 - - [30/Sep/2023 17:47:10] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 17:47:10,246 - 127.0.0.1 - - [30/Sep/2023 17:47:10] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:47:19,796 - 127.0.0.1 - - [30/Sep/2023 17:47:19] "GET / HTTP/1.1" 200 -
+2023-09-30 17:47:19,885 - 127.0.0.1 - - [30/Sep/2023 17:47:19] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:47:19,989 - 127.0.0.1 - - [30/Sep/2023 17:47:19] "[35m[1mGET /static/assets/Final_End_Dance.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:20,042 - 127.0.0.1 - - [30/Sep/2023 17:47:20] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:47:23,464 - 127.0.0.1 - - [30/Sep/2023 17:47:23] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 17:47:23,586 - 127.0.0.1 - - [30/Sep/2023 17:47:23] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:47:23,613 - 127.0.0.1 - - [30/Sep/2023 17:47:23] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 17:47:23,628 - 127.0.0.1 - - [30/Sep/2023 17:47:23] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:47:27,266 - circle_center, circle_radius:,(8, 8) 5
+2023-09-30 17:47:27,309 - 127.0.0.1 - - [30/Sep/2023 17:47:27] "GET /favicon.ico HTTP/1.1" 200 -
+2023-09-30 17:47:40,758 - 127.0.0.1 - - [30/Sep/2023 17:47:40] "GET /ffmpeg_commands HTTP/1.1" 200 -
+2023-09-30 17:47:40,910 - 127.0.0.1 - - [30/Sep/2023 17:47:40] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:47:40,946 - 127.0.0.1 - - [30/Sep/2023 17:47:40] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:47:40,953 - 127.0.0.1 - - [30/Sep/2023 17:47:40] "[35m[1mGET /static/assets/00005Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:40,994 - 127.0.0.1 - - [30/Sep/2023 17:47:40] "[35m[1mGET /static/assets/00005Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:41,058 - 127.0.0.1 - - [30/Sep/2023 17:47:41] "[35m[1mGET /static/assets/00005Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:47:47,488 - 127.0.0.1 - - [30/Sep/2023 17:47:47] "GET /edit_template_page?filename=index.html HTTP/1.1" 200 -
+2023-09-30 17:47:47,562 - 127.0.0.1 - - [30/Sep/2023 17:47:47] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:47:47,647 - 127.0.0.1 - - [30/Sep/2023 17:47:47] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:48:13,666 - 127.0.0.1 - - [30/Sep/2023 17:48:13] "GET / HTTP/1.1" 200 -
+2023-09-30 17:48:13,721 - 127.0.0.1 - - [30/Sep/2023 17:48:13] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:48:13,758 - 127.0.0.1 - - [30/Sep/2023 17:48:13] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:48:13,790 - 127.0.0.1 - - [30/Sep/2023 17:48:13] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:48:13,818 - 127.0.0.1 - - [30/Sep/2023 17:48:13] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:48:13,839 - 127.0.0.1 - - [30/Sep/2023 17:48:13] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:48:21,020 - 127.0.0.1 - - [30/Sep/2023 17:48:21] "GET /ffmpeg_commands HTTP/1.1" 200 -
+2023-09-30 17:48:21,151 - 127.0.0.1 - - [30/Sep/2023 17:48:21] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:48:21,163 - 127.0.0.1 - - [30/Sep/2023 17:48:21] "[35m[1mGET /static/assets/00004Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:48:21,172 - 127.0.0.1 - - [30/Sep/2023 17:48:21] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:48:21,222 - 127.0.0.1 - - [30/Sep/2023 17:48:21] "[35m[1mGET /static/assets/00004Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:48:21,247 - 127.0.0.1 - - [30/Sep/2023 17:48:21] "[35m[1mGET /static/assets/00004Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:48:24,217 - 127.0.0.1 - - [30/Sep/2023 17:48:24] "GET /edit_template_page?filename=index.html HTTP/1.1" 200 -
+2023-09-30 17:48:24,317 - 127.0.0.1 - - [30/Sep/2023 17:48:24] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:48:24,387 - 127.0.0.1 - - [30/Sep/2023 17:48:24] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:49:08,195 - 127.0.0.1 - - [30/Sep/2023 17:49:08] "GET /edit_template_page?filename=index.html HTTP/1.1" 200 -
+2023-09-30 17:49:08,333 - 127.0.0.1 - - [30/Sep/2023 17:49:08] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:49:08,474 - 127.0.0.1 - - [30/Sep/2023 17:49:08] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:50:00,104 - 127.0.0.1 - - [30/Sep/2023 17:50:00] "GET /edit_template_page?filename=ffmpeg_commands.html HTTP/1.1" 200 -
+2023-09-30 17:50:00,220 - 127.0.0.1 - - [30/Sep/2023 17:50:00] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:50:00,285 - 127.0.0.1 - - [30/Sep/2023 17:50:00] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:53:15,749 - 127.0.0.1 - - [30/Sep/2023 17:53:15] "[32mPOST /edit_template_save HTTP/1.1[0m" 302 -
+2023-09-30 17:53:15,759 - 127.0.0.1 - - [30/Sep/2023 17:53:15] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 17:53:16,080 - 127.0.0.1 - - [30/Sep/2023 17:53:16] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:53:16,229 - 127.0.0.1 - - [30/Sep/2023 17:53:16] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:53:16,258 - 127.0.0.1 - - [30/Sep/2023 17:53:16] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 17:53:21,432 - 127.0.0.1 - - [30/Sep/2023 17:53:21] "GET / HTTP/1.1" 200 -
+2023-09-30 17:53:21,555 - 127.0.0.1 - - [30/Sep/2023 17:53:21] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:53:21,599 - 127.0.0.1 - - [30/Sep/2023 17:53:21] "[35m[1mGET /static/assets/Final_002.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:53:21,612 - 127.0.0.1 - - [30/Sep/2023 17:53:21] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:53:21,711 - 127.0.0.1 - - [30/Sep/2023 17:53:21] "[35m[1mGET /static/assets/Final_002.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:53:21,815 - 127.0.0.1 - - [30/Sep/2023 17:53:21] "[35m[1mGET /static/assets/Final_002.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:53:23,765 - 127.0.0.1 - - [30/Sep/2023 17:53:23] "GET /ffmpeg_commands HTTP/1.1" 200 -
+2023-09-30 17:53:23,861 - 127.0.0.1 - - [30/Sep/2023 17:53:23] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:53:23,867 - 127.0.0.1 - - [30/Sep/2023 17:53:23] "[35m[1mGET /static/assets/00016Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:53:23,899 - 127.0.0.1 - - [30/Sep/2023 17:53:23] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:53:23,928 - 127.0.0.1 - - [30/Sep/2023 17:53:23] "[35m[1mGET /static/assets/00016Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:53:26,834 - 127.0.0.1 - - [30/Sep/2023 17:53:26] "GET /edit_template_page?filename=ffmpeg_commands.html HTTP/1.1" 200 -
+2023-09-30 17:53:26,938 - 127.0.0.1 - - [30/Sep/2023 17:53:26] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:53:26,973 - 127.0.0.1 - - [30/Sep/2023 17:53:26] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:53:49,753 - 127.0.0.1 - - [30/Sep/2023 17:53:49] "[32mPOST /edit_template_save HTTP/1.1[0m" 302 -
+2023-09-30 17:53:49,767 - 127.0.0.1 - - [30/Sep/2023 17:53:49] "GET /edit_template HTTP/1.1" 200 -
+2023-09-30 17:53:49,901 - 127.0.0.1 - - [30/Sep/2023 17:53:49] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:53:49,922 - 127.0.0.1 - - [30/Sep/2023 17:53:49] "[33mGET /static/assets/voice-for_avatar_Edit_Files.mp4 HTTP/1.1[0m" 404 -
+2023-09-30 17:53:49,961 - 127.0.0.1 - - [30/Sep/2023 17:53:49] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:53:59,464 - 127.0.0.1 - - [30/Sep/2023 17:53:59] "GET / HTTP/1.1" 200 -
+2023-09-30 17:53:59,565 - 127.0.0.1 - - [30/Sep/2023 17:53:59] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:53:59,594 - 127.0.0.1 - - [30/Sep/2023 17:53:59] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:53:59,665 - 127.0.0.1 - - [30/Sep/2023 17:53:59] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:53:59,676 - 127.0.0.1 - - [30/Sep/2023 17:53:59] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:53:59,802 - 127.0.0.1 - - [30/Sep/2023 17:53:59] "[35m[1mGET /static/assets/00014Final.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:54:01,300 - 127.0.0.1 - - [30/Sep/2023 17:54:01] "GET /ffmpeg_commands HTTP/1.1" 200 -
+2023-09-30 17:54:01,415 - 127.0.0.1 - - [30/Sep/2023 17:54:01] "[36mGET /static/css/body.css HTTP/1.1[0m" 304 -
+2023-09-30 17:54:01,451 - 127.0.0.1 - - [30/Sep/2023 17:54:01] "[35m[1mGET /static/assets/Final_001.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:54:01,466 - 127.0.0.1 - - [30/Sep/2023 17:54:01] "[36mGET /static/assets/MemMaker_background.png HTTP/1.1[0m" 304 -
+2023-09-30 17:54:01,495 - 127.0.0.1 - - [30/Sep/2023 17:54:01] "[35m[1mGET /static/assets/Final_001.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:54:01,634 - 127.0.0.1 - - [30/Sep/2023 17:54:01] "[35m[1mGET /static/assets/Final_001.mp4 HTTP/1.1[0m" 206 -
+2023-09-30 17:54:03,844 - 127.0.0.1 - - [30/Sep/2023 17:54:03] "GET /mkblend_video HTTP/1.1" 200 -
+2023-09-30 17:54:04,274 - circle_center, circle_radius:,(8, 8) 5
+2023-09-30 17:54:04,280 - 127.0.0.1 - - [30/Sep/2023 17:54:04] "GET /favicon.ico HTTP/1.1" 200 -
+2023-09-30 17:54:32,092 - IMAGE_LIST: []
+2023-09-30 17:54:32,093 - Selected image filenames: []
+2023-09-30 17:54:32,093 - Number of files: 0
+2023-09-30 17:54:32,094 - 127.0.0.1 - - [30/Sep/2023 17:54:32] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 17:58:14,440 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 17:58:14,677 -  * Restarting with stat
+2023-09-30 17:58:16,276 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1205
+2023-09-30 17:58:16,293 -  * Debugger is active!
+2023-09-30 17:58:16,294 -  * Debugger PIN: 511-420-279
+2023-09-30 17:59:42,678 - IMAGE_LIST: []
+2023-09-30 17:59:42,680 - Selected image filenames: []
+2023-09-30 17:59:42,680 - Number of files: 0
+2023-09-30 17:59:42,685 - 127.0.0.1 - - [30/Sep/2023 17:59:42] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:00:58,953 - IMAGE_LIST: []
+2023-09-30 18:00:58,955 - Selected image filenames: []
+2023-09-30 18:00:58,956 - Number of files: 0
+2023-09-30 18:00:58,956 - 127.0.0.1 - - [30/Sep/2023 18:00:58] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:01:10,959 - IMAGE_LIST: []
+2023-09-30 18:01:10,960 - Selected image filenames: []
+2023-09-30 18:01:10,961 - Number of files: 0
+2023-09-30 18:01:10,961 - 127.0.0.1 - - [30/Sep/2023 18:01:10] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:04:24,475 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 18:04:24,673 -  * Restarting with stat
+2023-09-30 18:04:25,599 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1206
+2023-09-30 18:04:25,615 -  * Debugger is active!
+2023-09-30 18:04:25,615 -  * Debugger PIN: 511-420-279
+2023-09-30 18:05:18,510 - IMAGE_LIST: []
+2023-09-30 18:05:18,510 - Selected image filenames: []
+2023-09-30 18:05:18,510 - Number of files: 0
+2023-09-30 18:05:18,514 - 127.0.0.1 - - [30/Sep/2023 18:05:18] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:05:31,581 - IMAGE_LIST: []
+2023-09-30 18:05:31,582 - Selected image filenames: []
+2023-09-30 18:05:31,582 - Number of files: 0
+2023-09-30 18:05:31,583 - 127.0.0.1 - - [30/Sep/2023 18:05:31] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:07:41,796 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 18:07:42,018 -  * Restarting with stat
+2023-09-30 18:07:42,956 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1206
+2023-09-30 18:07:42,973 -  * Debugger is active!
+2023-09-30 18:07:42,974 -  * Debugger PIN: 511-420-279
+2023-09-30 18:07:56,185 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/app.py', reloading
+2023-09-30 18:07:56,374 -  * Restarting with stat
+2023-09-30 18:07:57,295 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1206
+2023-09-30 18:07:57,311 -  * Debugger is active!
+2023-09-30 18:07:57,311 -  * Debugger PIN: 511-420-279
+2023-09-30 18:08:09,494 - 127.0.0.1 - - [30/Sep/2023 18:08:09] "GET /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:08:12,838 - 127.0.0.1 - - [30/Sep/2023 18:08:12] "GET /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:08:20,680 - Selected Directory: None
+2023-09-30 18:08:20,681 - IMAGE_LIST: []
+2023-09-30 18:08:20,681 - Selected image filenames: []
+2023-09-30 18:08:20,681 - Number of files: 0
+2023-09-30 18:08:20,682 - 127.0.0.1 - - [30/Sep/2023 18:08:20] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:08:27,867 - 127.0.0.1 - - [30/Sep/2023 18:08:27] "GET /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:08:32,502 - 127.0.0.1 - - [30/Sep/2023 18:08:32] "GET /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:08:43,822 - Selected Directory: None
+2023-09-30 18:08:43,823 - IMAGE_LIST: []
+2023-09-30 18:08:43,824 - Selected image filenames: []
+2023-09-30 18:08:43,824 - Number of files: 0
+2023-09-30 18:08:43,825 - 127.0.0.1 - - [30/Sep/2023 18:08:43] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:17:46,276 - 127.0.0.1 - - [30/Sep/2023 18:17:46] "GET /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:17:53,734 - Selected Directory: None
+2023-09-30 18:17:53,736 - IMAGE_LIST: []
+2023-09-30 18:17:53,736 - Selected image filenames: []
+2023-09-30 18:17:53,736 - Number of files: 0
+2023-09-30 18:17:53,737 - 127.0.0.1 - - [30/Sep/2023 18:17:53] "POST /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:26:05,373 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/templates/mkblend.py', reloading
+2023-09-30 18:26:05,576 -  * Restarting with stat
+2023-09-30 18:26:06,494 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1335
+2023-09-30 18:26:06,510 -  * Debugger is active!
+2023-09-30 18:26:06,510 -  * Debugger PIN: 511-420-279
+2023-09-30 18:27:16,525 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/templates/mkblend.py', reloading
+2023-09-30 18:27:16,735 -  * Restarting with stat
+2023-09-30 18:27:17,785 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1335
+2023-09-30 18:27:17,809 -  * Debugger is active!
+2023-09-30 18:27:17,810 -  * Debugger PIN: 511-420-279
+2023-09-30 18:35:14,889 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/mkblend.py', reloading
+2023-09-30 18:35:15,081 -  * Restarting with stat
+2023-09-30 18:35:16,294 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1334
+2023-09-30 18:35:16,310 -  * Debugger is active!
+2023-09-30 18:35:16,311 -  * Debugger PIN: 511-420-279
+2023-09-30 18:36:42,696 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/mkblend.py', reloading
+2023-09-30 18:36:42,977 -  * Restarting with stat
+2023-09-30 18:36:43,955 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1335
+2023-09-30 18:36:43,971 -  * Debugger is active!
+2023-09-30 18:36:43,972 -  * Debugger PIN: 511-420-279
+2023-09-30 18:46:18,592 - 127.0.0.1 - - [30/Sep/2023 18:46:18] "GET /mkblend_video HTTP/1.1" 200 -
+2023-09-30 18:46:41,069 - 127.0.0.1 - - [30/Sep/2023 18:46:41] "GET /mkblend_video HTTP/1.1" 200 -
+2023-09-30 19:07:21,340 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/mkblend.py', reloading
+2023-09-30 19:07:21,713 -  * Restarting with stat
+2023-09-30 19:07:22,770 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1379
+2023-09-30 19:07:22,791 -  * Debugger is active!
+2023-09-30 19:07:22,791 -  * Debugger PIN: 511-420-279
+2023-09-30 19:11:33,787 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/mkblend.py', reloading
+2023-09-30 19:11:34,600 -  * Restarting with stat
+2023-09-30 19:11:41,534 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1377
+2023-09-30 19:11:41,551 -  * Debugger is active!
+2023-09-30 19:11:41,551 -  * Debugger PIN: 511-420-279
+2023-09-30 19:12:50,569 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/mkblend.py', reloading
+2023-09-30 19:12:50,787 -  * Restarting with stat
+2023-09-30 19:12:51,978 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1377
+2023-09-30 19:12:51,997 -  * Debugger is active!
+2023-09-30 19:12:51,997 -  * Debugger PIN: 511-420-279
+2023-09-30 19:16:11,878 -  * Detected change in '/home/jack/Desktop/FlaskLearnFfmpeg/mkblend.py', reloading
+2023-09-30 19:16:12,081 -  * Restarting with stat
+2023-09-30 19:16:13,776 - Total lines of code in /home/jack/Desktop/FlaskLearnFfmpeg: 1385
+2023-09-30 19:16:13,793 -  * Debugger is active!
+2023-09-30 19:16:13,793 -  * Debugger PIN: 511-420-279

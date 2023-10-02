@@ -30,8 +30,7 @@ import imageio
 import time
 from werkzeug.utils import secure_filename
 import shutil
-from search import search
-import clean_images
+#from search import search
 from time import sleep
 from pydub import AudioSegment
 from PIL import Image, ImageDraw, ImageFont
@@ -40,11 +39,11 @@ from flask_cors import CORS
 import json
 import logging
 from logging.handlers import RotatingFileHandler
-from view_gallery import view_gallery_bp
-from create_comic import create_comic_bp
-from view_archive_videos import view_archive_videos_bp
-from api_search.api_search import api_search_bp
-from mp3_sound.mp3_sound import mp3_sound_bp
+#from view_gallery import view_gallery_bp
+#from create_comic import create_comic_bp
+#from view_archive_videos import view_archive_videos_bp
+#from api_search.api_search import api_search_bp
+#from mp3_sound.mp3_sound import mp3_sound_bp
 from zoomin import zoomin_bp
 import sys
 from selenium import webdriver 
@@ -54,13 +53,13 @@ app = Flask(__name__)
 app.template_folder = 'templates'
 # Register your Blueprint and specify its template folder
 api_search_template_folder = 'api_search/templates'
-app.register_blueprint(api_search_bp, url_prefix='/api_search', template_folder=api_search_template_folder)
+#app.register_blueprint(api_search_bp, url_prefix='/api_search', template_folder=api_search_template_folder)
 # Register the Blueprint from view_gallery.py with the main app
-app.register_blueprint(view_gallery_bp)
-app.register_blueprint(create_comic_bp)
+#app.register_blueprint(view_gallery_bp)
+#app.register_blueprint(create_comic_bp)
 app.register_blueprint(zoomin_bp)
-app.register_blueprint(view_archive_videos_bp)
-app.register_blueprint(mp3_sound_bp)
+#app.register_blueprint(view_archive_videos_bp)
+#app.register_blueprint(mp3_sound_bp)
 app.static_folder = 'static'
 # allow CORS
 CORS(app)
@@ -82,11 +81,26 @@ file_handler.setFormatter(formatter)
 # Add the file handler to the logger
 logger.addHandler(file_handler)
 
-SDIR = "static/"
+#SDIR = "static/"
 # Define the file path to store the script content
-script_file = os.path.join(os.getcwd(), SDIR, 'scripts', 'scripts.js')
+#script_file = os.path.join(os.getcwd(), SDIR, 'scripts', 'scripts.js')
 
 # Route to the main app's template
+
+def findvideos():
+    videoroot_directory = "static"
+    MP4 = []
+    for dirpath, dirnames, filenames in os.walk(videoroot_directory):
+        for filename in filenames:
+            if filename.endswith(".mp4") and "Final" in filename:
+                MP4.append(os.path.join(dirpath, filename))
+    if MP4:
+        last_video = session.get("last_video")
+        new_video = random.choice([video for video in MP4 if video != last_video])
+        session["last_video"] = new_video
+        return new_video
+    else:
+        return None
 @app.route('/')
 def index():
     video = findvideos()
@@ -178,20 +192,7 @@ def ClipList():
     return cliplist
 for clip in ClipList():
     os.remove(clip)   
-def findvideos():
-    videoroot_directory = "static"
-    MP4 = []
-    for dirpath, dirnames, filenames in os.walk(videoroot_directory):
-        for filename in filenames:
-            if filename.endswith(".mp4") and "Final" in filename:
-                MP4.append(os.path.join(dirpath, filename))
-    if MP4:
-        last_video = session.get("last_video")
-        new_video = random.choice([video for video in MP4 if video != last_video])
-        session["last_video"] = new_video
-        return new_video
-    else:
-        return None
+
 
 
 
